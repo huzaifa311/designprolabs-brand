@@ -1,550 +1,777 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>Home</title>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Home</title>
 
-        <link href="css/bootstrap.css" rel="stylesheet" />
-        <link href="css/style.css" rel="stylesheet" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-    </head>
-    <body>
-        <header>
-            <div class="container">
-                <div class="col-md-7 col-xs-12 col-sm-7">
-                    <nav class="navbar navbar-default">
-               
-                            <div class="navbar-header">
-                                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                                    <span class="sr-only">Toggle navigation</span>
-                                    <span class="icon-bar"></span>
-                                    <span class="icon-bar"></span>
-                                    <span class="icon-bar"></span>
-                                </button>
+    <link href="css/bootstrap.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="col-md-7 col-xs-12 col-sm-7">
+          <nav class="navbar navbar-default">
+            <div class="navbar-header">
+              <button
+                type="button"
+                class="navbar-toggle collapsed"
+                data-toggle="collapse"
+                data-target="#bs-example-navbar-collapse-1"
+                aria-expanded="false"
+              >
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
 
-                                <div class="wow rubberBand" data-wow-delay="2000ms" data-wow-duration="1s">
-                                    <div class="wow pulse" data-wow-delay="300ms" data-wow-iteration="infinite" data-wow-duration="2s">
-                                        <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="logo" /></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Collect the nav links, forms, and other content for toggling -->
-                            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                                <ul class="nav navbar-nav">
-                                    <li class=""><a href="index.html">Home</a></li>
-                                    <li class="dropdown active">
-                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Services <span class="caret"></span></a>
-                                        <ul class="dropdown-menu">
-                                          <li><a href="custom-website-design-development.html">Custom Website Design & Development</a></li>
-                                 <li><a href="ecommerce.html">Ecommerce</a></li>
-                                 <li><a href="custom-logo-design.html">Custom Logo Design</a></li>
-                                            <li><a href="video-animation.html">Video Animation</a></li>
-                                            <li><a href="marketing-services.html">Marketing Services</a></li>
-                                            <li><a href="creative-content-writing-business-proposals.html">Creative Content Writing </a></li>
-                                            <li><a href="branding-stationery.html">Branding & Stationery</a></li>
-                                            <li><a href="mobile-applications.html">Mobile Applications</a></li>
-                                            <li><a href="web-maintenance-securities.html">Web Maintenance & Securities</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="packages.html">Packages</a></li>
-                                      <li><a href="portfolio.html">Portfolio</a></li>
-                                    <li><a href="reviews.html">Reviews</a></li>
-                                    <li><a href="faqs.html">Faqs</a></li>
-                                </ul>
-                            </div>
-                            <!-- /.navbar-collapse -->
-                    
-                    </nav>
+              <div
+                class="wow rubberBand"
+                data-wow-delay="2000ms"
+                data-wow-duration="1s"
+              >
+                <div
+                  class="wow pulse"
+                  data-wow-delay="300ms"
+                  data-wow-iteration="infinite"
+                  data-wow-duration="2s"
+                >
+                  <a class="navbar-brand" href="index.html"
+                    ><img src="images/logo.png" alt="logo"
+                  /></a>
                 </div>
-                <div class="col-md-5 col-xs-12 col-sm-5">
-                    <div class="topBarList">
-                        <ul class="clearfix">
-                            <li>
-                                <a href=""><i class="fa fa-phone" aria-hidden="true"></i> (775) 583-8939</a>
-                            </li>
-                            <li>
-                                <a href=""><i class="fa fa-comments" aria-hidden="true"></i> Live Chat</a>
-                            </li>
-                            <li>
-                                <div class="wow rubberBand" data-wow-delay="3000ms" data-wow-duration="1s">
-                                    <div class="wow pulse" data-wow-delay="300ms" data-wow-iteration="infinite" data-wow-duration="2s">
-                                        <a href="get-started.html" class="getStarted tc-image-effect-circle">Let's Get Started</a>
-                                    </div>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
+              </div>
             </div>
-        </header>
-        <div class="btns_wrap">
-            <a href="javascript:;" class="chat_wrap sea-bg" onclick="setButtonURL();">
-                <span class="icoo sea-bg"><i class="fa fa-comment"></i></span>
-                <span>Chat With Us</span>
-            </a>
-            <a href="" class="call_wrap sea-bg">
-                <span class="icoo sea-bg"><i class="fa fa-phone"></i></span>
-                <span> (775) 583-8939 </span>
-            </a>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div
+              class="collapse navbar-collapse"
+              id="bs-example-navbar-collapse-1"
+            >
+              <ul class="nav navbar-nav">
+                <li class=""><a href="index.html">Home</a></li>
+                <li class="dropdown active">
+                  <a
+                    href="#"
+                    class="dropdown-toggle"
+                    data-toggle="dropdown"
+                    role="button"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                    >Services <span class="caret"></span
+                  ></a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a href="custom-website-design-development.html"
+                        >Custom Website Design & Development</a
+                      >
+                    </li>
+                    <li><a href="ecommerce.html">Ecommerce</a></li>
+                    <li>
+                      <a href="custom-logo-design.html">Custom Logo Design</a>
+                    </li>
+                    <li><a href="video-animation.html">Video Animation</a></li>
+                    <li>
+                      <a href="marketing-services.html">Marketing Services</a>
+                    </li>
+                    <li>
+                      <a href="creative-content-writing-business-proposals.html"
+                        >Creative Content Writing
+                      </a>
+                    </li>
+                    <li>
+                      <a href="branding-stationery.html"
+                        >Branding & Stationery</a
+                      >
+                    </li>
+                    <li>
+                      <a href="mobile-applications.html">Mobile Applications</a>
+                    </li>
+                    <li>
+                      <a href="web-maintenance-securities.html"
+                        >Web Maintenance & Securities</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li><a href="packages.html">Packages</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="reviews.html">Reviews</a></li>
+                <li><a href="faqs.html">Faqs</a></li>
+              </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+          </nav>
         </div>
+        <div class="col-md-5 col-xs-12 col-sm-5">
+          <div class="topBarList">
+            <ul class="clearfix">
+              <li>
+                <a href=""
+                  ><i class="fa fa-phone" aria-hidden="true"></i> (775)
+                  583-8939</a
+                >
+              </li>
+              <li>
+                <a href=""
+                  ><i class="fa fa-comments" aria-hidden="true"></i> Live
+                  Chat</a
+                >
+              </li>
+              <li>
+                <div
+                  class="wow rubberBand"
+                  data-wow-delay="3000ms"
+                  data-wow-duration="1s"
+                >
+                  <div
+                    class="wow pulse"
+                    data-wow-delay="300ms"
+                    data-wow-iteration="infinite"
+                    data-wow-duration="2s"
+                  >
+                    <a
+                      href="get-started.html"
+                      class="getStarted tc-image-effect-circle"
+                      >Let's Get Started</a
+                    >
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="btns_wrap">
+      <a href="javascript:;" class="chat_wrap sea-bg" onclick="setButtonURL();">
+        <span class="icoo sea-bg"><i class="fa fa-comment"></i></span>
+        <span>Chat With Us</span>
+      </a>
+      <a href="" class="call_wrap sea-bg">
+        <span class="icoo sea-bg"><i class="fa fa-phone"></i></span>
+        <span> (775) 583-8939 </span>
+      </a>
+    </div>
 
-        <section class="main-services-banner-sec banner4">
-            <div class="container">
-                <div class="row align-self-center">
-                    <div class="col-lg-7 col-md-7 col-sm-12 align-self-center">
-                        <div class="srvce-cont">
-                            <h6>DIGITAL MARKETING SERVICES</h6>
-                            <h1>We Can Help Your Business Reach The Heights That It Deserves.</h1>
-                            <p class="subtitle">
-                                Our experts at Thedigipearls have years of experience in Digital Marketing and are well rehearsed in the different aspects of Digital Marketing. Deal with us and watch your business grow rapidly.
-                            </p>
-                            <ul class="myticks clearfix">
-                                <li>Seo and Email Marketing</li>
-                                <li>Integrated Marketing Communication</li>
-                                <li>Creative Blogs and Articles</li>
-                                <li>B2B and B2C Online Marketing</li>
-                            </ul>
-                            <a href="javascript:;" class="book-call-now tc-image-effect-circle">Book your free consultation call</a>
-                            <img src="images/partners.png" />
-                        </div>
-                    </div>
-                    <div class="col-lg-5 col-md-5 col-sm-12 align-self-center">
-                        <div class="banner-form srv-bnr-frm">
-                            <div class="banner-formInner">
-                                <h2>Sign Up Now & <b>Let’s Get Starteds</b></h2>
-                                <section class="banform">
-                                    <div class="row">
-                                        <div class="">
-                                            <div class="ban-form">
-                                                <form method="POST" action="#">
-                                                    <div class="row">
-                                                        <div class="col-lg-12">
-                                                            <div class="fldset">
-                                                                <input id="" type="text" placeholder="Enter your name *" required />
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-lg-12">
-                                                            <div class="fldset">
-                                                                <input id="" type="email" name="" placeholder="Enter email here *" required />
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-lg-12">
-                                                            <div class="fldset">
-                                                                <input id="" name="" type="number" placeholder="Phone Number *" required />
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-lg-12">
-                                                            <div class="fldset">
-                                                                <textarea placeholder="Enter a brief description about your project" name=""></textarea>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-lg-12">
-                                                            <div class="fldset inpchecbx">
-                                                                <label><input type="checkbox" name="" /> Click Here to receive our Promotional SMS - Unsubscribe at any time (optional)</label>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-lg-12">
-                                                            <div class="fldset inpchecbx">
-                                                                <label><input type="checkbox" name="" /> Click Here to receive our Promotional Emails - Unsubscribe at any time (optional)</label>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-lg-12">
-                                                            <div class="fldset">
-                                                                <p>
-                                                                    Message & Data rates may apply, You will receive one promotional text a month & Receive recurring messages. Reply STOP to cancel, Reply HELP for help,
-                                                                    <a href="#">Privacy and Terms</a>
-                                                                </p>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-lg-12">
-                                                            <div class="fldset submitbtn tc-image-effect-circle">
-                                                                <input name="submit" type="submit" placeholder="Connect With Us" required />
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </form>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </section>
+    <section class="main-services-banner-sec banner4">
+      <div class="container">
+        <div class="row align-self-center">
+          <div class="col-lg-7 col-md-7 col-sm-12 align-self-center">
+            <div class="srvce-cont">
+              <h6>DIGITAL MARKETING SERVICES</h6>
+              <h1>
+                We Can Help Your Business Reach The Heights That It Deserves.
+              </h1>
+              <p class="subtitle">
+                Our experts at Thedigipearls have years of experience in Digital
+                Marketing and are well rehearsed in the different aspects of
+                Digital Marketing. Deal with us and watch your business grow
+                rapidly.
+              </p>
+              <ul class="myticks clearfix">
+                <li>Seo and Email Marketing</li>
+                <li>Integrated Marketing Communication</li>
+                <li>Creative Blogs and Articles</li>
+                <li>B2B and B2C Online Marketing</li>
+              </ul>
+              <a
+                href="javascript:;"
+                class="book-call-now tc-image-effect-circle"
+                >Book your free consultation call</a
+              >
+              <img src="images/partners.png" />
+            </div>
+          </div>
+          <div class="col-lg-5 col-md-5 col-sm-12 align-self-center">
+            <div class="banner-form srv-bnr-frm">
+              <div class="banner-formInner">
+                <h2>Sign Up Now & <b>Let’s Get Starteds</b></h2>
+                <section class="banform">
+                  <div class="row">
+                    <div class="">
+                      <div class="ban-form">
+                        <form method="POST" action="#">
+                          <div class="row">
+                            <div class="col-lg-12">
+                              <div class="fldset">
+                                <input
+                                  id=""
+                                  type="text"
+                                  placeholder="Enter your name *"
+                                  required
+                                />
+                              </div>
                             </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="mainClients">
-            <div class="container">
-                <div id="clients" class="owl-carousel owl-theme">
-                    <div class="item">
-                        <div class="clientBox"><img src="images/cl-1.svg" alt="clients" /></div>
-                    </div>
-                    <div class="item">
-                        <div class="clientBox"><img src="images/cl-2.svg" alt="clients" /></div>
-                    </div>
-                    <div class="item">
-                        <div class="clientBox"><img src="images/cl-3.svg" alt="clients" /></div>
-                    </div>
-                    <div class="item">
-                        <div class="clientBox"><img src="images/cl-4.svg" alt="clients" /></div>
-                    </div>
-                    <div class="item">
-                        <div class="clientBox"><img src="images/cl-5.svg" alt="clients" /></div>
-                    </div>
-                    <div class="item">
-                        <div class="clientBox"><img src="images/cl-6.svg" alt="clients" /></div>
-                    </div>
-                    <div class="item">
-                        <div class="clientBox"><img src="images/cl-7.svg" alt="clients" /></div>
-                    </div>
-                    <div class="item">
-                        <div class="clientBox"><img src="images/cl-8.svg" alt="clients" /></div>
-                    </div>
-                    <div class="item">
-                        <div class="clientBox"><img src="images/cl-9.svg" alt="clients" /></div>
-                    </div>
-                    <div class="item">
-                        <div class="clientBox"><img src="images/cl-2.svg" alt="clients" /></div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="main-srvice-second-sec">
-            <div class="container">
-                <div class="row align-self-center">
-                    <div class="col-lg-6 col-md-6 col-sm-12 align-self-center">
-                        <div class="evry-heading-sec">
-                            <h2>Strategic planning to the on-going management</h2>
-                            <p>
-                                Our social media marketing services include content creation, community management, and advertising campaigns. This combined approach ensures that your social pages not only generate brand preference amongst
-                                followers but contribute to your bottom line too. As a full-service digital and social media marketing firm, we understand the nuances and overlap between SEO, PPC, social media, and other online platforms.
-                            </p>
-                            <a href="#" class="startbtn tc-image-effect-circle">Let's Get Started</a>
-                        </div>
-                    </div>
-                    <div class="col-lg-5 offset-lg-1 col-md-5 offset-md-1 col-sm-12 align-self-center">
-                        <div class="evry-img-sec">
-                            <figure>
-                                <img class="img-fluid" src="images/social-media.png" alt="*" />
-                            </figure>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-
-
-        <section class="main-srvng-bsiness-sec">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12 col-md-12 col-sm-12">
-                        <div class="flsevce">
-                            <h2 class="main-cnt-heading">Serving Businesses <b>of All Sizes</b></h2>
-                            <p class="main-cnt-para para-wdth">
-                                Our services are accessible to all types of customers. We have the capacity to handle large established companies, while providing the same attention to small and medium-sized businesses still growing.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="row align-self-center whitebox">
-                    <div class="col-lg-3 col-md-3 col-sm-12 align-self-center">
-                        <div class="mble-pckge-lft">
-                            <figure>
-                                <img src="images/search.png" />
-                            </figure>
-                            <a href="get-started.html" class="getbtn tc-image-effect-circle">Get a Custom Quote</a>
-                        </div>
-                    </div>
-                    <div class="col-lg-9 col-md-9 col-sm-12 align-self-center">
-                        <div class="mble-pckge-rght ulnone">
-                            <h3>Social Media Marketing!</h3>
-                            <p>
-                                We have a skilled team that handles hundreds of brands with utmost care, professionalism and a tinge of creativity. We offer you nothing short of perfection with a team that works consistently to provide you
-                                with services that help your brand stand out.
-                            </p>
-                            <ul class="ticklistmy">
-                                <li>
-                                    <a href="javascript:;" href="javascript:;">Speak with our Strategist</a>
-                                    <a href="tel:+18889665460"><h6>(775) 583-8939</h6></a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="row align-self-center whitebox">
-                    <div class="col-lg-9 col-md-9 col-sm-12 align-self-center">
-                        <div class="mble-pckge-rght ulnone">
-                            <h3>Search Engine Optimization</h3>
-                            <p>
-                                We have a skilled team that handles hundreds of brands with utmost care, professionalism and a tinge of creativity. We offer you nothing short of perfection with a team that works consistently to provide you
-                                with services that help your brand stand out.
-                            </p>
-                            <ul class="ticklistmy">
-                                <li>
-                                    <a href="javascript:;" href="javascript:;">Speak with our Strategist</a>
-                                    <a href="tel:+18889665460"><h6>(775) 583-8939</h6></a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-3 col-sm-12 align-self-center">
-                        <div class="mble-pckge-lft">
-                            <figure>
-                                <img src="images/payperclick.png" />
-                            </figure>
-                            <a href="get-started.html" class="getbtn tc-image-effect-circle">Get a Custom Quote</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="DigitalAgency experienceSec">
-            <div class="container">
-                <h2>Experience with <b>Various Industries</b></h2>
-                <p>We provide custom and diverse solutions for all companies.</p>
-
-                <div class="strey">
-                    <ul>
-                        <li class="DigitalAgencyBox">
-                            <a href="">
-                                <h3>Start-ups</h3>
-                                <span class="experienceSecImg experienceSec1"></span>
-                            </a>
-                        </li>
-
-                        <li class="DigitalAgencyBox">
-                            <a href="">
-                                <h3>E-commerce</h3>
-                                <span class="experienceSecImg experienceSec2"></span>
-                            </a>
-                        </li>
-                        <li class="DigitalAgencyBox">
-                            <a href="">
-                                <h3>B2C</h3>
-                                <span class="experienceSecImg experienceSec3"></span>
-                            </a>
-                        </li>
-                        <li class="DigitalAgencyBox">
-                            <a href="">
-                                <h3>B2B</h3>
-                                <span class="experienceSecImg experienceSec4"></span>
-                            </a>
-                        </li>
-                        <li class="DigitalAgencyBox">
-                            <a href="">
-                                <h3>Non-Profit</h3>
-                                <span class="experienceSecImg experienceSec5"></span>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-
-        <section class="subcribeSec">
-            <div class="container">
-                <h2>Subscribe Now !</h2>
-                <p>
-                    Subscribe to Newsletters & SMS Promotions<br />
-                    Message and data rates may apply. Reply STOP to cancel OR Reply HELP for info Privacy and Terms
-                </p>
-
-                <form>
-                    <div class="col-md-3 col-xs-12 col-sm-3">
-                        <input type="text" placeholder="Name" />
-                    </div>
-                    <div class="col-md-3 col-xs-12 col-sm-3">
-                        <input type="email" placeholder="Email" />
-                    </div>
-                    <div class="col-md-3 col-xs-12 col-sm-3">
-                        <input type="tel" placeholder="Phone" />
-                    </div>
-                    <div class="col-md-3 col-xs-12 col-sm-3">
-                        <input type="submit" value="SUBCRIBE" />
-                    </div>
-
-                    <div class="col-md-6 col-xs-12 col-sm-6">
-                        <label for="male"><input type="checkbox" id="male" value="male" /> Click Here to receive our Promotional SMS - Unsubscribe at any time (optional)</label>
-                    </div>
-                    <div class="col-md-6 col-xs-12 col-sm-6">
-                        <label for="female"><input type="checkbox" id="female" value="female" /> Click Here to receive our Promotional Emails - Unsubscribe at any time (optional)</label>
-                    </div>
-                </form>
-            </div>
-        </section>
-
-        <section class="DigitalAgency experienceSec UtilizingSec">
-            <div class="container">
-                <h2>Utilizing Current <b>Technologies</b></h2>
-                <p>Our team works with advanced platform solutions to create sleek user-friendly designs that your customers and clients will love.</p>
-
-                <ul>
-                    <li><div class="UtilizingSecBox UtilizingSecBox1"></div></li>
-                    <li><div class="UtilizingSecBox UtilizingSecBox2"></div></li>
-                    <li><div class="UtilizingSecBox UtilizingSecBox3"></div></li>
-                    <li><div class="UtilizingSecBox UtilizingSecBox4"></div></li>
-                    <li><div class="UtilizingSecBox UtilizingSecBox5"></div></li>
-                    <li><div class="UtilizingSecBox UtilizingSecBox6"></div></li>
-                    <li><div class="UtilizingSecBox UtilizingSecBox7"></div></li>
-                </ul>
-            </div>
-        </section>
-
-        <!-- let get started sec start -->
-        <section class="getstartedsec">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-8 col-sm-10 col-xs-12 center">
-                        <div class="gettext">
-                            <h3>Let’s <b>Get Started</b></h3>
-                            <p>
-                                Call <a href="#">(775) 583-8939</a> or fill up the form below to start <br />
-                                a conversation or for help
-                            </p>
-                        </div>
-                        <form>
-                            <div class="row">
-                                <div class="col-md-6 col-sm-6 col-xs-12">
-                                    <div class="startedlist">
-                                        <input type="text" placeholder="First Name*" />
-                                    </div>
-                                </div>
-
-                                <div class="col-md-6 col-sm-6 col-xs-12">
-                                    <div class="startedlist">
-                                        <input type="text" placeholder="Email*" />
-                                    </div>
-                                </div>
+                            <div class="col-lg-12">
+                              <div class="fldset">
+                                <input
+                                  id=""
+                                  type="email"
+                                  name=""
+                                  placeholder="Enter email here *"
+                                  required
+                                />
+                              </div>
                             </div>
-
-                            <div class="row">
-                                <div class="col-md-12 col-sm-12 col-xs-12">
-                                    <div class="startedlist">
-                                        <input type="text" placeholder="Phone*" />
-                                    </div>
-                                </div>
+                            <div class="col-lg-12">
+                              <div class="fldset">
+                                <input
+                                  id=""
+                                  name=""
+                                  type="number"
+                                  placeholder="Phone Number *"
+                                  required
+                                />
+                              </div>
                             </div>
-                            <div class="row">
-                                <div class="col-md-12 col-sm-12 col-xs-12">
-                                    <div class="startedlist">
-                                        <textarea placeholder="How we can help"></textarea>
-                                    </div>
-                                </div>
+                            <div class="col-lg-12">
+                              <div class="fldset">
+                                <textarea
+                                  placeholder="Enter a brief description about your project"
+                                  name=""
+                                ></textarea>
+                              </div>
                             </div>
-                            <div class="row">
-                                <div class="col-md-12 col-sm-12 col-xs-12">
-                                    <div class="startedlist">
-                                        <button>Submit</button>
-                                    </div>
-                                </div>
+                            <div class="col-lg-12">
+                              <div class="fldset inpchecbx">
+                                <label
+                                  ><input type="checkbox" name="" /> Click Here
+                                  to receive our Promotional SMS - Unsubscribe
+                                  at any time (optional)</label
+                                >
+                              </div>
                             </div>
+                            <div class="col-lg-12">
+                              <div class="fldset inpchecbx">
+                                <label
+                                  ><input type="checkbox" name="" /> Click Here
+                                  to receive our Promotional Emails -
+                                  Unsubscribe at any time (optional)</label
+                                >
+                              </div>
+                            </div>
+                            <div class="col-lg-12">
+                              <div class="fldset">
+                                <p>
+                                  Message & Data rates may apply, You will
+                                  receive one promotional text a month & Receive
+                                  recurring messages. Reply STOP to cancel,
+                                  Reply HELP for help,
+                                  <a href="#">Privacy and Terms</a>
+                                </p>
+                              </div>
+                            </div>
+                            <div class="col-lg-12">
+                              <div
+                                class="fldset submitbtn tc-image-effect-circle"
+                              >
+                                <input
+                                  name="submit"
+                                  type="submit"
+                                  placeholder="Connect With Us"
+                                  required
+                                />
+                              </div>
+                            </div>
+                          </div>
                         </form>
+                      </div>
                     </div>
-                </div>
+                  </div>
+                </section>
+              </div>
             </div>
-        </section>
-        <!-- let get started sec end -->
-        <!-- footer start -->
-        <footer>
-            <div class="container">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="mainClients">
+      <div class="container">
+        <div id="clients" class="owl-carousel owl-theme">
+          <div class="item">
+            <div class="clientBox">
+              <img src="images/cl-1.svg" alt="clients" />
+            </div>
+          </div>
+          <div class="item">
+            <div class="clientBox">
+              <img src="images/cl-2.svg" alt="clients" />
+            </div>
+          </div>
+          <div class="item">
+            <div class="clientBox">
+              <img src="images/cl-3.svg" alt="clients" />
+            </div>
+          </div>
+          <div class="item">
+            <div class="clientBox">
+              <img src="images/cl-4.svg" alt="clients" />
+            </div>
+          </div>
+          <div class="item">
+            <div class="clientBox">
+              <img src="images/cl-5.svg" alt="clients" />
+            </div>
+          </div>
+          <div class="item">
+            <div class="clientBox">
+              <img src="images/cl-6.svg" alt="clients" />
+            </div>
+          </div>
+          <div class="item">
+            <div class="clientBox">
+              <img src="images/cl-7.svg" alt="clients" />
+            </div>
+          </div>
+          <div class="item">
+            <div class="clientBox">
+              <img src="images/cl-8.svg" alt="clients" />
+            </div>
+          </div>
+          <div class="item">
+            <div class="clientBox">
+              <img src="images/cl-9.svg" alt="clients" />
+            </div>
+          </div>
+          <div class="item">
+            <div class="clientBox">
+              <img src="images/cl-2.svg" alt="clients" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="main-srvice-second-sec">
+      <div class="container">
+        <div class="row align-self-center">
+          <div class="col-lg-6 col-md-6 col-sm-12 align-self-center">
+            <div class="evry-heading-sec">
+              <h2>Strategic planning to the on-going management</h2>
+              <p>
+                Our social media marketing services include content creation,
+                community management, and advertising campaigns. This combined
+                approach ensures that your social pages not only generate brand
+                preference amongst followers but contribute to your bottom line
+                too. As a full-service digital and social media marketing firm,
+                we understand the nuances and overlap between SEO, PPC, social
+                media, and other online platforms.
+              </p>
+              <a href="#" class="startbtn tc-image-effect-circle"
+                >Let's Get Started</a
+              >
+            </div>
+          </div>
+          <div
+            class="col-lg-5 offset-lg-1 col-md-5 offset-md-1 col-sm-12 align-self-center"
+          >
+            <div class="evry-img-sec">
+              <figure>
+                <img class="img-fluid" src="images/social-media.png" alt="*" />
+              </figure>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="main-srvng-bsiness-sec">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 col-md-12 col-sm-12">
+            <div class="flsevce">
+              <h2 class="main-cnt-heading">
+                Serving Businesses <b>of All Sizes</b>
+              </h2>
+              <p class="main-cnt-para para-wdth">
+                Our services are accessible to all types of customers. We have
+                the capacity to handle large established companies, while
+                providing the same attention to small and medium-sized
+                businesses still growing.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="row align-self-center whitebox">
+          <div class="col-lg-3 col-md-3 col-sm-12 align-self-center">
+            <div class="mble-pckge-lft">
+              <figure>
+                <img src="images/search.png" />
+              </figure>
+              <a href="get-started.html" class="getbtn tc-image-effect-circle"
+                >Get a Custom Quote</a
+              >
+            </div>
+          </div>
+          <div class="col-lg-9 col-md-9 col-sm-12 align-self-center">
+            <div class="mble-pckge-rght ulnone">
+              <h3>Social Media Marketing!</h3>
+              <p>
+                We have a skilled team that handles hundreds of brands with
+                utmost care, professionalism and a tinge of creativity. We offer
+                you nothing short of perfection with a team that works
+                consistently to provide you with services that help your brand
+                stand out.
+              </p>
+              <ul class="ticklistmy">
+                <li>
+                  <a href="javascript:;" href="javascript:;"
+                    >Speak with our Strategist</a
+                  >
+                  <a href="tel:+18889665460"><h6>(775) 583-8939</h6></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="row align-self-center whitebox">
+          <div class="col-lg-9 col-md-9 col-sm-12 align-self-center">
+            <div class="mble-pckge-rght ulnone">
+              <h3>Search Engine Optimization</h3>
+              <p>
+                We have a skilled team that handles hundreds of brands with
+                utmost care, professionalism and a tinge of creativity. We offer
+                you nothing short of perfection with a team that works
+                consistently to provide you with services that help your brand
+                stand out.
+              </p>
+              <ul class="ticklistmy">
+                <li>
+                  <a href="javascript:;" href="javascript:;"
+                    >Speak with our Strategist</a
+                  >
+                  <a href="tel:+18889665460"><h6>(775) 583-8939</h6></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-12 align-self-center">
+            <div class="mble-pckge-lft">
+              <figure>
+                <img src="images/payperclick.png" />
+              </figure>
+              <a href="get-started.html" class="getbtn tc-image-effect-circle"
+                >Get a Custom Quote</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="DigitalAgency experienceSec">
+      <div class="container">
+        <h2>Experience with <b>Various Industries</b></h2>
+        <p>We provide custom and diverse solutions for all companies.</p>
+
+        <div class="strey">
+          <ul>
+            <li class="DigitalAgencyBox">
+              <a href="">
+                <h3>Start-ups</h3>
+                <span class="experienceSecImg experienceSec1"></span>
+              </a>
+            </li>
+
+            <li class="DigitalAgencyBox">
+              <a href="">
+                <h3>E-commerce</h3>
+                <span class="experienceSecImg experienceSec2"></span>
+              </a>
+            </li>
+            <li class="DigitalAgencyBox">
+              <a href="">
+                <h3>B2C</h3>
+                <span class="experienceSecImg experienceSec3"></span>
+              </a>
+            </li>
+            <li class="DigitalAgencyBox">
+              <a href="">
+                <h3>B2B</h3>
+                <span class="experienceSecImg experienceSec4"></span>
+              </a>
+            </li>
+            <li class="DigitalAgencyBox">
+              <a href="">
+                <h3>Non-Profit</h3>
+                <span class="experienceSecImg experienceSec5"></span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="subcribeSec">
+      <div class="container">
+        <h2>Subscribe Now !</h2>
+        <p>
+          Subscribe to Newsletters & SMS Promotions<br />
+          Message and data rates may apply. Reply STOP to cancel OR Reply HELP
+          for info Privacy and Terms
+        </p>
+
+        <form>
+          <div class="col-md-3 col-xs-12 col-sm-3">
+            <input type="text" placeholder="Name" />
+          </div>
+          <div class="col-md-3 col-xs-12 col-sm-3">
+            <input type="email" placeholder="Email" />
+          </div>
+          <div class="col-md-3 col-xs-12 col-sm-3">
+            <input type="tel" placeholder="Phone" />
+          </div>
+          <div class="col-md-3 col-xs-12 col-sm-3">
+            <input type="submit" value="SUBCRIBE" />
+          </div>
+
+          <div class="col-md-6 col-xs-12 col-sm-6">
+            <label for="male"
+              ><input type="checkbox" id="male" value="male" /> Click Here to
+              receive our Promotional SMS - Unsubscribe at any time
+              (optional)</label
+            >
+          </div>
+          <div class="col-md-6 col-xs-12 col-sm-6">
+            <label for="female"
+              ><input type="checkbox" id="female" value="female" /> Click Here
+              to receive our Promotional Emails - Unsubscribe at any time
+              (optional)</label
+            >
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <section class="DigitalAgency experienceSec UtilizingSec">
+      <div class="container">
+        <h2>Utilizing Current <b>Technologies</b></h2>
+        <p>
+          Our team works with advanced platform solutions to create sleek
+          user-friendly designs that your customers and clients will love.
+        </p>
+
+        <ul>
+          <li><div class="UtilizingSecBox UtilizingSecBox1"></div></li>
+          <li><div class="UtilizingSecBox UtilizingSecBox2"></div></li>
+          <li><div class="UtilizingSecBox UtilizingSecBox3"></div></li>
+          <li><div class="UtilizingSecBox UtilizingSecBox4"></div></li>
+          <li><div class="UtilizingSecBox UtilizingSecBox5"></div></li>
+          <li><div class="UtilizingSecBox UtilizingSecBox6"></div></li>
+          <li><div class="UtilizingSecBox UtilizingSecBox7"></div></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- let get started sec start -->
+    <section class="getstartedsec">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-sm-10 col-xs-12 center">
+            <div class="gettext">
+              <h3>Let’s <b>Get Started</b></h3>
+              <p>
+                Call <a href="#">(775) 583-8939</a> or fill up the form below to
+                start <br />
+                a conversation or for help
+              </p>
+            </div>
+            <form>
+              <div class="row">
+                <div class="col-md-6 col-sm-6 col-xs-12">
+                  <div class="startedlist">
+                    <input type="text" placeholder="First Name*" />
+                  </div>
+                </div>
+
+                <div class="col-md-6 col-sm-6 col-xs-12">
+                  <div class="startedlist">
+                    <input type="text" placeholder="Email*" />
+                  </div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-md-12 col-sm-12 col-xs-12">
+                  <div class="startedlist">
+                    <input type="text" placeholder="Phone*" />
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12 col-sm-12 col-xs-12">
+                  <div class="startedlist">
+                    <textarea placeholder="How we can help"></textarea>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12 col-sm-12 col-xs-12">
+                  <div class="startedlist">
+                    <button>Submit</button>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- let get started sec end -->
+    <!-- footer start -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 col-sm-4 col-xs-12">
+            <div class="footer-logo">
+              <img
+                src="images/footer-logo.png"
+                class="img-responsive"
+                alt="img"
+              />
+              <p>
+                A creative, technical, full service, website designing and
+                development agency, building beautiful, attractive and
+                affordable masterpiece for small and large businesses.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-4 col-xs-12">
+            <div class="row">
+              <div class="col-md-12 col-sm-12 col-xs-12">
+                <div class="service-list-text">
+                  <h4>Services</h4>
+                </div>
                 <div class="row">
-                    <div class="col-md-4 col-sm-4 col-xs-12">
-                        <div class="footer-logo">
-                            <img src="images/footer-logo.png" class="img-responsive" alt="img" />
-                            <p>A creative, technical, full service, website designing and development agency, building beautiful, attractive and affordable masterpiece for small and large businesses.</p>
-                        </div>
+                  <div class="col-md-6 col-sm-6 col-xs-12">
+                    <div class="footer-list">
+                      <ul>
+                        <li>
+                          <a href="custom-logo-design.html"
+                            >Custom Logo Design</a
+                          >
+                        </li>
+                        <li>
+                          <a href="custom-website-design-development.html"
+                            >Custom Website Design & Development</a
+                          >
+                        </li>
+                        <li>
+                          <a href="video-animation.html">Video Animation</a>
+                        </li>
+                        <li>
+                          <a href="marketing-services.html"
+                            >Marketing Services</a
+                          >
+                        </li>
+                      </ul>
                     </div>
-                    <div class="col-md-4 col-sm-4 col-xs-12">
-                        <div class="row">
-                            <div class="col-md-12 col-sm-12 col-xs-12">
-                                <div class="service-list-text">
-                                    <h4>Services</h4>
-                                </div>
-                                <div class="row">
-                                    <div class="col-md-6 col-sm-6 col-xs-12">
-                                        <div class="footer-list">
-                                            <ul>
-                                                <li><a href="custom-logo-design.html">Custom Logo Design</a></li>
-                                                <li><a href="custom-website-design-development.html">Custom Website Design & Development</a></li>
-                                                <li><a href="video-animation.html">Video Animation</a></li>
-                                                <li><a href="marketing-services.html">Marketing Services</a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6 col-sm-6 col-xs-12">
-                                        <div class="footer-list">
-                                            <ul>
-                                                <li><a href="creative-content-writing-business-proposals.html">Creative Content Writing </a></li>
-                                                <li><a href="branding-stationery.html">Branding & Stationery</a></li>
-                                                <li><a href="mobile-applications.html">Mobile Applications</a></li>
-                                                <li><a href="web-maintenance-securities.html">Web Maintenance & Securities</a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                  </div>
+                  <div class="col-md-6 col-sm-6 col-xs-12">
+                    <div class="footer-list">
+                      <ul>
+                        <li>
+                          <a
+                            href="creative-content-writing-business-proposals.html"
+                            >Creative Content Writing
+                          </a>
+                        </li>
+                        <li>
+                          <a href="branding-stationery.html"
+                            >Branding & Stationery</a
+                          >
+                        </li>
+                        <li>
+                          <a href="mobile-applications.html"
+                            >Mobile Applications</a
+                          >
+                        </li>
+                        <li>
+                          <a href="web-maintenance-securities.html"
+                            >Web Maintenance & Securities</a
+                          >
+                        </li>
+                      </ul>
                     </div>
-                    <div class="col-md-4 col-sm-4 col-xs-12">
-                        <div class="about-list-text">
-                            <h4>About</h4>
-                            <ul>
-                                <li><a href="#">(775) 583-8939</a></li>
-                              <!--   <li>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-4 col-xs-12">
+            <div class="about-list-text">
+              <h4>About</h4>
+              <ul>
+                <li><a href="#">(775) 583-8939</a></li>
+                <!--   <li>
                                     <a href="#">
                                         <b>Address:</b><br />
                                         188 Jefferson Street Unit #1021 Newark,<br />
                                         NJ 07105
                                     </a>
                                 </li> -->
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-12 col-sm-12 col-xs-12">
-                        <div class="main-logo-list">
-                            <img src="images/footer-logo-list.png" class="img-responsive" alt="img" />
-                        </div>
-                        <div class="card-brand-list">
-                            <img src="images/card-brand.png" class="img-responsive" alt="img" />
-                        </div>
-                        <div class="socail-list">
-                            <ul>
-                                <li>
-                                    <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                                </li>
-                                <li>
-                                    <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="copy-sec">
-                    <div class="row">
-                        <div class="col-md-6 col-sm-6 col-xs-12">
-                            <div class="copy-text">
-                                <p>© Thedigipearls 2021. All rights reserved.</p>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-sm-6 col-xs-12">
-                            <div class="copy-list">
-                                <a href="privacypolicy.html">Privacy and Terms</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+              </ul>
             </div>
-        </footer>
-        <!-- footer end -->
-        <script src="js/bootstrap.min.js"></script>
-        <script src="js/custom.js"></script>
-    </body>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12 col-sm-12 col-xs-12">
+            <div class="main-logo-list">
+              <img
+                src="images/footer-logo-list.png"
+                class="img-responsive"
+                alt="img"
+              />
+            </div>
+            <div class="card-brand-list">
+              <img
+                src="images/card-brand.png"
+                class="img-responsive"
+                alt="img"
+              />
+            </div>
+            <div class="socail-list">
+              <ul>
+                <li>
+                  <a href="#"
+                    ><i class="fa fa-facebook" aria-hidden="true"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><i class="fa fa-instagram" aria-hidden="true"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="copy-sec">
+          <div class="row">
+            <div class="col-md-6 col-sm-6 col-xs-12">
+              <div class="copy-text">
+                <p>© Thedigipearls 2021. All rights reserved.</p>
+              </div>
+            </div>
+            <div class="col-md-6 col-sm-6 col-xs-12">
+              <div class="copy-list">
+                <a href="privacypolicy.html">Privacy and Terms</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- footer end -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/custom.js"></script>
+  </body>
 </html>
