@@ -1,0 +1,173 @@
+RewriteEngine On
+
+RewriteCond %{SERVER_PORT} 80
+
+RewriteRule ^(.*)$ https://www.thedigipearls.com//$1 [R,L]
+
+
+<IfModule mod_rewrite.c>
+
+    <IfModule mod_negotiation.c>
+
+        Options -MultiViews -Indexes
+
+    </IfModule>
+
+
+
+    RewriteEngine On
+
+    # Turn on Expires and set default to 0
+
+    ExpiresActive On
+
+    ExpiresDefault A0
+
+
+
+# Set up caching on media files for 1 year (forever?)
+
+<FilesMatch "\.(flv|ico|pdf|avi|mov|ppt|doc|mp3|wmv|wav)$">
+
+ExpiresDefault A29030400
+
+Header append Cache-Control "public"
+
+</FilesMatch>
+
+
+
+# Set up caching on media files for 1 week
+
+<FilesMatch "\.(gif|jpg|jpeg|png|swf)$">
+
+ExpiresDefault A604800
+
+Header append Cache-Control "public"
+
+</FilesMatch>
+
+
+
+# Set up 2 Hour caching on commonly updated files
+
+<FilesMatch "\.(xml|txt|html|js|css|woff2)$">
+
+ExpiresDefault A7200
+
+Header append Cache-Control "proxy-revalidate"
+
+</FilesMatch>
+
+
+
+# Force no caching for dynamic files
+
+<FilesMatch "\.(php|cgi|pl|htm)$">
+
+ExpiresActive Off
+
+Header set Cache-Control "private, no-cache, no-store, proxy-revalidate, no-transform"
+
+Header set Pragma "no-cache"
+
+</FilesMatch>
+
+</IfModule>
+
+#Gzip
+
+<ifmodule mod_deflate.c>
+
+AddOutputFilterByType DEFLATE text/text text/html text/plain text/xml text/css text/woff2 application/x-javascript application/javascript text/javascript
+
+</ifmodule>
+
+#End Gzip
+
+# BEGIN Expire headers  
+
+<ifModule mod_expires.c>  
+
+        ExpiresActive On  
+
+        ExpiresDefault "access plus 5 seconds"  
+
+        ExpiresByType image/x-icon "access plus 2592000 seconds"  
+
+        ExpiresByType image/jpeg "access plus 2592000 seconds"  
+
+        ExpiresByType image/png "access plus 2592000 seconds"  
+
+        ExpiresByType image/gif "access plus 2592000 seconds"  
+
+        ExpiresByType application/x-shockwave-flash "access plus 2592000 seconds"  
+
+        ExpiresByType text/css "access plus 2592000 seconds"
+
+		ExpiresByType text/woff2 "access plus 2592000 seconds"
+
+        ExpiresByType text/javascript "access plus 216000 seconds"  
+
+        ExpiresByType application/javascript "access plus 216000 seconds"  
+
+        ExpiresByType application/x-javascript "access plus 216000 seconds"  
+
+        ExpiresByType text/html "access plus 600 seconds"  
+
+        ExpiresByType application/xhtml+xml "access plus 600 seconds"  
+
+</ifModule>  
+
+# END Expire headers  
+
+# BEGIN Caching
+
+<ifModule mod_headers.c>
+
+<filesMatch "\\.(ico|pdf|flv|jpg|jpeg|png|gif|swf)$">
+
+Header set Cache-Control "max-age=2592000, public"
+
+</filesMatch>
+
+<filesMatch "\\.(css)$">
+
+Header set Cache-Control "max-age=2592000, public"
+
+</filesMatch>
+
+<filesMatch "\\.(woff2)$">
+
+Header set Cache-Control "max-age=2592000, public"
+
+</filesMatch>
+
+<filesMatch "\\.(js)$">
+
+Header set Cache-Control "max-age=216000, private"
+
+</filesMatch>
+
+<filesMatch "\\.(xml|txt)$">
+
+Header set Cache-Control "max-age=216000, public, must-revalidate"
+
+</filesMatch>
+
+<filesMatch "\\.(html|htm|php)$">
+
+Header set Cache-Control "max-age=1, private, must-revalidate"
+
+</filesMatch>
+
+</ifModule>
+
+# END Caching
+
+
+
+RewriteCond %{REQUEST_FILENAME}.php -f
+
+RewriteRule !.*\.php$ %{REQUEST_FILENAME}.php [QSA,L]
+
