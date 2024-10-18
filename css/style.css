@@ -2452,18 +2452,19 @@ div#fancybox-container-1 {
     text-shadow: none;
 }
 
-.main-services-banner-sec:before {
-    position: absolute;
-    content: "";
-    /* background-image: linear-gradient(to right, #460461, #720a7d); */
-    width: 100%;
-    height: 100%;
-    top: 0px;
-    left: 0px;
-    z-index: 0;
-    background-image: radial-gradient(circle, #ffffff, #f1f1f1, #e2e2e2, #d4d4d4, #c6c6c6);
-    /* opacity: 0.8; */
-}
+
+    .main-services-banner-sec:before {
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 100%;
+        top: 0px;
+        left: 0px;
+        z-index: 0;
+        background-color: rgba(255, 255, 255, 0.8);
+        /* White color with 50% opacity */
+    }
+
 
 .banner2 {
     background-image: url(../images/banner2.png);
@@ -5114,7 +5115,7 @@ html .mt30 {
     margin: 0;
     position: relative;
     border-radius: 8px;
-    
+
     box-shadow: 0 3.4px 2.7px -30px rgba(0, 0, 0, .059), 0 8.2px 8.9px -30px rgba(0, 0, 0, .071), 0 25px 40px -30px rgba(0, 0, 0, .2);
     border: 1px solid #006ebea1;
 }
@@ -5128,6 +5129,7 @@ html .mt30 {
     max-width: 100%;
     height: auto;
 }
+
 .s-block h4 {
     margin: 0 0 10px;
     font-size: 22px;
@@ -5142,12 +5144,14 @@ html .mt30 {
     line-height: 28px;
 }
 
-.service-block.bg-gradient6 .common-heading.ptag h2{
+.service-block.bg-gradient6 .common-heading.ptag h2 {
     color: #fff !important;
 }
+
 .common-heading.ptag h2 {
     margin-bottom: 15px;
 }
+
 .common-heading h2 {
     padding: 0 0 20px;
 }
@@ -5182,6 +5186,7 @@ html .mt70 {
 .bg-gradient7 {
     background: linear-gradient(to bottom, #006ebe7d 0, #006ebe21 100%);
 }
+
 .common-heading>span {
     color: #000000;
     text-transform: uppercase;
@@ -5191,31 +5196,40 @@ html .mt70 {
     margin: 0 0 15px;
     display: block;
 }
+
 .service-block .wide-sblock {
     height: 270px;
 }
+
 .wide-sblock {
     display: inline-flex;
     text-align: left;
     padding: 30px 20px;
 }
+
 .s-block-content {
     margin: 0 0 0 20px;
 }
+
 .wide-sblock p {
     font-size: 16px;
     line-height: 28px;
 }
+
 .justify-content-center {
     justify-content: center !important;
 }
 
-.ty{
+.ty {
     display: flex;
 }
-.wide-sblock h4{
+
+.wide-sblock h4 {
     margin: 0 0 10px;
     font-size: 22px;
     line-height: 32px;
 }
 
+.colr {
+    color: var(--theme-color) !important;
+}
