@@ -2468,13 +2468,11 @@ div#fancybox-container-1 {
     top: 0px;
     left: 0px;
     z-index: 0;
-    background-image: radial-gradient(circle, #ffffff, #f1f1f1, #e2e2e2, #d4d4d4, #c6c6c6);
-    /* opacity: 0.8; */
+    opacity: 0.8;
 }
 
 .banner2 {
-    background-image: url(../images/banner2.png);
-    /* background-image: linear-gradient(to right, #460461, #720a7d); */
+    background-image: url(../images/banner2.png) !important;
 }
 
 .banner3 {
@@ -5411,8 +5409,31 @@ html .mt60 {
 }
 
 .mini-heading{
+    font-weight: 300;
     text-transform: uppercase;
     font-size: 14px;
-    font-weight: 300;
     color: white;
+}
+
+.mini-heading2{
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 600 !important;
+    color: white;
+    margin-bottom: -10px;
+    letter-spacing: .5px;
+    display: block;
+}
+
+.uppercase{
+    text-transform: uppercase !important;
+
+}
+
+.manage-height{
+    height: fit-content !important;
+}
+
+.addBanner{
+    background-color: white !important;
 }
