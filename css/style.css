@@ -3446,8 +3446,8 @@ strong {
 /*our client sec start.......................*/
 
 section.what-our-client-sec {
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 50px !important;
+    padding-bottom: 180px!important;
 }
 
 section.what-our-client-sec h2 {
@@ -5134,6 +5134,13 @@ html .mt30 {
 .img-fluid {
     max-width: 100%;
     height: auto;
+}
+
+.container-fluid {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .s-block h4 {
