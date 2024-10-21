@@ -4986,6 +4986,9 @@ $(document).ready(function() {
     font-size: 16px;
     line-height: 28px;
 }
+.common-heading.ptag h2 b {
+    color: #161367;
+}
 
 html .mb30 {
     margin-bottom: 30px;
@@ -5472,4 +5475,17 @@ html .mt60 {
 .sim2{
     width: 90px !important;
     object-fit: contain;
+}
+
+.sim3{
+    max-width: 70px !important;
+}
+
+.bg-white{
+    background-color: white;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 7px;
 }
