@@ -5117,7 +5117,7 @@ html .mt30 {
     background-position: top right;
     background-repeat: no-repeat;
     text-align: center;
-    padding: 0px 20px;
+    padding: 12px 20px;
     margin: 0;
     position: relative;
     border-radius: 8px;
@@ -5211,7 +5211,7 @@ html .mt70 {
 }
 
 .service-block .wide-sblock {
-    height: 270px;
+    min-height: 270px;
 }
 
 .wide-sblock {
@@ -5222,6 +5222,7 @@ html .mt70 {
 
 .s-block-content {
     margin: 0 0 0 20px;
+    padding-bottom: 15px;
 }
 
 .wide-sblock p {
@@ -5445,4 +5446,9 @@ html .mt60 {
 
 .addBanner{
     background-color: white !important;
+}
+
+.mobileAppPlatfroms .round img{
+    width: 100px !important;
+    max-height: 60px;
 }
