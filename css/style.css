@@ -5452,3 +5452,7 @@ html .mt60 {
     width: 100px !important;
     max-height: 60px;
 }
+
+.navbar-nav li{
+    padding-right: 15px;
+}
