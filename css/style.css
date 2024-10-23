@@ -5449,3 +5449,46 @@ html .mt60 {
     padding-bottom: 5px;
     border-radius: 7px;
 }
+
+.cont {
+    display: flex;
+    align-items: center;
+    margin: 20px auto;
+    width: fit-content;
+    color: white;
+    gap: 40px;
+    position: relative;
+}
+
+.cont h5{
+    font-weight: 700;
+    font-size: larger;
+}
+
+.cont h5::after{
+    content: " :";
+}
+
+.cont .countries {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+}
+
+.cont .countries span{
+    font-size: larger;
+    cursor: pointer;
+}
+
+.cont .countries span:not(:last-child)::after {
+    content: "|";
+    padding: 0px 16px;
+}
+
+.flag-display{
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    right: 50%;
+    transform: translateX(-50%);
+}
