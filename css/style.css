@@ -5460,12 +5460,12 @@ html .mt60 {
     position: relative;
 }
 
-.cont h5{
+.cont h5 {
     font-weight: 700;
     font-size: larger;
 }
 
-.cont h5::after{
+.cont h5::after {
     content: " :";
 }
 
@@ -5473,22 +5473,30 @@ html .mt60 {
     display: flex;
     align-items: center;
     list-style-type: none;
+    gap: 14px;
 }
 
-.cont .countries span{
+.cont .countries div {
     font-size: larger;
     cursor: pointer;
 }
 
-.cont .countries span:not(:last-child)::after {
-    content: "|";
-    padding: 0px 16px;
+.cont .countries div img {
+    width: 70px;
+    height: auto;
+    position: absolute;
+    top: 30px;
+    left: 10px;
+    border-radius: 6px;
+    border: 4px solid white;
+    display: none;
 }
 
-.flag-display{
-    position: absolute;
-    top: 50px;
-    left: 50%;
-    right: 50%;
-    transform: translateX(-50%);
+.countries div:hover img {
+    display: block;
+}
+
+.cont .countries div:not(:last-child)::after {
+    content: "|";
+    padding-left: 14px;
 }

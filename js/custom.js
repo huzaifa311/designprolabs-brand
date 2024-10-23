@@ -57,26 +57,11 @@ jQuery(document).ready(function () {
 
 
 
+let values = ["Home", "👋 Hi there! Looking for a website?"];
+let index = 0;
 
-const flagImage = document.getElementById('flagImage');
+setInterval(() => {
+    document.title = values[index];
 
-const countryFlags = {
-    usa: 'https://www.logoverseinc.com/assets/images/flag/usa.png',  // Replace with actual paths to your flag images
-    can: 'https://www.logoverseinc.com/assets/images/flag/can.png',
-    uae: 'https://www.logoverseinc.com/assets/images/flag/uae.png',
-    aus: 'https://www.logoverseinc.com/assets/images/flag/aus.png',
-    uk: 'https://www.logoverseinc.com/assets/images/flag/uk.png',
-    ire: 'https://www.logoverseinc.com/assets/images/flag/ire.png'
-};
-
-document.querySelectorAll('.countries span').forEach(span => {
-    span.addEventListener('mouseover', function () {
-        const country = this.getAttribute('data-flag');
-        flagImage.src = countryFlags[country];
-        flagImage.style.display = 'block';  // Show the flag
-    });
-
-    span.addEventListener('mouseout', function () {
-        flagImage.style.display = 'none';  // Hide the flag
-    });
-});
+    index = (index + 1) % values.length;
+}, 2000);
