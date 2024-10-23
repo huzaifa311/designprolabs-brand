@@ -96,7 +96,7 @@
                                                 <li>100 Ownership Rights</li>
                                                 <li>100 Satisfaction Guarantee</li>
                                                 <li>100 Unique Design Guarantee</li>
-                                                <li>100 Money Back Guarantee*</li>
+                                                <li>100 No Monthly or Yearly Charges</li>
                                             </ul>
                                         </div>
                                         <div class="adons">
@@ -214,7 +214,7 @@
                                                 <li>1 Stationery Design Set (Business card, Letterhead, Envelope &amp; Email Signature)</li>
                                                 <li>100 Ownership Rights</li>
                                                 <li>100 Satisfaction Guarantee</li>
-                                                <li>100 Money Back Guarantee*</li>
+                                                <li>100 No Monthly or Yearly Charges</li>
                                             </ul>
                                         </div>
                                         <div class="adons">
@@ -1576,7 +1576,7 @@
                                                 <li>Dedicated Project Manager</li>
                                                 <li>News Letter Subscription</li>
                                                 <li><strong>100</strong> Satisfaction Guarantee</li>
-                                                <li><strong>100</strong> Money Back Guarantee*</li>
+                                                <li><strong>100</strong> No Monthly or Yearly Charges</li>
                                             </ul>
                                         </div>
                                         <div class="adons">
@@ -1706,7 +1706,7 @@
                                                 <li>Dedicated Project Manager</li>
                                                 <li>News Letter Subscription</li>
                                                 <li><strong>100</strong> Satisfaction Guarantee</li>
-                                                <li><strong>100</strong> Money Back Guarantee*</li>
+                                                <li><strong>100</strong> No Monthly or Yearly Charges</li>
                                             </ul>
                                         </div>
                                         <div class="adons">
