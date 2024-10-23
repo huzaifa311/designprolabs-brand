@@ -5,234 +5,590 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>web-brief</title>
-    <link href="css/bootstrap.css" rel="stylesheet" />
-  <link href="css/style.css" rel="stylesheet" />
+    <link href="css/web-brief.css" rel="stylesheet" />
+    <link href="css/web-brief2.css" rel="stylesheet" />
 </head>
 
 <body>
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-12">
-                <div><img style="width: 250px" src="https://logovent.com/assets/images/logo.svg" alt=""></div>
-                <h5 class=" mt-5 subHeading text-uppercase">Order Website design</h5>
-                <h1 class=" mt-4 hClr underLine brd-clr-2"><span>Get Ready</span><span> to</span><span>
-                        Revolutionize</span><br><span>Your Brand</span><span>Forever</span></h1>
-                <p class=" mt-4">Seeking exceptional design and development solutions? With our excellently crafted
-                    packages, we're here to transform your brand for the better.</p>
-
-                <form enctype="multipart/form-data" name="weborder" action="https://logovent.com/home/web_brief_form"
-                    method="post">
-                    <div class="">
+    <section class="main-bg-color-2 padding-b get_quote pt-5"
+        style="background-color: rgba(var(--main-bg-color), .015);color: rgba(var(--main-bg-color), .895);">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12">
+                    <div class=""><img style="width: 250px" src="./images/logo3.png" alt="logo">
+                    </div>
+                    <h5 class="subHeading mt-5">Order logo design</h5>
+                    <h1 class=" mt-4 hClr underLine brd-clr-2">Get Ready to Revolutionize<br>Your Brand Forever</h1>
+                    <p class="text-center mt-4">Seeking exceptional design and development solutions? With our
+                        excellently crafted packages, we're here to transform your brand for the better.</p>
+                    <form method="POST" action="https://logovent.com/home/logo_brief_form" autocomplete="off"
+                        enctype="multipart/form-data">
                         <div class="row">
-                            <div class="col-md-6 mb-3">
-                                <div class="form-group">
-                                    <input type="text" autocomplete="off" class="form-control" placeholder="* Full Name"
-                                        value="" name="name" onfocus="this.placeholder = ''"
-                                        onblur="this.placeholder = 'Full Name'" required="">
-                                </div>
+                            <div class="col-12 mb-3">
+                                <h3 class="hClr underLine brd-clr-2">Business Information</h3>
                             </div>
                             <div class="col-md-6 mb-3">
                                 <div class="form-group">
-                                    <input type="email" autocomplete="off" class="form-control" placeholder="* Email"
-                                        name="email" value="" onfocus="this.placeholder = ''"
+                                    <input type="text" autocomplete="off" class="form-control  "
+                                        placeholder="* Full Name" name="name" value="" maxlenght="30"
+                                        onfocus="this.placeholder = ''" onblur="this.placeholder = 'Full Name'"
+                                        required="">
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-3">
+
+                                <div class="form-group">
+
+                                    <input type="email" autocomplete="off" class="form-control  " placeholder="* Email"
+                                        name="email" value="" maxlenght="75" onfocus="this.placeholder = ''"
                                         onblur="this.placeholder = 'Email'" required="">
+
                                 </div>
+
                             </div>
+
                             <div class="col-md-6 mb-3">
+
                                 <div class="form-group">
+
                                     <input type="hidden" name="package_name" value="">
-                                    <input type="text" autocomplete="off" class="form-control" value=""
+
+                                    <input type="text" autocomplete="off" class="form-control  " value=""
                                         name="package_name" onfocus="this.placeholder = ''"
                                         onblur="this.placeholder = 'Email'" disabled="" required="">
+
                                 </div>
+
                             </div>
+
                             <div class="col-md-6 mb-3">
+
                                 <div class="form-group">
+
                                     <input type="hidden" name="package_price" value="">
-                                    <input type="text" autocomplete="off" class="form-control" value=""
+
+                                    <input type="text" autocomplete="off" class="form-control  " value=""
                                         name="package_price" onfocus="this.placeholder = ''"
                                         onblur="this.placeholder = 'Email'" disabled="">
+
+                                </div>
+
+                            </div>
+                            <input name="" value="" type="hidden">
+                            <div class="col-md-6 mb-3">
+
+                                <div class="form-group">
+
+                                    <span class="help-text">Logo Name* which you want to use in Logo</span>
+
+                                    <input type="text" autocomplete="off" class="form-control  mt-3"
+                                        placeholder="logo Name" maxlenght="100" name="name_on_logo"
+                                        onfocus="this.placeholder = ''" onblur="this.placeholder = 'logo Name'"
+                                        required="">
+
+                                </div>
+
+                            </div>
+
+                            <div class="col-md-6 mb-3">
+
+                                <div class="form-group">
+
+                                    <span class="help-text">Company Slogan which you want to use in Logo</span>
+
+                                    <input type="text" autocomplete="off" class="form-control  mt-3"
+                                        placeholder="Company Slogan" maxlenght="150" name="company_slogan"
+                                        onfocus="this.placeholder = ''" onblur="this.placeholder = 'Company Slogan'">
+
+                                </div>
+
+                            </div>
+
+                            <div class="col-md-6 mb-3">
+
+                                <div class="form-group">
+
+                                    <span class="help-text">Competitors Reference Optional, you can enter multiple Links
+
+                                    </span>
+
+                                    <textarea class="form-control  mt-3" name="description"
+                                        placeholder="* Competitors Reference:" maxlenght="300"
+                                        onfocus="this.placeholder = ''"
+                                        onblur="this.placeholder = '*Competitors Reference:'"></textarea>
+
+                                </div>
+
+                            </div>
+
+                            <div class="col-md-6 mb-3">
+
+                                <div class="form-group">
+
+                                    <span class="help-text">Describe your business* what is your Business all about
+
+                                    </span>
+
+                                    <textarea class="form-control  mt-3" name="bussiness_about"
+                                        placeholder="* Describe your business" maxlenght="500"
+                                        onfocus="this.placeholder = ''"
+                                        onblur="this.placeholder = '*Describe your business:'" required=""></textarea>
+
+                                </div>
+
+                            </div>
+
+                            <div class="col-md-12 mb-3">
+
+                                <div class="form-group">
+
+                                    <span class="help-text">What you want in your logo Any additional details
+
+                                    </span>
+
+                                    <textarea class="form-control  mt-3" name="additional_detail"
+                                        placeholder="* What you want in your logo" maxlenght="300"
+                                        onfocus="this.placeholder = ''"
+                                        onblur="this.placeholder = '*Describe your business:'" required=""></textarea>
+
+                                </div>
+
+                            </div>
+
+                            <div class="col-12 mb-3">
+                                <h3 class="underLine brd-clr-2">Select Colors</h3>
+                            </div>
+
+                            <div class="col-md-6 mb-3">
+
+                                <div class="form-group">
+                                    <span class="help-text">Primary Color: Write the name or code, like Blue,
+                                        #FFFF00</span>
+                                    <input type="text" autocomplete="off" class="form-control mt-3" name="primarycolor"
+                                        id="primarycolor" placeholder="Primary Color" onfocus="this.placeholder = ''"
+                                        onblur="this.placeholder = 'Primary Color'">
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-lg-9">
+                                        <div class="row no-gutters color">
+                                            <!-- Color option 1 -->
+                                            <div class="col text-center">
+                                                <div class="primary-code d-block" data-color="d80002"
+                                                    style="height:45px;width:45px;background:#d80002;"
+                                                    onclick="setPrimaryColor('#d80002')">
+                                                </div>
+                                                <p class="text-uppercase">d80002</p>
+                                            </div>
+                                            <!-- Color option 2 -->
+                                            <div class="col text-center">
+                                                <div class="primary-code d-block" data-color="fc6605"
+                                                    style="height:45px;width:45px;background:#fc6605;"
+                                                    onclick="setPrimaryColor('#fc6605')">
+                                                </div>
+                                                <p class="text-uppercase">fc6605</p>
+                                            </div>
+                                            <!-- Color option 3 -->
+                                            <div class="col text-center">
+                                                <div class="primary-code d-block" data-color="fc9a03"
+                                                    style="height:45px;width:45px;background:#fc9a03;"
+                                                    onclick="setPrimaryColor('#fc9a03')">
+                                                </div>
+                                                <p class="text-uppercase">fc9a03</p>
+                                            </div>
+                                            <!-- Color option 4 -->
+                                            <div class="col text-center">
+                                                <div class="primary-code d-block" data-color="fcfe03"
+                                                    style="height:45px;width:45px;background:#fcfe03;"
+                                                    onclick="setPrimaryColor('#fcfe03')">
+                                                </div>
+                                                <p class="text-uppercase">fcfe03</p>
+                                            </div>
+                                            <!-- Color option 5 -->
+                                            <div class="col text-center">
+                                                <div class="primary-code d-block" data-color="329804"
+                                                    style="height:45px;width:45px;background:#329804;"
+                                                    onclick="setPrimaryColor('#329804')">
+                                                </div>
+                                                <p class="text-uppercase">329804</p>
+                                            </div>
+                                            <!-- Color option 6 -->
+                                            <div class="col text-center">
+                                                <div class="primary-code d-block" data-color="036564"
+                                                    style="height:45px;width:45px;background:#036564;"
+                                                    onclick="setPrimaryColor('#036564')">
+                                                </div>
+                                                <p class="text-uppercase">036564</p>
+                                            </div>
+                                            <!-- Color option 7 -->
+                                            <div class="col text-center">
+                                                <div class="primary-code d-block" data-color="03349d"
+                                                    style="height:45px;width:45px;background:#03349d;"
+                                                    onclick="setPrimaryColor('#03349d')">
+                                                </div>
+                                                <p class="text-uppercase">03349d</p>
+                                            </div>
+                                            <!-- Color option 8 -->
+                                            <div class="col text-center">
+                                                <div class="primary-code d-block" data-color="040263"
+                                                    style="height:45px;width:45px;background:#040263;"
+                                                    onclick="setPrimaryColor('#040263')">
+                                                </div>
+                                                <p class="text-uppercase">040263</p>
+                                            </div>
+                                            <!-- Color option 9 -->
+                                            <div class="col text-center">
+                                                <div class="primary-code d-block" data-color="630263"
+                                                    style="height:45px;width:45px;background:#630263;"
+                                                    onclick="setPrimaryColor('#630263')">
+                                                </div>
+                                                <p class="text-uppercase">630263</p>
+                                            </div>
+                                            <!-- Color option 10 -->
+                                            <div class="col text-center">
+                                                <div class="primary-code d-block" data-color="151515"
+                                                    style="height:45px;width:45px;background:#151515;"
+                                                    onclick="setPrimaryColor('#151515')">
+                                                </div>
+                                                <p class="text-uppercase">151515</p>
+                                            </div>
+                                            <!-- Color option 11 -->
+                                            <div class="col text-center">
+                                                <div class="primary-code d-block" data-color="0F00F0"
+                                                    style="height:45px;width:45px;background:#0F00F0;"
+                                                    onclick="setPrimaryColor('#0F00F0')">
+                                                </div>
+                                                <p class="text-uppercase">0F00F0</p>
+                                            </div>
+                                            <!-- Color option 12 -->
+                                            <div class="col text-center">
+                                                <div class="primary-code d-block" data-color="C3F"
+                                                    style="height:45px;width:45px;background:#C3F;"
+                                                    onclick="setPrimaryColor('#C3F')">
+                                                </div>
+                                                <p class="text-uppercase">C3F</p>
+                                            </div>
+                                            <!-- Color option 13 (Visible on large screens) -->
+                                            <div class="col text-center d-none d-lg-block">
+                                                <div class="primary-code d-block" data-color="16CB1C"
+                                                    style="height:45px;width:45px;background:#16CB1C;"
+                                                    onclick="setPrimaryColor('#16CB1C')">
+                                                </div>
+                                                <p class="text-uppercase">16CB1C</p>
+                                            </div>
+                                            <!-- Color option 14 (Visible on large screens) -->
+                                            <div class="col text-center d-none d-lg-block">
+                                                <div class="primary-code d-block" data-color="CBA716"
+                                                    style="height:45px;width:45px;background:#CBA716;"
+                                                    onclick="setPrimaryColor('#CBA716')">
+                                                </div>
+                                                <p class="text-uppercase">CBA716</p>
+                                            </div>
+                                            <!-- Color option 15 (Visible on large screens) -->
+                                            <div class="col text-center d-none d-lg-block">
+                                                <div class="primary-code d-block" data-color="16ADCB"
+                                                    style="height:45px;width:45px;background:#16ADCB;"
+                                                    onclick="setPrimaryColor('#16ADCB')">
+                                                </div>
+                                                <p class="text-uppercase">16ADCB</p>
+                                            </div>
+                                            <!-- Color option 16 (Visible on large screens) -->
+                                            <div class="col text-center d-none d-lg-block">
+                                                <div class="primary-code d-block" data-color="4400FF"
+                                                    style="height:45px;width:45px;background:#4400FF;"
+                                                    onclick="setPrimaryColor('#4400FF')">
+                                                </div>
+                                                <p class="text-uppercase">4400FF</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="col-md-6 mb-3">
+
+                                <div class="form-group">
+
+                                    <span class="help-text">Secondary Color Write the name or code, Like Blue,
+                                        #FFFF00</span>
+
+                                    <input type="text" autocomplete="off" class="form-control  mt-3" id="secondarycolor"
+                                        placeholder="Secondary Color" name="secondarycolor"
+                                        onfocus="this.placeholder = ''" onblur="this.placeholder = 'Secondary Color:'">
+
+                                </div>
+                                <div class="row ">
+                                    <div class="col-lg-9">
+                                        <div class="row no-gutters color">
+
+
+                                            <div class="col text-center">
+                                                <div onclick="setSecondaryColor('#d80002')" class="secondary-code d-block" data-color="d80002"
+                                                    style="height:45px;width:45px;background:#d80002;">
+                                                </div>
+                                                <p class="text-uppercase">d80002</p>
+                                            </div>
+
+                                            <div class="col text-center">
+                                                <div onclick="setSecondaryColor('#fc6605')" class="secondary-code d-block" data-color="fc6605"
+                                                    style="height:45px;width:45px;background:#fc6605;">
+                                                </div>
+                                                <p class="text-uppercase">fc6605</p>
+                                            </div>
+                                            <div class="col text-center">
+                                                <div onclick="setSecondaryColor('#fc9a03')" class="secondary-code d-block" data-color="fc9a03"
+                                                    style="height:45px;width:45px;background:#fc9a03;">
+                                                </div>
+                                                <p class="text-uppercase">fc9a03</p>
+                                            </div>
+                                            <div class="col text-center">
+                                                <div onclick="setSecondaryColor('#fcfe03')" class="secondary-code d-block" data-color="fcfe03"
+                                                    style="height:45px;width:45px;background:#fcfe03;">
+                                                </div>
+                                                <p class="text-uppercase">fcfe03</p>
+                                            </div>
+                                            <div class="col text-center">
+                                                <div onclick="setSecondaryColor('#329804')" class="secondary-code d-block" data-color="329804"
+                                                    style="height:45px;width:45px;background:#329804;">
+                                                </div>
+                                                <p class="text-uppercase">329804</p>
+                                            </div>
+                                            <div class="col text-center">
+                                                <div onclick="setSecondaryColor('#036564')" class="secondary-code d-block" data-color="036564"
+                                                    style="height:45px;width:45px;background:#036564;">
+                                                </div>
+                                                <p class="text-uppercase">036564</p>
+                                            </div>
+                                            <div class="col text-center">
+                                                <div onclick="setSecondaryColor('#03349d')" class="secondary-code d-block" data-color="03349d"
+                                                    style="height:45px;width:45px;background:#03349d;">
+                                                </div>
+                                                <p class="text-uppercase">03349d</p>
+                                            </div>
+                                            <div class="col text-center">
+                                                <div onclick="setSecondaryColor('#040263')" class="secondary-code d-block" data-color="040263"
+                                                    style="height:45px;width:45px;background:#040263;">
+                                                </div>
+                                                <p class="text-uppercase">040263</p>
+                                            </div>
+                                            <div class="col text-center">
+                                                <div onclick="setSecondaryColor('#d80002')" class="secondary-code d-block" data-color="d80002"
+                                                    style="height:45px;width:45px;background:#630263;">
+                                                </div>
+                                                <p class="text-uppercase">630263</p>
+                                            </div>
+                                            <div class="col text-center">
+                                                <div onclick="setSecondaryColor('#151515')" class="secondary-code d-block" data-color="151515"
+                                                    style="height:45px;width:45px;background:#151515;">
+                                                </div>
+                                                <p class="text-uppercase">151515</p>
+                                            </div>
+                                            <div class="col text-center">
+                                                <div onclick="setSecondaryColor('#0F00F0')" class="secondary-code d-block" data-color="0F00F0"
+                                                    style="height:45px;width:45px;background:#0F00F0;">
+                                                </div>
+                                                <p class="text-uppercase">0F00F0</p>
+                                            </div>
+                                            <div class="col text-center">
+                                                <div onclick="setSecondaryColor('#C3F')" class="secondary-code d-block" data-color="C3F"
+                                                    style="height:45px;width:45px;background:#C3F;">
+                                                </div>
+                                                <p class="text-uppercase">C3F</p>
+                                            </div>
+                                            <div class="col text-center d-none d-lg-block">
+                                                <div onclick="setSecondaryColor('#16CB1C')" class="secondary-code d-block" data-color="16CB1C"
+                                                    style="height:45px;width:45px;background:#16CB1C;">
+                                                </div>
+                                                <p class="text-uppercase">16CB1C</p>
+                                            </div>
+                                            <div class="col text-center d-none d-lg-block">
+                                                <div onclick="setSecondaryColor('#CBA716')" class="secondary-code d-block" data-color="CBA716"
+                                                    style="height:45px;width:45px;background:#CBA716;">
+                                                </div>
+                                                <p class="text-uppercase">CBA716</p>
+                                            </div>
+                                            <div class="col text-center d-none d-lg-block">
+                                                <div onclick="setSecondaryColor('#16ADCB')" class="secondary-code d-block" data-color="16ADCB"
+                                                    style="height:45px;width:45px;background:#16ADCB;">
+                                                </div>
+                                                <p class="text-uppercase">16ADCB</p>
+                                            </div>
+                                            <div class="col text-center d-none d-lg-block">
+                                                <div onclick="setSecondaryColor('#4400FF')" class="secondary-code d-block" data-color="4400FF"
+                                                    style="height:45px;width:45px;background:#4400FF;">
+                                                </div>
+                                                <p class="text-uppercase">4400FF</p>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <input name="" value="" type="hidden">
-                        <div class="row">
-                            <div class="col-lg-4">
-                                <label for="">
-                                    Exact name of your business/organization: *
-                                    <span class="initial"></span></label>
-                            </div>
-                            <div class="col-lg-8">
-                                <input type="text" class="form-control" placeholder="Your Business Name" required=""
-                                    id="business_name" name="business_name">
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-lg-4">
-                                <label for="">Kindly state the purpose of your website: (Is it a selling/informative
-                                    website or a personal blog? etc.) *<span class="initial"></span></label>
-                            </div>
-                            <div class="col-lg-8">
-                                <textarea placeholder="Describe Here " name="purpose" required="" class="form-control"
-                                    rows="5"></textarea>
-                            </div>
-                        </div>
 
-
-                        <div class="row">
-                            <div class="col-lg-4">
-                                <label for="">As per the navigation of your website, kindly state the title of your
-                                    WebPages: (E.g.: Company Profile, Contact us etc.) *<span
-                                        class="initial"></span></label>
-                            </div>
-                            <div class="col-lg-8">
-                                <textarea placeholder="Describe Here " name="navigation" required=""
-                                    class="form-control" rows="5"></textarea>
-                            </div>
-                        </div>
-
-
-                        <div class="row">
-                            <div class="col-lg-4">
-                                <label for="">What type of overall feeling would you like to project with your new
-                                    Website Domain? (Corporate, fun, high-tech, etc...) Leave this field blank if you
-                                    would like us to make this determination. <span class="initial"></span></label>
-                            </div>
-                            <div class="col-lg-8">
-                                <textarea placeholder="Describe Here " name="feeling" class="form-control"
-                                    rows="5"></textarea>
-                            </div>
-                        </div>
+                    </form>
+                </div>
 
 
 
-                        <div class="row">
-                            <div class="col-lg-4">
-                                <label for="">Please give a brief description of your business: (What type of products
-                                    or services does your company supply? etc...) *<span class="initial"></span></label>
-                            </div>
-                            <div class="col-lg-8">
-                                <textarea placeholder="Describe Here " name="description" required=""
-                                    class="form-control" rows="5"></textarea>
-                            </div>
-                        </div>
+                <div class="col-12 mb-3">
+                    <h3 class="hClr underLine brd-clr-2">Business Card Details</h3>
+                </div>
 
+                <div class="col-md-6 mb-3">
 
+                    <div class="form-group">
 
+                        <span class="help-text">Person name</span>
 
-
-                        <div class="row">
-                            <div class="col-lg-4">
-                                <label for="">State the target audience of your website: <span
-                                        class="initial"></span></label>
-                            </div>
-                            <div class="col-lg-8">
-                                <textarea placeholder="Describe Here " name="audience" class="form-control"
-                                    rows="5"></textarea>
-                            </div>
-                        </div>
-
-
-
-                        <div class="row">
-                            <div class="col-lg-4">
-                                <label for="">Do you have any specific design, preferences? If yes, please mention a
-                                    reference: (If you have any particular likes or dislikes regarding any competitor's
-                                    website etc.) *<span class="initial"></span></label>
-                            </div>
-                            <div class="col-lg-8">
-                                <textarea placeholder="Describe Here " name="design_specification" required=""
-                                    class="form-control" rows="5"></textarea>
-                            </div>
-                        </div>
-
-
-
-                        <div class="row">
-                            <div class="col-lg-4">
-                                <label for="">Do you have any additional comments? <span class="initial"></span></label>
-                            </div>
-                            <div class="col-lg-8">
-                                <textarea placeholder="Describe Here " name="comments" class="form-control"
-                                    rows="5"></textarea>
-                            </div>
-                        </div>
-
-
-
-
-
-                        <div class="row mt-5">
-                            <div class="col-12 mb-3">
-                                <h5>Domain and Web Hosting Details</h5>
-                                <strong>Please give us a few details about the domain name and hosting of the website.
-                                </strong>
-                            </div>
-                        </div>
-
-                        <div class="row">
-                            <div class="col-md-6">
-                                <label for="">Do you have a Domain Name?: <span
-                                        class="red font-size-20">*</span></label>
-                            </div>
-                            <div class="col-md-6">
-                                <input type="radio" name="domain" required="" value="Yes">
-                                <label class="display-inline-block" for="">Yes</label>
-                                <input type="radio" class="margin-left-two" name="domain" required="" value="No">
-                                <label class="display-inline-block" for="">No</label>
-                            </div>
-                        </div>
-
-
-                        <div class="row">
-                            <div class="col-md-6">
-                                <label for="">Do you want us to provide
-                                    hosting for your website?: <span class="red font-size-20">*</span> </label>
-                            </div>
-                            <div class="col-md-6">
-                                <input type="radio" name="hosting" required="" value="Yes">
-                                <label class="display-inline-block" for="">Yes</label>
-                                <input type="radio" class="margin-left-two" name="hosting" required="" value="No">
-                                <label class="display-inline-block" for="">No</label>
-                            </div>
-                        </div>
-                        <div class="row" style="margin:20px 0;">
-                            <div class="row margin-bottom-five">
-                                <input type="checkbox" class="form-check-input" id="click" required="required">
-                                <label class="form-check-label" for="click">by clicking the submit button below you will
-                                    be giving permission to contact via SMS regarding your digital services</label>
-                            </div>
-                        </div>
-                        <div class="row" style="margin:20px 0;">
-                            <div class="row margin-bottom-five">
-                                <label class="display-inline-block" for=""><span class="mr-3" style="color: red;">Note :
-                                    </span>We will send you a "Page under construction" template on your respective
-                                    domain name, very soon. Meanwhile, our professional designers will be working on
-                                    your custom website design. It will get uploaded as soon as you approve the final
-                                    design.</label>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-12">
-                                <button type="submit" class=" submitform btn btn-1 p-3 px-5 "
-                                    disabled="disabled">Submit</button>
-                            </div>
-                        </div>
-
-
+                        <input type="text" autocomplete="off" class="form-control  mt-3" placeholder="Person' Name"
+                            maxlenght="30" name="person_name" onfocus="this.placeholder = ''"
+                            onblur="this.placeholder = 'Persons Name'">
 
                     </div>
 
+                </div>
 
-                </form>
+                <div class="col-md-6 mb-3">
+
+                    <div class="form-group">
+
+                        <span class="help-text">Person's Email</span>
+
+                        <input type="text" autocomplete="off" class="form-control  mt-3" placeholder="Person's Email"
+                            maxlenght="70" name="person_email" onfocus="this.placeholder = ''"
+                            onblur="this.placeholder = 'Person Email'">
+
+                    </div>
+
+                </div>
+
+                <div class="col-md-6 mb-3">
+
+                    <div class="form-group">
+
+                        <span class="help-text">Person Designation</span>
+
+                        <input type="text" autocomplete="off" class="form-control  mt-3" placeholder="Designation"
+                            maxlenght="50" name="designation" onfocus="this.placeholder = ''"
+                            onblur="this.placeholder = 'Designation'">
+
+                    </div>
+
+                </div>
+
+                <div class="col-md-6 mb-3">
+
+                    <div class="form-group">
+
+                        <span class="help-text">Person Phone Number#</span>
+
+                        <input type="text" autocomplete="off" class="form-control phone_new mt-3" maxlength="13"
+                            placeholder="Person Phone Number" maxlenght="15" name="person_phone"
+                            onfocus="this.placeholder = ''" onblur="this.placeholder = 'Person Phone Number'">
+
+                    </div>
+
+                </div>
+
+                <div class="col-md-6 mb-3">
+
+                    <div class="form-group">
+
+                        <span class="help-text">Company Address</span>
+
+                        <input type="text" autocomplete="off" class="form-control  mt-3" placeholder="Company Address"
+                            maxlenght="100" name="company_address" onfocus="this.placeholder = ''"
+                            onblur="this.placeholder = 'Company Address'">
+
+                    </div>
+
+                </div>
+
+                <div class="col-md-6 mb-3">
+
+                    <div class="form-group">
+
+                        <span class="help-text">Company Phone#</span>
+
+                        <input type="text" autocomplete="off" class="form-control phone_new mt-3" maxlength="13"
+                            placeholder="Company Phone" maxlenght="15" name="company_phone"
+                            onfocus="this.placeholder = ''" onblur="this.placeholder = 'Company Phone'">
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="col-md-12 mb-3">
+
+                    <label>Attach a file</label>
+
+                    <div class="form-group">
+
+                        <input type="file" autocomplete="off" class="form-control  padd" id="attachment" name="LogoFile"
+                            onfocus="this.placeholder = ''">
+
+                    </div>
+
+                </div>
+                <div class="col-md-12 mb-3">
+
+
+                    <div class="form-group">
+
+                        <input type="checkbox" class="form-check-input" id="click" required="required">
+                        <label class="form-check-label" for="click">by clicking the submit button below you will be
+                            giving permission to contact via SMS regarding your digital services</label>
+                    </div>
+
+                </div>
+
+                <div class="col-md-12 mb-3 field-mergedleft">
+
+                    <div class="clearfix">
+
+                        <div class="col-lg-12">
+
+                            <div class="company_profile fill-help pull-left">
+
+                                <label class="control control--checkbox">
+
+                                    *Please Fill all the field
+
+                                </label>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <input type="hidden" name="page" value="">
+
+                    <div class="text-center">
+
+                        <button type="submit" class="btn btn-1 p-3 px-5 submitform" style="color: white;" disabled="disabled">Submit</button>
+
+                    </div>
+
+                </div>
 
             </div>
 
 
 
-
         </div>
-    </div>
+
+
+
+
+
+    </section>
+
+
+    <script src="js/web-brief.js"></script>
 </body>
 
 </html>

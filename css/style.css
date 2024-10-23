@@ -281,8 +281,6 @@ header .navbar-default .navbar-nav>.active>a:hover {
     color: #000 !important;
 }
 
-
-
 .sliderMain {
     position: relative;
 }
@@ -625,9 +623,6 @@ header .navbar-default .navbar-nav>.active>a:hover {
     display: none !important
 }
 
-
-
-
 .servicesec {
     background: #fffcfd url(../images/serviceBG.jpg) no-repeat;
     width: 100%;
@@ -744,8 +739,6 @@ header .navbar-default .navbar-nav>.active>a:hover {
     font-size: 14px;
     font-weight: 600;
 }
-
-
 
 .servicesec .boxwrap li.active {
     /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#3996d2+0,1169cd+100 */
@@ -871,8 +864,6 @@ header .navbar-default .navbar-nav>.active>a:hover {
     background: #ffb101;
     color: #000 !important;
 }
-
-
 
 .DigitalAgency {
     padding: 50px 0;
@@ -1021,7 +1012,6 @@ header .navbar-default .navbar-nav>.active>a:hover {
     background-position: -650px 0;
 }
 
-
 .experienceSec {}
 
 .experienceSecImg {
@@ -1058,7 +1048,6 @@ header .navbar-default .navbar-nav>.active>a:hover {
 .experienceSec5 {
     background-position: -893px 0px;
 }
-
 
 .subcribeSec {
     background-image: linear-gradient(to right, var(--theme-color), #170761);
@@ -1124,7 +1113,6 @@ header .navbar-default .navbar-nav>.active>a:hover {
     margin-right: 3px;
 }
 
-
 .UtilizingSec {}
 
 .UtilizingSec ul {
@@ -1187,9 +1175,6 @@ header .navbar-default .navbar-nav>.active>a:hover {
 .UtilizingSecBox7 {
     background-position: -786px -158px;
 }
-
-
-
 
 /*get a quote page css start.............................................*/
 /*get srated sec css start*/
@@ -1626,7 +1611,6 @@ a.out-cmp-btn {
 
 /*================COMPLETE-BRANDING-SOLUTION-CSS-END=================*/
 
-
 /*BEGIN Packages Css*/
 .pakagesmain h2 {
     font-size: 46px;
@@ -1920,10 +1904,6 @@ span.main_price {
 ::-webkit-scrollbar-thumb:hover {
     background: #555;
 }
-
-
-
-
 
 .package-wrapper .package-item .list+hr {
     margin: -4px auto 13px auto;
@@ -3004,8 +2984,6 @@ div#fancybox-container-1 {
 
 /*END Markiting Services*/
 
-
-
 .sliderForm {
     position: relative;
     border-radius: 10px;
@@ -3267,12 +3245,6 @@ strong {
     display: none;
 }
 
-
-
-
-
-
-
 /*************** SCROLLBAR BASE CSS ***************/
 
 .scroll-wrapper {
@@ -3348,9 +3320,6 @@ strong {
     height: 0;
     width: 0;
 }
-
-
-
 
 /*************** SIMPLE INNER SCROLLBAR ***************/
 
@@ -3439,9 +3408,6 @@ strong {
 .scrollbar-inner>.scroll-element.scroll-y.scroll-scrollx_visible .scroll-element_size {
     top: -12px;
 }
-
-
-
 
 /*our client sec start.......................*/
 
@@ -3587,7 +3553,6 @@ section.what-our-client-sec .our-client-text h6 {
 
 /*our client sec end.......................*/
 
-
 /*faq page css start........................*/
 
 #accordion .panel-heading {
@@ -3704,9 +3669,6 @@ section.faq-sec .panel-body ul li {
 
 /*faq page css end........................*/
 
-
-
-
 /* thankYou */
 
 .thankYou {
@@ -3810,10 +3772,7 @@ section.thankYou img {
     background: #4a4a4a49;
 }
 
-
 /* thankYou */
-
-
 
 /*view detail page css start*/
 .packageDetailMainBar {
@@ -4986,6 +4945,7 @@ $(document).ready(function() {
     font-size: 16px;
     line-height: 28px;
 }
+
 .common-heading.ptag h2 b {
     color: #161367;
 }
@@ -5472,16 +5432,16 @@ html .mt60 {
     margin-bottom: 3rem;
 }
 
-.sim2{
+.sim2 {
     width: 90px !important;
     object-fit: contain;
 }
 
-.sim3{
+.sim3 {
     max-width: 70px !important;
 }
 
-.bg-white{
+.bg-white {
     background-color: white;
     padding-left: 16px;
     padding-right: 16px;
