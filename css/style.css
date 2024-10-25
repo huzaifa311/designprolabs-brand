@@ -3430,7 +3430,7 @@ section.what-our-client-sec h2 {
 
 section.what-our-client-sec h2 b {
     font-weight: 700;
-    color: #7d0b84;
+    color: #0B67B0;
 }
 
 section.what-our-client-sec .our-client-text h6 {
@@ -3484,6 +3484,7 @@ section.what-our-client-sec .our-client-text h6 {
     transition: all 0.4s ease;
     position: relative;
     border-radius: 15px;
+    height: 100% !important;
 }
 
 .reviews-box:before {
@@ -3530,7 +3531,7 @@ section.what-our-client-sec .our-client-text h6 {
 }
 
 .reviews-box h6 {
-    color: #7b0b82;
+    color: #0B67B0;
     line-height: 17px;
     font-size: 14px;
     font-weight: 500;
@@ -3568,7 +3569,7 @@ section.what-our-client-sec .our-client-text h6 {
 
 #accordion a:hover,
 #accordion a:focus {
-    color: #b31c55;
+    color: #0A68B0;
     text-decoration: underline;
     outline: none !important;
 }
@@ -3595,7 +3596,7 @@ section.what-our-client-sec .our-client-text h6 {
 #accordion a.collapsed[data-toggle="collapse"]::before {
     content: "\f067";
     font: normal normal normal 14px/1 FontAwesome;
-    color: #5c076f;
+    color: #0A68B0;
     font-size: 21px;
 }
 
@@ -3618,7 +3619,7 @@ section.faq-sec h2 {
 
 section.faq-sec h2 b {
     font-weight: 700;
-    color: #7e0b84;
+    color: #0A68B0;
 }
 
 section.faq-sec .panel {
@@ -3792,7 +3793,7 @@ section.thankYou img {
 
 .packageDetailMainBar h2 b {
     font-weight: 700;
-    color: #b31c55;
+    color: #0A68B0;
 }
 
 .packageDetailMainBar h6 {
@@ -4947,7 +4948,7 @@ $(document).ready(function() {
 }
 
 .common-heading.ptag h2 b {
-    color: #161367;
+    color: #0B67B0;
 }
 
 html .mb30 {
@@ -5553,4 +5554,63 @@ html .mt60 {
     100% {
         transform: scale3d(1, 1, 1);
     }
+}
+
+
+.arrowRight {
+    filter: invert(1);
+    height: 28px;
+    object-fit: contain;
+}
+
+.reviewRow {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px;
+    margin-bottom: 80px;
+}
+
+.reviewRow div {
+    display: flex;
+}
+
+.reviewImage {
+    border-radius: 150px;
+    border: 2px solid #e0e0e0;
+    width: 81px;
+    height: 81px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.reviewRow div .reviewContent {
+    background: #f9f9f9;
+    padding: 30px 40px 30px 60px;
+    position: relative;
+    transition: all 0.4s ease;
+    border-radius: 15px;
+    height: 100% !important;
+    margin-left: -15px;
+}
+
+.reviewRow div .reviewContent:before {
+    content: "\f10d";
+    display: block;
+    position: absolute;
+    left: 26px;
+    top: 17px;
+    color: #3d3d3d;
+    font: normal normal normal 14px / 1 FontAwesome;
+    font-size: 25px;
+}
+
+.reviewRow div .reviewContent:after {
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-right: 10px solid #f1f1f1;
+    border-bottom: 10px solid transparent;
+    position: absolute;
+    top: 26px;
+    left: -9px;
+    content: "";
 }
