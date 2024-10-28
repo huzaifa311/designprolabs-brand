@@ -3954,7 +3954,11 @@ $(document).ready(function() {
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {}
 
-@media only screen and (min-width: 520px) and (max-width: 767px) {}
+@media only screen and (min-width: 520px) and (max-width: 767px) {
+    .languages:{
+    
+    }
+}
 
 @media only screen and (min-width: 300px) and (max-width: 519px) {
 
@@ -5365,6 +5369,7 @@ html .mt60 {
     justify-content: center;
     align-items: center;
     gap: 20px;
+    flex-wrap: wrap;
 }
 
 .round {
