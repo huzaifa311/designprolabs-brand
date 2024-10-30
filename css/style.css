@@ -4,7 +4,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-@font-face {
+/* @font-face {
     font-family: 'Proxima Nova Th';
     src: url('../fonts/ProximaNova-Extrabld.eot');
     src: url('../fonts/ProximaNova-Extrabld.eot?#iefix') format('embedded-opentype'), url('../fonts/ProximaNova-Extrabld.woff2') format('woff2'), url('../fonts/ProximaNova-Extrabld.woff') format('woff'), url('../fonts/ProximaNova-Extrabld.ttf') format('truetype'), url('../fonts/ProximaNova-Extrabld.svg#ProximaNova-Extrabld') format('svg');
@@ -30,7 +30,7 @@
         url('../fonts/ImperialStdBoldItalic.svg#ImperialStdBoldItalic') format('svg');
     font-weight: bold;
     font-style: italic;
-}
+} */
 
 * {
     outline: none
@@ -42,7 +42,6 @@ html {
 
 body {
     overflow-x: hidden;
-    font-family: 'Poppins', sans-serif;
 }
 
 a {
@@ -253,7 +252,7 @@ header .dropdown-menu li a {
 
 header .dropdown-menu li a:hover,
 header .dropdown-menu li a:focus {
-    background-image: linear-gradient(to right, #000000, var(--theme-color));
+    background-image: linear-gradient(to right, var(--theme-color), #170761);
     color: #fff;
 }
 
@@ -483,7 +482,6 @@ header .navbar-default .navbar-nav>.active>a:hover {
 
 .sliderMain ul.myticks li:before {
     content: "\f00c";
-    font-family: fontawesome;
     position: absolute;
     left: -30px;
     top: 1px;
@@ -638,13 +636,12 @@ header .navbar-default .navbar-nav>.active>a:hover {
     font-weight: 300;
     color: #141315;
     text-align: center;
-    font-family: 'Poppins', sans-serif;
     text-transform: capitalize;
     letter-spacing: -2px;
 }
 
 .servicesec h2 b {
-    font-weight: 700;
+    font-weight: 600;
     color: var(--theme-color);
 }
 
@@ -653,7 +650,7 @@ header .navbar-default .navbar-nav>.active>a:hover {
     text-align: center;
     margin-bottom: 15px;
     width: 100%;
-    font-weight: 700;
+    font-weight: 600;
 }
 
 .servicesec p {
@@ -811,7 +808,6 @@ header .navbar-default .navbar-nav>.active>a:hover {
     color: #909090;
 }
 
-/*.pointlisting li:before {position: absolute; left: 0; top: 0; color: #2c42b3; content: "\f00c";font-family:fontawesome; }*/
 .pointlisting li span {
     margin-right: 10px;
     color: var(--theme-color);
@@ -825,7 +821,7 @@ header .navbar-default .navbar-nav>.active>a:hover {
 .servicesec .left h2 {
     text-align: left;
     font-size: 46px;
-    font-weight: 800;
+    font-weight: 600;
     line-height: 40px;
     margin-bottom: 0;
     line-height: 55px;
@@ -842,7 +838,7 @@ header .navbar-default .navbar-nav>.active>a:hover {
 .servicesec .left h3 {
     text-align: left;
     font-size: 25px;
-    font-weight: 800;
+    font-weight: 600;
     color: var(--theme-color);
 }
 
@@ -875,13 +871,12 @@ header .navbar-default .navbar-nav>.active>a:hover {
     font-weight: 300;
     color: #141315;
     text-align: center;
-    font-family: 'Poppins', sans-serif;
     text-transform: capitalize;
     letter-spacing: -2px;
 }
 
 .DigitalAgency h2 b {
-    font-weight: 700;
+    font-weight: 600;
     color: var(--theme-color);
 }
 
@@ -1057,7 +1052,7 @@ header .navbar-default .navbar-nav>.active>a:hover {
 .subcribeSec h2 {
     font-size: 46px;
     line-height: 50px;
-    font-weight: 700;
+    font-weight: 600;
     color: #fff;
     text-align: center;
 }
@@ -1182,7 +1177,7 @@ header .navbar-default .navbar-nav>.active>a:hover {
 .gettext h3 {
     font-size: 46px;
     line-height: 50px;
-    font-weight: 700;
+    font-weight: 600;
     color: #141315;
     text-align: center;
 }
@@ -1193,13 +1188,12 @@ header .navbar-default .navbar-nav>.active>a:hover {
     font-weight: 300;
     color: #141315;
     text-align: center;
-    font-family: 'Poppins', sans-serif;
     text-transform: capitalize;
     letter-spacing: -2px;
 }
 
 .gettext h3 b {
-    font-weight: 700;
+    font-weight: 600;
     color: var(--theme-color);
 }
 
@@ -1435,7 +1429,6 @@ footer {
 .cmpo-prc-inner ul li:before {
     content: "\f05d";
     position: absolute;
-    font-family: 'fontawesome' !important;
     font-size: 13px;
     color: #ffb101;
     left: 0px;
@@ -1618,13 +1611,12 @@ a.out-cmp-btn {
     font-weight: 300;
     color: #141315;
     text-align: center;
-    font-family: 'Poppins', sans-serif;
     text-transform: capitalize;
     letter-spacing: -2px;
 }
 
 .pakagesmain h2 b {
-    font-weight: 700;
+    font-weight: 600;
     color: var(--theme-color);
 }
 
@@ -1832,7 +1824,7 @@ a.out-cmp-btn {
 
 span.main_price {
     font-size: 44px;
-    font-weight: 700;
+    font-weight: 600;
     color: #fff;
     line-height: 1.2;
     padding-bottom: 5px;
@@ -1841,7 +1833,7 @@ span.main_price {
 .old-price span {
     font-size: 35px;
     color: var(--theme-color);
-    font-weight: 700;
+    font-weight: 600;
     margin-top: 10px;
     text-align: center;
     display: block;
@@ -1917,7 +1909,6 @@ span.main_price {
     content: "\f05d";
     color: var(--theme-color);
     position: absolute;
-    font-family: 'fontawesome' !important;
     font-size: 15px;
     left: 4px;
     top: 0px;
@@ -1930,7 +1921,7 @@ span.main_price {
 .adons p {
     padding: 0;
     font-size: 13px;
-    font-weight: 700;
+    font-weight: 600;
     color: #141315;
     text-align: center;
 }
@@ -1945,7 +1936,7 @@ span.main_price {
 
 .package-item .list ul li.heading {
     font-size: 16px;
-    font-weight: 700;
+    font-weight: 600;
     /* padding-left: 30px; */
     list-style: none;
     margin: 10px 0 10px 0;
@@ -1989,7 +1980,7 @@ span.main_price {
     border-radius: 50px;
     letter-spacing: 1.5px;
     font-size: 16px;
-    font-weight: 700;
+    font-weight: 600;
     padding: 16px 40px;
     text-transform: uppercase;
 }
@@ -2063,7 +2054,7 @@ span.main_price {
     font-size: 18px;
     margin: 0;
     padding: 1px 15px;
-    font-weight: 700;
+    font-weight: 600;
 }
 
 .chat-con ul li p a {
@@ -2080,14 +2071,12 @@ span.main_price {
 
 .pckgslidersec .slick-prev:before {
     content: "\f104";
-    font-family: FontAwesome;
     font-size: 50px;
     color: #59bad3;
 }
 
 .pckgslidersec .slick-next:before {
     content: "\f105";
-    font-family: FontAwesome;
     font-size: 50px;
     color: #59bad3;
 }
@@ -2210,13 +2199,12 @@ span.main_price {
     font-weight: 300;
     color: #141315;
     text-align: center;
-    font-family: 'Poppins', sans-serif;
     text-transform: capitalize;
     letter-spacing: -2px;
 }
 
 .Portfolio h2 b {
-    font-weight: 700;
+    font-weight: 600;
     color: var(--theme-color);
 }
 
@@ -2419,7 +2407,6 @@ div#fancybox-container-1 {
 
 .main-services-banner-sec ul.myticks li:before {
     content: "\f00c";
-    font-family: fontawesome;
     position: absolute;
     left: -30px;
     top: 2px;
@@ -2548,7 +2535,7 @@ div#fancybox-container-1 {
     font-size: 40px;
     /* padding-bottom: 15px; */
     margin-bottom: 0;
-    font-weight: 700;
+    font-weight: 600;
     color: #450460;
     position: relative;
     text-shadow: none;
@@ -2570,7 +2557,7 @@ div#fancybox-container-1 {
     font-size: 49px;
     /* padding-bottom: 15px; */
     margin-bottom: 0;
-    font-weight: 700;
+    font-weight: 600;
     color: #ffffff;
     position: relative;
     text-shadow: none;
@@ -2610,7 +2597,6 @@ div#fancybox-container-1 {
 
 .srvce-cont ul.myticks li:before {
     content: "\f00c";
-    font-family: fontawesome;
     position: absolute;
     left: -30px;
     top: 1px;
@@ -2866,7 +2852,7 @@ div#fancybox-container-1 {
 .main-cnt-heading {
     font-size: 46px;
     line-height: 50px;
-    font-weight: 700;
+    font-weight: 600;
     color: #141315;
     text-align: center;
 }
@@ -2930,7 +2916,7 @@ div#fancybox-container-1 {
 .ticklistmy li a {
     color: #bb1d56;
     font-size: 16px;
-    font-weight: 700;
+    font-weight: 600;
 }
 
 .ticklistmy li h6 {
@@ -3237,7 +3223,7 @@ div#fancybox-container-1 {
 
 .privacyPolicy ul li b,
 strong {
-    font-weight: 700;
+    font-weight: 600;
     color: var(--theme-color);
 }
 
@@ -3422,14 +3408,13 @@ section.what-our-client-sec h2 {
     font-weight: 300;
     color: #141315;
     text-align: center;
-    font-family: 'Poppins', sans-serif;
     text-transform: capitalize;
     letter-spacing: -2px;
     margin-bottom: 10px;
 }
 
 section.what-our-client-sec h2 b {
-    font-weight: 700;
+    font-weight: 600;
     color: #0B67B0;
 }
 
@@ -3454,7 +3439,6 @@ section.what-our-client-sec .our-client-text h6 {
 }
 
 .our-client-text p {
-    font-family: 'Poppins', sans-serif;
     display: block;
     font-size: 18px;
     color: #333;
@@ -3611,14 +3595,13 @@ section.faq-sec h2 {
     font-weight: 300;
     color: #141315;
     text-align: center;
-    font-family: 'Poppins', sans-serif;
     text-transform: capitalize;
     letter-spacing: -2px;
     margin-bottom: 50px;
 }
 
 section.faq-sec h2 b {
-    font-weight: 700;
+    font-weight: 600;
     color: #0A68B0;
 }
 
@@ -3786,13 +3769,12 @@ section.thankYou img {
     font-weight: 300;
     color: #141315;
     text-align: center;
-    font-family: 'Poppins', sans-serif;
     text-transform: capitalize;
     letter-spacing: -2px;
 }
 
 .packageDetailMainBar h2 b {
-    font-weight: 700;
+    font-weight: 600;
     color: #0A68B0;
 }
 
@@ -3829,7 +3811,7 @@ section.thankYou img {
 .packageSelectBox h4 {
     font-size: 35px;
     color: #fff;
-    font-weight: 700;
+    font-weight: 600;
 }
 
 .packageSelectBox p {
@@ -3850,7 +3832,7 @@ section.thankYou img {
 
 .packagesInclude h2 {
     font-size: 30px;
-    font-weight: 700;
+    font-weight: 600;
     margin-bottom: 15px;
     text-align: left;
 }
@@ -3872,7 +3854,6 @@ section.thankYou img {
 
 .packagesInclude ul li:before {
     content: "\f00c";
-    font-family: fontawesome;
     position: absolute;
     left: auto;
     right: 0;
@@ -3955,9 +3936,7 @@ $(document).ready(function() {
 @media only screen and (min-width: 768px) and (max-width: 991px) {}
 
 @media only screen and (min-width: 520px) and (max-width: 767px) {
-    .languages:{
-    
-    }
+    .languages: {}
 }
 
 @media only screen and (min-width: 300px) and (max-width: 519px) {
@@ -4997,12 +4976,12 @@ html .mb30 {
 }
 
 .-cta-btn p span {
-    font-weight: 700;
+    font-weight: 600;
     color: #006ebe !important;
 }
 
 .-cta-btn p span {
-    font-weight: 700;
+    font-weight: 600;
     color: #006ebe !important;
 }
 
@@ -5022,7 +5001,6 @@ html .mb30 {
 .btn-main {
     font-size: 16px;
     font-weight: 400;
-    font-family: Poppins, sans-serif;
     padding: 0 32px;
     line-height: 56px;
     text-align: center;
@@ -5115,7 +5093,6 @@ html .mt30 {
     margin: 0 0 10px;
     font-size: 22px;
     line-height: 32px;
-    font-family: Poppins, sans-serif;
     color: #1f1f1f;
     font-weight: 600;
 }
@@ -5254,14 +5231,13 @@ html .mt70 {
     font-weight: 300;
     color: #141315;
     text-align: center;
-    font-family: 'Poppins', sans-serif;
     text-transform: capitalize;
     letter-spacing: -2px;
 }
 
 .common-heading h2 b {
     color: #09a9dd;
-    font-weight: 700;
+    font-weight: 600;
 }
 
 
@@ -5467,7 +5443,7 @@ html .mt60 {
 }
 
 .cont h5 {
-    font-weight: 700;
+    font-weight: 600;
     font-size: larger;
 }
 
@@ -5618,4 +5594,76 @@ html .mt60 {
     top: 26px;
     left: -9px;
     content: "";
+}
+
+@font-face {
+    font-family: 'New Font';
+    src: url('../fonts/newFont.ttf');
+}
+
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins/Poppins-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins/Poppins-Bold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins/Poppins-Italic.ttf') format('truetype');
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins/Poppins-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins/Poppins-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins/Poppins-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins/Poppins-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins/Poppins-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+body {
+    font-family: "Poppins" !important;
+}
+
+
+
+.dropdown-menu li{
+    color: black !important;
 }
