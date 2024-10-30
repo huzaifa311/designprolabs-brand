@@ -4966,6 +4966,12 @@ html .mb30 {
     display: inline-flex;
 }
 
+@media (max-width: 500px) {
+    .free-cta-title {
+        display: block;
+    }
+}
+
 .v-center {
     align-self: center;
     align-items: center;
@@ -5223,6 +5229,14 @@ html .mt70 {
     line-height: 26px !important;
     margin: 0px 176px 0 !important;
     font-weight: normal !important;
+}
+
+@media (max-width: 500px) {
+
+    .explorepara {
+        width: 100% !important;
+        margin: 0 !important;
+    }
 
 }
 
@@ -5296,7 +5310,7 @@ html .mt60 {
 .customh3 {
     text-align: left !important;
     font-size: 25px !important;
-    font-weight: 800 !important;
+    font-weight: 600 !important;
     margin-bottom: 20px !important;
     color: #09a9dd !important;
 }
@@ -5667,12 +5681,12 @@ body {
     font-family: "Poppins" !important;
 }
 
-.changeFont {
+.changeFont,
+.srvce-cont h6,
+.evry-heading-sec h2 {
     font-family: "Poppins" !important;
     font-weight: 400 !important;
 }
-
-
 
 .dropdown-menu li {
     color: black !important;
@@ -5742,12 +5756,19 @@ body {
         max-width: 500px !important;
     }
 }
+
 @media (max-width: 500px) {
     .modal-content h5 {
         margin-top: 15px;
     }
+
     .modal-content {
         width: 90%;
+    }
+
+    .common-heading h2 {
+        font-size: xx-large;
+        line-height: 40px;
     }
 }
 
@@ -5793,7 +5814,7 @@ body {
 
 }
 
-.popupForm .popupButton{
+.popupForm .popupButton {
     background-color: #FEAF04;
     border: 0px;
     outline: 0px;
