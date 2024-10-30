@@ -97,8 +97,7 @@
         <div class="topBarList">
           <ul class="clearfix">
             <li>
-              <a href="tel:2087124201"><i class="fa fa-phone" aria-hidden="true"></i> (208)
-                7124-201</a>
+              <a href="tel:4372949609"><i class="fa fa-phone" aria-hidden="true"></i> (437) 294-9609</a>
             </li>
             <li>
               <a><i class="fa fa-comments" aria-hidden="true"></i> Live
@@ -121,9 +120,9 @@
       <span class="icoo sea-bg"><i class="fa fa-comment"></i></span>
       <span>Chat With Us</span>
     </a>
-    <a class="call_wrap sea-bg">
+    <a href="tel:4372949609" class="call_wrap sea-bg">
       <span class="icoo sea-bg"><i class="fa fa-phone"></i></span>
-      <span> (208) 7124-201 </span>
+      <span> (437) 294-9609 </span>
     </a>
   </div>
   <section class="sliderMain">
@@ -138,7 +137,7 @@
             <div class="container">
               <div class="col-md-7 col-xs-12 col-sm-7">
                 <div class="sliderText wow fadeIn" data-wow-duration="1s">
-                  <h3 class="wow slideInLeft" data-wow-duration="4s">
+                  <h3 class="wow slideInLeft changeFont" data-wow-duration="4s">
                     Custom
                   </h3>
                   <h1 class="wow slideInLeft" data-wow-duration="3s">
@@ -157,7 +156,8 @@
                   </ul>
 
                   <div class="wow rubberBand" data-wow-delay="2000ms" data-wow-duration="1s">
-                    <a style="color: white !important;" href="get-started.html" class="sliderBtn tc-image-effect-circle">Get a Design Now</a>
+                    <a style="color: white !important;" href="get-started.html"
+                      class="sliderBtn tc-image-effect-circle">Get a Design Now</a>
                   </div>
                 </div>
                 <ul class="pull-left reviews-box-link wow rubberBand customStar" data-wow-delay="2000ms"
@@ -202,7 +202,7 @@
             <div class="container">
               <div class="col-md-7 col-xs-12 col-sm-7">
                 <div class="sliderText">
-                  <h3 class="wow slideInLeft" data-wow-duration="4s">
+                  <h3 class="wow slideInLeft changeFont" data-wow-duration="4s">
                     Delivering Websites
                   </h3>
                   <h1 class="wow slideInLeft" data-wow-duration="3s">
@@ -220,7 +220,8 @@
                     <li>Unprecedented Success</li>
                   </ul>
                   <div class="wow rubberBand" data-wow-delay="2000ms" data-wow-duration="1s">
-                    <a style="color: white !important;" href="get-started.html" class="sliderBtn tc-image-effect-circle">Get a Design Now</a>
+                    <a style="color: white !important;" href="get-started.html"
+                      class="sliderBtn tc-image-effect-circle">Get a Design Now</a>
                   </div>
                 </div>
                 <ul class="pull-left reviews-box-link wow rubberBand customStar" data-wow-delay="2000ms"
@@ -268,7 +269,7 @@
             <div class="container">
               <div class="col-md-7 col-xs-12 col-sm-7">
                 <div class="sliderText">
-                  <h3 class="wow slideInLeft" data-wow-duration="4s">
+                  <h3 class="wow slideInLeft changeFont" data-wow-duration="4s">
                     Business Ecommerce Solution
                   </h3>
                   <h2 class="wow slideInLeft" data-wow-duration="3s">
@@ -286,7 +287,8 @@
                     <li>Custom eCommerce functionality</li>
                   </ul>
                   <div class="wow rubberBand" data-wow-delay="2000ms" data-wow-duration="1s">
-                    <a style="color: white !important;" href="get-started.html" class="sliderBtn tc-image-effect-circle">Get a Design Now</a>
+                    <a style="color: white !important;" href="get-started.html"
+                      class="sliderBtn tc-image-effect-circle">Get a Design Now</a>
                   </div>
                 </div>
                 <ul class="pull-left reviews-box-link wow rubberBand customStar" data-wow-delay="2000ms"
@@ -2167,12 +2169,37 @@
             </div>
             <div class="chat-con-combo">
               <div class="pkge-ordr">
-                <a class="out-cmp-btn">Order Now</a>
+                <a class="out-cmp-btn" id="orderBtn">Order Now</a>
               </div>
               <div class="pkge-bkcl">
-                <a class="out-cmp-btn">(208) 7124-201 </a>
+                <a href="tel:4372949609" class="out-cmp-btn">(437) 294-9609 </a>
               </div>
             </div>
+          </div>
+        </div>
+        <!-- Modal Form -->
+        <div id="orderModal" class="modal">
+          <div class="modal-content">
+            <span class="close-btn" id="closeBtn">x</span>
+            <h2>Lets Get Started</h2>
+            <h5>Avail Upto 70% Discount</h5>
+            <form class="popupForm">
+              <div class="r1">
+                <input type="text" name="name" id="name" placeholder="Your Name" class="form-control" required="">
+              </div>
+              <div class="r2">
+                <input type="email" name="email" id="email" placeholder="Your Email" class="form-control" required="">
+              </div>
+              <div class="r3">
+                <input type="phone" name="phone" id="phone" placeholder="Your Phone" class="form-control" required="">
+              </div>
+              <div class="r4">
+                <textarea rows="4" name="message" id="message" placeholder="Enter Your Messages"></textarea>
+              </div>
+              <button type="submit" name="contact_submit" id="submit" class="popupButton">Lets Get
+                Started</button>
+            </form>
+            <!-- Add your form or content here -->
           </div>
         </div>
         <div class="col-lg-4 col-md-4 col-sm-3">
@@ -2318,7 +2345,7 @@
           <div class="gettext">
             <h3>Let’s <b>Get Started</b></h3>
             <p>
-              Call <a href="77505838939">(208) 7124-201</a> or fill up the
+              Call <a href="77505838939">(437) 294-9609</a> or fill up the
               form below to start <br />
               a conversation or for help
             </p>
@@ -2432,7 +2459,7 @@
           <div class="about-list-text">
             <h4>About</h4>
             <ul>
-              <li><a href="tel:2087124201"><b>Phone:</b><br />(208) 7124-201</a></li>
+              <li><a href="tel:4372949609"><b>Phone:</b><br />(437) 294-9609</a></li>
               <li><a href="mailto:info@designprolabs.com"><b>Email:</b><br />info@designprolabs.com</a></li>
               <li>
                 <a href="#">
