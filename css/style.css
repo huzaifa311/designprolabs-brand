@@ -386,6 +386,13 @@ header .navbar-default .navbar-nav>.active>a:hover {
     width: 100%;
 }
 
+@media (max-width: 500px) {
+    .img-responsive {
+        width: 90vw !important;
+        margin-top: 20px;
+    }
+}
+
 .sliderMain .carousel-caption {
     right: 10%;
     left: 10%;
@@ -4027,7 +4034,7 @@ $(document).ready(function() {
         padding: 5px 0;
         text-align: center;
         margin: 0;
-        background: #b61c55;
+        background-image: linear-gradient(to right, var(--theme-color), #170761);
     }
 
     .topBarList ul {
