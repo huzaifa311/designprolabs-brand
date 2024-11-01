@@ -5796,3 +5796,9 @@ body {
     font-weight: 500;
     border-radius: 4px;
 }
+
+@media (min-width: 768px) {
+    .customHeight .s_block_ser_web {
+        height: 500px !important;
+    }
+}

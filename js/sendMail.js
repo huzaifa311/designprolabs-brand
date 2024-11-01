@@ -1,30 +1,42 @@
+// Updated sendEmail function
 async function sendEmail(event) {
   event.preventDefault();
 
-  const firstName = document.getElementById("firstName").value;
-  const email = document.getElementById("email").value;
-  const phone = document.getElementById("phone").value;
-  const message = document.getElementById("message").value;
+  const firstName = document.getElementById("firstName").value.trim();
+  const email = document.getElementById("email").value.trim();
+  const phone = document.getElementById("phone").value.trim();
+  const message = document.getElementById("message").value.trim();
 
   try {
-    console.log(email, firstName, phone, message);
-    const transporter = nodemailer.createTransport({
-      service: "gmail",
-      port: 465,
-      secure: true,
-      auth: {
-        user: "contactus@designprolabs.com",
-        pass: "#I-IeQSgzk)t",
+    const formData = {
+      name: firstName,
+      email,
+      phone,
+      message,
+    };
+
+    console.log("start");
+    
+    const response = await fetch("https://designprolabs.vercel.app/api/send-mail", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
       },
+      body: JSON.stringify(formData),
     });
-    const res = await transporter.sendMail({
-      from: "contactus@designprolabs.com",
-      to: "contactus@designprolabs.com",
-      subject: `New Contact Form Submission from ${firstName}`,
-      Body: `First Name: ${firstName} <br> Email: ${email} <br> Phone: ${phone} <br> Message: ${message}`,
-    });
-    console.log(res);
+
+    const result = await response.json();
+
+    if (response.ok) {
+      alert(result.message);
+      document.getElementById("contactForm").reset();
+    } else {
+      alert(`Error: ${result.message}`);
+    }
   } catch (error) {
-    console.log(error);
+    console.error("An error occurred:", error);
+    alert(
+      "An error occurred while sending your message. Please try again later."
+    );
   }
 }
