@@ -57,7 +57,8 @@
                   aria-expanded="false">Services <span class="caret"></span></a>
                 <ul class="dropdown-menu">
                   <li>
-                    <a style="color: #080808 !important;" href="custom-website-design-development.html">Custom Website Design & Development</a>
+                    <a style="color: #080808 !important;" href="custom-website-design-development.html">Custom Website
+                      Design & Development</a>
                   </li>
                   <li><a style="color: #080808 !important;" href="ecommerce.html">Ecommerce</a></li>
                   <li>
@@ -68,7 +69,8 @@
                     <a style="color: #080808 !important;" href="marketing-services.html">Marketing Services</a>
                   </li>
                   <li>
-                    <a style="color: #080808 !important;" href="creative-content-writing-business-proposals.html">Creative Content Writing
+                    <a style="color: #080808 !important;"
+                      href="creative-content-writing-business-proposals.html">Creative Content Writing
                     </a>
                   </li>
                   <li>
@@ -78,7 +80,8 @@
                     <a style="color: #080808 !important;" href="mobile-applications.html">Mobile Applications</a>
                   </li>
                   <li>
-                    <a style="color: #080808 !important;" href="web-maintenance-securities.html">Web Maintenance & Securities</a>
+                    <a style="color: #080808 !important;" href="web-maintenance-securities.html">Web Maintenance &
+                      Securities</a>
                   </li>
                 </ul>
               </li>
@@ -123,6 +126,12 @@
       <span> (437) 294-9609 </span>
     </a>
   </div>
+  <!-- Add this loader div somewhere in your HTML -->
+<div id="loader" style="display: none;">
+  <!-- You can replace this text with a spinner or any loading animation -->
+  <p>Submitting your form, please wait...</p>
+</div>
+
   <section class="Portfolio adPD">
     <div class="container">
       <h2>Project <b>Portfolio</b></h2>
@@ -2198,17 +2207,17 @@
               a conversation or for help
             </p>
           </div>
-          <form>
+          <form id="contactForm" onsubmit="sendEmail(event)">
             <div class="row">
               <div class="col-md-6 col-sm-6 col-xs-12">
                 <div class="startedlist">
-                  <input type="text" placeholder="First Name*" />
+                  <input required id="firstName" type="text" placeholder="First Name*" />
                 </div>
               </div>
 
               <div class="col-md-6 col-sm-6 col-xs-12">
                 <div class="startedlist">
-                  <input type="text" placeholder="Email*" />
+                  <input required id="email" type="email" placeholder="Email*" />
                 </div>
               </div>
             </div>
@@ -2216,21 +2225,21 @@
             <div class="row">
               <div class="col-md-12 col-sm-12 col-xs-12">
                 <div class="startedlist">
-                  <input type="text" placeholder="Phone*" />
+                  <input required id="phone" type="text" placeholder="Phone*" />
                 </div>
               </div>
             </div>
             <div class="row">
               <div class="col-md-12 col-sm-12 col-xs-12">
                 <div class="startedlist">
-                  <textarea placeholder="How we can help"></textarea>
+                  <textarea id="message" required placeholder="How we can help"></textarea>
                 </div>
               </div>
             </div>
             <div class="row">
               <div class="col-md-12 col-sm-12 col-xs-12">
                 <div class="startedlist">
-                  <button>Submit</button>
+                  <button type="submit">Submit</button>
                 </div>
               </div>
             </div>
@@ -2402,6 +2411,7 @@
   <!-- footer end -->
   <script src="js/bootstrap.min.js"></script>
   <script src="js/custom.js"></script>
+  <script src="js/sendMail.js"></script>
 </body>
 
 </html>

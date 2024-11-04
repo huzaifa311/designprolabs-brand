@@ -125,6 +125,12 @@
       <span> (437) 294-9609 </span>
     </a>
   </div>
+  <!-- Add this loader div somewhere in your HTML -->
+<div id="loader" style="display: none;">
+  <!-- You can replace this text with a spinner or any loading animation -->
+  <p>Submitting your form, please wait...</p>
+</div>
+
   <section class="sliderMain">
     <div id="carouselFade" class="carousel slide carousel-fade" data-ride="carousel">
       <!-- Wrapper for slides -->
@@ -344,26 +350,26 @@
             <div class="row">
               <div class="">
                 <div class="ban-form">
-                  <form method="POST" action="#">
+                  <form id="contactForm" onsubmit="sendEmail(event)">
                     <div class="row">
                       <div class="col-lg-12">
                         <div class="fldset">
-                          <input id="" type="text" placeholder="Enter your name *" required />
+                          <input id="firstName" type="text" placeholder="Enter your name *" required />
                         </div>
                       </div>
                       <div class="col-lg-12">
                         <div class="fldset">
-                          <input id="" type="email" name="" placeholder="Enter email here *" required />
+                          <input id="email" type="email" name="" placeholder="Enter email here *" required />
                         </div>
                       </div>
                       <div class="col-lg-12">
                         <div class="fldset">
-                          <input id="" name="" type="number" placeholder="Phone Number *" required />
+                          <input id="phone" name="" type="text" placeholder="Phone Number *" required />
                         </div>
                       </div>
                       <div class="col-lg-12">
                         <div class="fldset">
-                          <textarea placeholder="Enter a brief description about your project" name=""></textarea>
+                          <textarea id="message" placeholder="Enter a brief description about your project" name=""></textarea>
                         </div>
                       </div>
                       <div class="col-lg-12">
@@ -392,7 +398,7 @@
                         </div>
                       </div>
                       <div class="col-lg-12">
-                        <div class="fldset submitbtn tc-image-effect-circle">
+                        <div class="submitbtn">
                           <input name="submit" type="submit" placeholder="Connect With Us" required />
                         </div>
                       </div>
@@ -2183,20 +2189,20 @@
             <span class="close-btn" id="closeBtn">x</span>
             <h2>Lets Get Started</h2>
             <h5>Avail Upto 70% Discount</h5>
-            <form class="popupForm">
+            <form id="contactForm" class="popupForm" onsubmit="sendEmail(event)">
               <div class="r1">
-                <input type="text" name="name" id="name" placeholder="Your Name" class="form-control" required="">
+                <input required id="firstName" type="text" name="name" placeholder="Your Name">
               </div>
               <div class="r2">
-                <input type="email" name="email" id="email" placeholder="Your Email" class="form-control" required="">
+                <input required id="email" type="email" name="email" placeholder="Your Email">
               </div>
               <div class="r3">
-                <input type="phone" name="phone" id="phone" placeholder="Your Phone" class="form-control" required="">
+                <input required id="phone" type="text" name="phone" placeholder="Your Phone">
               </div>
               <div class="r4">
-                <textarea rows="4" name="message" id="message" placeholder="Enter Your Messages"></textarea>
+                <textarea id="message" required rows="4" name="message" placeholder="Enter Your Messages"></textarea>
               </div>
-              <button type="submit" name="contact_submit" id="submit" class="popupButton">Lets Get
+              <button type="submit">Lets Get
                 Started</button>
             </form>
             <!-- Add your form or content here -->
@@ -2285,15 +2291,15 @@
         Message and data rates may apply. Reply STOP to cancel OR Reply HELP
         for info Privacy and Terms
       </p>
-      <form>
+      <form id="contactForm" onsubmit="sendEmail(event)">
         <div class="col-md-3 col-xs-12 col-sm-3">
-          <input type="text" placeholder="Name" />
+          <input required id="firstName" type="text" placeholder="Name" />
         </div>
         <div class="col-md-3 col-xs-12 col-sm-3">
-          <input type="email" placeholder="Email" />
+          <input required id="email" type="email" placeholder="Email" />
         </div>
         <div class="col-md-3 col-xs-12 col-sm-3">
-          <input type="tel" placeholder="Phone" />
+          <input required id="phone" type="text" placeholder="Phone" />
         </div>
         <div class="col-md-3 col-xs-12 col-sm-3">
           <input type="submit" value="SUBCRIBE" />
@@ -2345,22 +2351,22 @@
           <div class="gettext">
             <h3>Let’s <b>Get Started</b></h3>
             <p>
-              Call <a href="77505838939">(437) 294-9609</a> or fill up the
+              Call <a href="4372949609">(437) 294-9609</a> or fill up the
               form below to start <br />
               a conversation or for help
             </p>
           </div>
-          <form>
+          <form id="contactForm" onsubmit="sendEmail(event)">
             <div class="row">
               <div class="col-md-6 col-sm-6 col-xs-12">
                 <div class="startedlist">
-                  <input type="text" placeholder="First Name*" />
+                  <input required id="firstName" type="text" placeholder="First Name*" />
                 </div>
               </div>
 
               <div class="col-md-6 col-sm-6 col-xs-12">
                 <div class="startedlist">
-                  <input type="text" placeholder="Email*" />
+                  <input required id="email" type="email" placeholder="Email*" />
                 </div>
               </div>
             </div>
@@ -2368,21 +2374,21 @@
             <div class="row">
               <div class="col-md-12 col-sm-12 col-xs-12">
                 <div class="startedlist">
-                  <input type="text" placeholder="Phone*" />
+                  <input required id="phone" type="text" placeholder="Phone*" />
                 </div>
               </div>
             </div>
             <div class="row">
               <div class="col-md-12 col-sm-12 col-xs-12">
                 <div class="startedlist">
-                  <textarea placeholder="How we can help"></textarea>
+                  <textarea id="message" required placeholder="How we can help"></textarea>
                 </div>
               </div>
             </div>
             <div class="row">
               <div class="col-md-12 col-sm-12 col-xs-12">
                 <div class="startedlist">
-                  <button>Submit</button>
+                  <button type="submit">Submit</button>
                 </div>
               </div>
             </div>
@@ -2549,6 +2555,7 @@
   <!-- footer end -->
   <script src="js/bootstrap.min.js"></script>
   <script src="js/custom.js"></script>
+  <script src="js/sendMail.js"></script>
 </body>
 
 </html>

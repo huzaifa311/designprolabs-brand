@@ -126,6 +126,13 @@
     </a>
   </div>
 
+  <!-- Add this loader div somewhere in your HTML -->
+<div id="loader" style="display: none;">
+  <!-- You can replace this text with a spinner or any loading animation -->
+  <p>Submitting your form, please wait...</p>
+</div>
+
+
   <section class="main-services-banner-sec banner2">
     <div class="container">
       <div class="row align-self-center">
@@ -156,55 +163,55 @@
                 <div class="row">
                   <div class="">
                     <div class="ban-form">
-                      <form method="POST" action="#">
+                      <form id="contactForm" onsubmit="sendEmail(event)">
                         <div class="row">
                           <div class="col-lg-12">
                             <div class="fldset">
-                              <input id="" type="text" placeholder="Enter your name *" required />
+                              <input id="firstName" type="text" placeholder="Enter your name *" required />
                             </div>
                           </div>
                           <div class="col-lg-12">
                             <div class="fldset">
-                              <input id="" type="email" name="" placeholder="Enter email here *" required />
+                              <input id="email" type="email" name="" placeholder="Enter email here *" required />
                             </div>
                           </div>
                           <div class="col-lg-12">
                             <div class="fldset">
-                              <input id="" name="" type="number" placeholder="Phone Number *" required />
+                              <input id="phone" name="" type="text" placeholder="Phone Number *" required />
                             </div>
                           </div>
                           <div class="col-lg-12">
                             <div class="fldset">
-                              <textarea placeholder="Enter a brief description about your project" name=""></textarea>
+                              <textarea id="message" placeholder="Enter a brief description about your project" name=""></textarea>
                             </div>
                           </div>
                           <div class="col-lg-12">
                             <div class="fldset inpchecbx">
-                              <label><input type="checkbox" name="" /> Click Here
-                                to receive our Promotional SMS - Unsubscribe
-                                at any time (optional)</label>
+                              <label><input type="checkbox" name="" /> Click Here to
+                                receive our Promotional SMS - Unsubscribe at any
+                                time (optional)</label>
                             </div>
                           </div>
                           <div class="col-lg-12">
                             <div class="fldset inpchecbx">
-                              <label><input type="checkbox" name="" /> Click Here
-                                to receive our Promotional Emails -
-                                Unsubscribe at any time (optional)</label>
+                              <label><input type="checkbox" name="" /> Click Here to
+                                receive our Promotional Emails - Unsubscribe at
+                                any time (optional)</label>
                             </div>
                           </div>
                           <div class="col-lg-12">
                             <div class="fldset">
                               <p>
-                                Message & Data rates may apply, You will
-                                receive one promotional text a month & Receive
-                                recurring messages. Reply STOP to cancel,
-                                Reply HELP for help,
-                                <a href="privacypolicy.html">Privacy and Terms</a>
+                                Message & Data rates may apply, You will receive
+                                one promotional text a month & Receive recurring
+                                messages. Reply STOP to cancel, Reply HELP for
+                                help,
+                                <a href="#">Privacy and Terms</a>
                               </p>
                             </div>
                           </div>
                           <div class="col-lg-12">
-                            <div class="fldset submitbtn tc-image-effect-circle">
+                            <div class="submitbtn">
                               <input name="submit" type="submit" placeholder="Connect With Us" required />
                             </div>
                           </div>
@@ -698,27 +705,25 @@
 
   <section class="subcribeSec">
     <div class="container">
-      <h2>Subscribe Now !</h2>
+      <h2>Subscribe <b>Now !</b></h2>
       <p>
         Subscribe to Newsletters & SMS Promotions<br />
         Message and data rates may apply. Reply STOP to cancel OR Reply HELP
         for info Privacy and Terms
       </p>
-
-      <form>
+      <form id="contactForm" onsubmit="sendEmail(event)">
         <div class="col-md-3 col-xs-12 col-sm-3">
-          <input type="text" placeholder="Name" />
+          <input required id="firstName" type="text" placeholder="Name" />
         </div>
         <div class="col-md-3 col-xs-12 col-sm-3">
-          <input type="email" placeholder="Email" />
+          <input required id="email" type="email" placeholder="Email" />
         </div>
         <div class="col-md-3 col-xs-12 col-sm-3">
-          <input type="tel" placeholder="Phone" />
+          <input required id="phone" type="text" placeholder="Phone" />
         </div>
         <div class="col-md-3 col-xs-12 col-sm-3">
           <input type="submit" value="SUBCRIBE" />
         </div>
-
         <div class="col-md-6 col-xs-12 col-sm-6">
           <label for="male"><input type="checkbox" id="male" value="male" /> Click Here to
             receive our Promotional SMS - Unsubscribe at any time
@@ -778,17 +783,17 @@
               a conversation or for help
             </p>
           </div>
-          <form>
+          <form id="contactForm" onsubmit="sendEmail(event)">
             <div class="row">
               <div class="col-md-6 col-sm-6 col-xs-12">
                 <div class="startedlist">
-                  <input type="text" placeholder="First Name*" />
+                  <input required id="firstName" type="text" placeholder="First Name*" />
                 </div>
               </div>
 
               <div class="col-md-6 col-sm-6 col-xs-12">
                 <div class="startedlist">
-                  <input type="text" placeholder="Email*" />
+                  <input required id="email" type="email" placeholder="Email*" />
                 </div>
               </div>
             </div>
@@ -796,21 +801,21 @@
             <div class="row">
               <div class="col-md-12 col-sm-12 col-xs-12">
                 <div class="startedlist">
-                  <input type="text" placeholder="Phone*" />
+                  <input required id="phone" type="text" placeholder="Phone*" />
                 </div>
               </div>
             </div>
             <div class="row">
               <div class="col-md-12 col-sm-12 col-xs-12">
                 <div class="startedlist">
-                  <textarea placeholder="How we can help"></textarea>
+                  <textarea id="message" required placeholder="How we can help"></textarea>
                 </div>
               </div>
             </div>
             <div class="row">
               <div class="col-md-12 col-sm-12 col-xs-12">
                 <div class="startedlist">
-                  <button>Submit</button>
+                  <button type="submit">Submit</button>
                 </div>
               </div>
             </div>
@@ -981,6 +986,7 @@
   <!-- footer end -->
   <script src="js/bootstrap.min.js"></script>
   <script src="js/custom.js"></script>
+  <script src="js/sendMail.js"></script>
 </body>
 
 </html>

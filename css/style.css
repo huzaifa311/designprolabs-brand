@@ -5778,6 +5778,7 @@ body {
     border: 1.8px solid #006ebe;
     margin-bottom: 18px;
     padding: 20px 12px;
+    width: 100%;
 }
 
 .popupForm textarea {
@@ -5788,7 +5789,7 @@ body {
 
 }
 
-.popupForm .popupButton {
+.popupForm button {
     background-color: #FEAF04;
     border: 0px;
     outline: 0px;
@@ -5801,4 +5802,61 @@ body {
     .customHeight .s_block_ser_web {
         height: 500px !important;
     }
+}
+
+
+@media (max-width: 500px) {
+    .client-img img {
+        width: 80px !important;
+        height: 80px !important;
+    }
+
+    .footer-logo img {
+        max-width: 200px !important;
+    }
+
+}
+
+#loader {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 9999;
+    /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: hidden;
+    /* Disable scroll */
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 654515131313321;
+    /* Black background with opacity */
+}
+
+#loader p {
+    position: absolute;
+    top: 50%;
+    /* Center vertically */
+    left: 50%;
+    /* Center horizontally */
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 1.5em;
+}
+
+.submitbtn{
+    display: flex;
+    justify-content: center;
+}
+.submitbtn button{
+    background-color: #FFB817;
+    color: white;
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    font-size: medium;
 }

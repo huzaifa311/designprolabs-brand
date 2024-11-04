@@ -11,6 +11,12 @@
 </head>
 
 <body>
+  <!-- Add this loader div somewhere in your HTML -->
+<div id="loader" style="display: none;">
+  <!-- You can replace this text with a spinner or any loading animation -->
+  <p>Submitting your form, please wait...</p>
+</div>
+
     <section class="main-bg-color-2 padding-b get_quote pt-5"
         style="background-color: rgba(var(--main-bg-color), .015);color: rgba(var(--main-bg-color), .895);">
         <div class="container">
@@ -22,412 +28,60 @@
                     <h1 class=" mt-4 hClr underLine brd-clr-2">Get Ready to Revolutionize<br>Your Brand Forever</h1>
                     <p class="text-center mt-4">Seeking exceptional design and development solutions? With our
                         excellently crafted packages, we're here to transform your brand for the better.</p>
-                    <form method="POST" action="https://logovent.com/home/logo_brief_form" autocomplete="off"
-                        enctype="multipart/form-data">
-                        <div class="row">
-                            <div class="col-12 mb-3">
-                                <h3 class="hClr underLine brd-clr-2">Business Information</h3>
-                            </div>
-                            <div class="col-md-6 mb-3">
-                                <div class="form-group">
-                                    <input type="text" autocomplete="off" class="form-control  "
-                                        placeholder="* Full Name" name="name" value="" maxlenght="30"
-                                        onfocus="this.placeholder = ''" onblur="this.placeholder = 'Full Name'"
-                                        required="">
+                        <form id="contactForm" onsubmit="sendEmail(event)">
+                            <div class="row">
+                              <div class="col-lg-12">
+                                <div class="fldset">
+                                  <input id="firstName" type="text" placeholder="Enter your name *" required />
                                 </div>
-                            </div>
-                            <div class="col-md-6 mb-3">
-
-                                <div class="form-group">
-
-                                    <input type="email" autocomplete="off" class="form-control  " placeholder="* Email"
-                                        name="email" value="" maxlenght="75" onfocus="this.placeholder = ''"
-                                        onblur="this.placeholder = 'Email'" required="">
-
+                              </div>
+                              <div class="col-lg-12">
+                                <div class="fldset">
+                                  <input id="email" type="email" name="" placeholder="Enter email here *" required />
                                 </div>
-
-                            </div>
-
-                            <div class="col-md-6 mb-3">
-
-                                <div class="form-group">
-
-                                    <input type="hidden" name="package_name" value="">
-
-                                    <input type="text" autocomplete="off" class="form-control  " value=""
-                                        name="package_name" onfocus="this.placeholder = ''"
-                                        onblur="this.placeholder = 'Email'" disabled="" required="">
-
+                              </div>
+                              <div class="col-lg-12">
+                                <div class="fldset">
+                                  <input id="phone" name="" type="text" placeholder="Phone Number *" required />
                                 </div>
-
-                            </div>
-
-                            <div class="col-md-6 mb-3">
-
-                                <div class="form-group">
-
-                                    <input type="hidden" name="package_price" value="">
-
-                                    <input type="text" autocomplete="off" class="form-control  " value=""
-                                        name="package_price" onfocus="this.placeholder = ''"
-                                        onblur="this.placeholder = 'Email'" disabled="">
-
+                              </div>
+                              <div class="col-lg-12">
+                                <div class="fldset">
+                                  <textarea id="message" placeholder="Enter a brief description about your project" name=""></textarea>
                                 </div>
-
-                            </div>
-                            <input name="" value="" type="hidden">
-                            <div class="col-md-6 mb-3">
-
-                                <div class="form-group">
-
-                                    <span class="help-text">Logo Name* which you want to use in Logo</span>
-
-                                    <input type="text" autocomplete="off" class="form-control  mt-3"
-                                        placeholder="logo Name" maxlenght="100" name="name_on_logo"
-                                        onfocus="this.placeholder = ''" onblur="this.placeholder = 'logo Name'"
-                                        required="">
-
+                              </div>
+                              <div class="col-lg-12">
+                                <div class="fldset inpchecbx">
+                                  <label><input type="checkbox" name="" /> Click Here to
+                                    receive our Promotional SMS - Unsubscribe at any
+                                    time (optional)</label>
                                 </div>
-
-                            </div>
-
-                            <div class="col-md-6 mb-3">
-
-                                <div class="form-group">
-
-                                    <span class="help-text">Company Slogan which you want to use in Logo</span>
-
-                                    <input type="text" autocomplete="off" class="form-control  mt-3"
-                                        placeholder="Company Slogan" maxlenght="150" name="company_slogan"
-                                        onfocus="this.placeholder = ''" onblur="this.placeholder = 'Company Slogan'">
-
+                              </div>
+                              <div class="col-lg-12">
+                                <div class="fldset inpchecbx">
+                                  <label><input type="checkbox" name="" /> Click Here to
+                                    receive our Promotional Emails - Unsubscribe at
+                                    any time (optional)</label>
                                 </div>
-
-                            </div>
-
-                            <div class="col-md-6 mb-3">
-
-                                <div class="form-group">
-
-                                    <span class="help-text">Competitors Reference Optional, you can enter multiple Links
-
-                                    </span>
-
-                                    <textarea class="form-control  mt-3" name="description"
-                                        placeholder="* Competitors Reference:" maxlenght="300"
-                                        onfocus="this.placeholder = ''"
-                                        onblur="this.placeholder = '*Competitors Reference:'"></textarea>
-
+                              </div>
+                              <div class="col-lg-12">
+                                <div class="fldset">
+                                  <p>
+                                    Message & Data rates may apply, You will receive
+                                    one promotional text a month & Receive recurring
+                                    messages. Reply STOP to cancel, Reply HELP for
+                                    help,
+                                    <a href="#">Privacy and Terms</a>
+                                  </p>
                                 </div>
-
-                            </div>
-
-                            <div class="col-md-6 mb-3">
-
-                                <div class="form-group">
-
-                                    <span class="help-text">Describe your business* what is your Business all about
-
-                                    </span>
-
-                                    <textarea class="form-control  mt-3" name="bussiness_about"
-                                        placeholder="* Describe your business" maxlenght="500"
-                                        onfocus="this.placeholder = ''"
-                                        onblur="this.placeholder = '*Describe your business:'" required=""></textarea>
-
+                              </div>
+                              <div class="col-lg-12">
+                                <div class="fldset submitbtn tc-image-effect-circle">
+                                  <input name="submit" type="submit" placeholder="Connect With Us" required />
                                 </div>
-
+                              </div>
                             </div>
-
-                            <div class="col-md-12 mb-3">
-
-                                <div class="form-group">
-
-                                    <span class="help-text">What you want in your logo Any additional details
-
-                                    </span>
-
-                                    <textarea class="form-control  mt-3" name="additional_detail"
-                                        placeholder="* What you want in your logo" maxlenght="300"
-                                        onfocus="this.placeholder = ''"
-                                        onblur="this.placeholder = '*Describe your business:'" required=""></textarea>
-
-                                </div>
-
-                            </div>
-
-                            <div class="col-12 mb-3">
-                                <h3 class="underLine brd-clr-2">Select Colors</h3>
-                            </div>
-
-                            <div class="col-md-6 mb-3">
-
-                                <div class="form-group">
-                                    <span class="help-text">Primary Color: Write the name or code, like Blue,
-                                        #FFFF00</span>
-                                    <input type="text" autocomplete="off" class="form-control mt-3" name="primarycolor"
-                                        id="primarycolor" placeholder="Primary Color" onfocus="this.placeholder = ''"
-                                        onblur="this.placeholder = 'Primary Color'">
-                                </div>
-
-                                <div class="row">
-                                    <div class="col-lg-9">
-                                        <div class="row no-gutters color">
-                                            <!-- Color option 1 -->
-                                            <div class="col text-center">
-                                                <div class="primary-code d-block" data-color="d80002"
-                                                    style="height:45px;width:45px;background:#d80002;"
-                                                    onclick="setPrimaryColor('#d80002')">
-                                                </div>
-                                                <p class="text-uppercase">d80002</p>
-                                            </div>
-                                            <!-- Color option 2 -->
-                                            <div class="col text-center">
-                                                <div class="primary-code d-block" data-color="fc6605"
-                                                    style="height:45px;width:45px;background:#fc6605;"
-                                                    onclick="setPrimaryColor('#fc6605')">
-                                                </div>
-                                                <p class="text-uppercase">fc6605</p>
-                                            </div>
-                                            <!-- Color option 3 -->
-                                            <div class="col text-center">
-                                                <div class="primary-code d-block" data-color="fc9a03"
-                                                    style="height:45px;width:45px;background:#fc9a03;"
-                                                    onclick="setPrimaryColor('#fc9a03')">
-                                                </div>
-                                                <p class="text-uppercase">fc9a03</p>
-                                            </div>
-                                            <!-- Color option 4 -->
-                                            <div class="col text-center">
-                                                <div class="primary-code d-block" data-color="fcfe03"
-                                                    style="height:45px;width:45px;background:#fcfe03;"
-                                                    onclick="setPrimaryColor('#fcfe03')">
-                                                </div>
-                                                <p class="text-uppercase">fcfe03</p>
-                                            </div>
-                                            <!-- Color option 5 -->
-                                            <div class="col text-center">
-                                                <div class="primary-code d-block" data-color="329804"
-                                                    style="height:45px;width:45px;background:#329804;"
-                                                    onclick="setPrimaryColor('#329804')">
-                                                </div>
-                                                <p class="text-uppercase">329804</p>
-                                            </div>
-                                            <!-- Color option 6 -->
-                                            <div class="col text-center">
-                                                <div class="primary-code d-block" data-color="036564"
-                                                    style="height:45px;width:45px;background:#036564;"
-                                                    onclick="setPrimaryColor('#036564')">
-                                                </div>
-                                                <p class="text-uppercase">036564</p>
-                                            </div>
-                                            <!-- Color option 7 -->
-                                            <div class="col text-center">
-                                                <div class="primary-code d-block" data-color="03349d"
-                                                    style="height:45px;width:45px;background:#03349d;"
-                                                    onclick="setPrimaryColor('#03349d')">
-                                                </div>
-                                                <p class="text-uppercase">03349d</p>
-                                            </div>
-                                            <!-- Color option 8 -->
-                                            <div class="col text-center">
-                                                <div class="primary-code d-block" data-color="040263"
-                                                    style="height:45px;width:45px;background:#040263;"
-                                                    onclick="setPrimaryColor('#040263')">
-                                                </div>
-                                                <p class="text-uppercase">040263</p>
-                                            </div>
-                                            <!-- Color option 9 -->
-                                            <div class="col text-center">
-                                                <div class="primary-code d-block" data-color="630263"
-                                                    style="height:45px;width:45px;background:#630263;"
-                                                    onclick="setPrimaryColor('#630263')">
-                                                </div>
-                                                <p class="text-uppercase">630263</p>
-                                            </div>
-                                            <!-- Color option 10 -->
-                                            <div class="col text-center">
-                                                <div class="primary-code d-block" data-color="151515"
-                                                    style="height:45px;width:45px;background:#151515;"
-                                                    onclick="setPrimaryColor('#151515')">
-                                                </div>
-                                                <p class="text-uppercase">151515</p>
-                                            </div>
-                                            <!-- Color option 11 -->
-                                            <div class="col text-center">
-                                                <div class="primary-code d-block" data-color="0F00F0"
-                                                    style="height:45px;width:45px;background:#0F00F0;"
-                                                    onclick="setPrimaryColor('#0F00F0')">
-                                                </div>
-                                                <p class="text-uppercase">0F00F0</p>
-                                            </div>
-                                            <!-- Color option 12 -->
-                                            <div class="col text-center">
-                                                <div class="primary-code d-block" data-color="C3F"
-                                                    style="height:45px;width:45px;background:#C3F;"
-                                                    onclick="setPrimaryColor('#C3F')">
-                                                </div>
-                                                <p class="text-uppercase">C3F</p>
-                                            </div>
-                                            <!-- Color option 13 (Visible on large screens) -->
-                                            <div class="col text-center d-none d-lg-block">
-                                                <div class="primary-code d-block" data-color="16CB1C"
-                                                    style="height:45px;width:45px;background:#16CB1C;"
-                                                    onclick="setPrimaryColor('#16CB1C')">
-                                                </div>
-                                                <p class="text-uppercase">16CB1C</p>
-                                            </div>
-                                            <!-- Color option 14 (Visible on large screens) -->
-                                            <div class="col text-center d-none d-lg-block">
-                                                <div class="primary-code d-block" data-color="CBA716"
-                                                    style="height:45px;width:45px;background:#CBA716;"
-                                                    onclick="setPrimaryColor('#CBA716')">
-                                                </div>
-                                                <p class="text-uppercase">CBA716</p>
-                                            </div>
-                                            <!-- Color option 15 (Visible on large screens) -->
-                                            <div class="col text-center d-none d-lg-block">
-                                                <div class="primary-code d-block" data-color="16ADCB"
-                                                    style="height:45px;width:45px;background:#16ADCB;"
-                                                    onclick="setPrimaryColor('#16ADCB')">
-                                                </div>
-                                                <p class="text-uppercase">16ADCB</p>
-                                            </div>
-                                            <!-- Color option 16 (Visible on large screens) -->
-                                            <div class="col text-center d-none d-lg-block">
-                                                <div class="primary-code d-block" data-color="4400FF"
-                                                    style="height:45px;width:45px;background:#4400FF;"
-                                                    onclick="setPrimaryColor('#4400FF')">
-                                                </div>
-                                                <p class="text-uppercase">4400FF</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div>
-
-                            <div class="col-md-6 mb-3">
-
-                                <div class="form-group">
-
-                                    <span class="help-text">Secondary Color Write the name or code, Like Blue,
-                                        #FFFF00</span>
-
-                                    <input type="text" autocomplete="off" class="form-control  mt-3" id="secondarycolor"
-                                        placeholder="Secondary Color" name="secondarycolor"
-                                        onfocus="this.placeholder = ''" onblur="this.placeholder = 'Secondary Color:'">
-
-                                </div>
-                                <div class="row ">
-                                    <div class="col-lg-9">
-                                        <div class="row no-gutters color">
-
-
-                                            <div class="col text-center">
-                                                <div onclick="setSecondaryColor('#d80002')" class="secondary-code d-block" data-color="d80002"
-                                                    style="height:45px;width:45px;background:#d80002;">
-                                                </div>
-                                                <p class="text-uppercase">d80002</p>
-                                            </div>
-
-                                            <div class="col text-center">
-                                                <div onclick="setSecondaryColor('#fc6605')" class="secondary-code d-block" data-color="fc6605"
-                                                    style="height:45px;width:45px;background:#fc6605;">
-                                                </div>
-                                                <p class="text-uppercase">fc6605</p>
-                                            </div>
-                                            <div class="col text-center">
-                                                <div onclick="setSecondaryColor('#fc9a03')" class="secondary-code d-block" data-color="fc9a03"
-                                                    style="height:45px;width:45px;background:#fc9a03;">
-                                                </div>
-                                                <p class="text-uppercase">fc9a03</p>
-                                            </div>
-                                            <div class="col text-center">
-                                                <div onclick="setSecondaryColor('#fcfe03')" class="secondary-code d-block" data-color="fcfe03"
-                                                    style="height:45px;width:45px;background:#fcfe03;">
-                                                </div>
-                                                <p class="text-uppercase">fcfe03</p>
-                                            </div>
-                                            <div class="col text-center">
-                                                <div onclick="setSecondaryColor('#329804')" class="secondary-code d-block" data-color="329804"
-                                                    style="height:45px;width:45px;background:#329804;">
-                                                </div>
-                                                <p class="text-uppercase">329804</p>
-                                            </div>
-                                            <div class="col text-center">
-                                                <div onclick="setSecondaryColor('#036564')" class="secondary-code d-block" data-color="036564"
-                                                    style="height:45px;width:45px;background:#036564;">
-                                                </div>
-                                                <p class="text-uppercase">036564</p>
-                                            </div>
-                                            <div class="col text-center">
-                                                <div onclick="setSecondaryColor('#03349d')" class="secondary-code d-block" data-color="03349d"
-                                                    style="height:45px;width:45px;background:#03349d;">
-                                                </div>
-                                                <p class="text-uppercase">03349d</p>
-                                            </div>
-                                            <div class="col text-center">
-                                                <div onclick="setSecondaryColor('#040263')" class="secondary-code d-block" data-color="040263"
-                                                    style="height:45px;width:45px;background:#040263;">
-                                                </div>
-                                                <p class="text-uppercase">040263</p>
-                                            </div>
-                                            <div class="col text-center">
-                                                <div onclick="setSecondaryColor('#d80002')" class="secondary-code d-block" data-color="d80002"
-                                                    style="height:45px;width:45px;background:#630263;">
-                                                </div>
-                                                <p class="text-uppercase">630263</p>
-                                            </div>
-                                            <div class="col text-center">
-                                                <div onclick="setSecondaryColor('#151515')" class="secondary-code d-block" data-color="151515"
-                                                    style="height:45px;width:45px;background:#151515;">
-                                                </div>
-                                                <p class="text-uppercase">151515</p>
-                                            </div>
-                                            <div class="col text-center">
-                                                <div onclick="setSecondaryColor('#0F00F0')" class="secondary-code d-block" data-color="0F00F0"
-                                                    style="height:45px;width:45px;background:#0F00F0;">
-                                                </div>
-                                                <p class="text-uppercase">0F00F0</p>
-                                            </div>
-                                            <div class="col text-center">
-                                                <div onclick="setSecondaryColor('#C3F')" class="secondary-code d-block" data-color="C3F"
-                                                    style="height:45px;width:45px;background:#C3F;">
-                                                </div>
-                                                <p class="text-uppercase">C3F</p>
-                                            </div>
-                                            <div class="col text-center d-none d-lg-block">
-                                                <div onclick="setSecondaryColor('#16CB1C')" class="secondary-code d-block" data-color="16CB1C"
-                                                    style="height:45px;width:45px;background:#16CB1C;">
-                                                </div>
-                                                <p class="text-uppercase">16CB1C</p>
-                                            </div>
-                                            <div class="col text-center d-none d-lg-block">
-                                                <div onclick="setSecondaryColor('#CBA716')" class="secondary-code d-block" data-color="CBA716"
-                                                    style="height:45px;width:45px;background:#CBA716;">
-                                                </div>
-                                                <p class="text-uppercase">CBA716</p>
-                                            </div>
-                                            <div class="col text-center d-none d-lg-block">
-                                                <div onclick="setSecondaryColor('#16ADCB')" class="secondary-code d-block" data-color="16ADCB"
-                                                    style="height:45px;width:45px;background:#16ADCB;">
-                                                </div>
-                                                <p class="text-uppercase">16ADCB</p>
-                                            </div>
-                                            <div class="col text-center d-none d-lg-block">
-                                                <div onclick="setSecondaryColor('#4400FF')" class="secondary-code d-block" data-color="4400FF"
-                                                    style="height:45px;width:45px;background:#4400FF;">
-                                                </div>
-                                                <p class="text-uppercase">4400FF</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                    </form>
+                          </form>
                 </div>
 
 

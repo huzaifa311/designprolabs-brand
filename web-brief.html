@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Design Pro Labs - Web Brief</title>
-  <link rel="icon" type="png" href="images/favicon.png" />
+    <link rel="icon" type="png" href="images/favicon.png" />
     <link href="css/logo-brief.css" rel="stylesheet" />
     <link href="css/logo-brief2.css" rel="stylesheet" />
 </head>
@@ -24,216 +24,244 @@
                     <p class=" mt-4">Seeking exceptional design and development solutions? With our excellently crafted
                         packages, we're here to transform your brand for the better.</p>
 
-                    <form enctype="multipart/form-data" name="weborder"
-                        action="https://logovent.com/home/web_brief_form" method="post">
+                    <form onsubmit="handleSubmit()" id="websiteForm">
                         <div class="">
                             <div class="row">
+                                <!-- Full Name -->
                                 <div class="col-md-6 mb-3">
                                     <div class="form-group">
-                                        <input type="text" autocomplete="off" class="form-control"
-                                            placeholder="* Full Name" value="" name="name"
-                                            onfocus="this.placeholder = ''" onblur="this.placeholder = 'Full Name'"
-                                            required="">
+                                        <input id="name" type="text" class="form-control" placeholder="* Full Name" name="name"
+                                            onfocus="this.placeholder = ''" onblur="this.placeholder = '* Full Name'"
+                                            required>
                                     </div>
                                 </div>
+                                <!-- Email -->
                                 <div class="col-md-6 mb-3">
                                     <div class="form-group">
-                                        <input type="email" autocomplete="off" class="form-control"
-                                            placeholder="* Email" name="email" value="" onfocus="this.placeholder = ''"
-                                            onblur="this.placeholder = 'Email'" required="">
+                                        <input id="email" type="email" class="form-control" placeholder="* Email" name="email"
+                                            onfocus="this.placeholder = ''" onblur="this.placeholder = '* Email'"
+                                            required>
                                     </div>
                                 </div>
+                                <!-- Package Name -->
                                 <div class="col-md-6 mb-3">
                                     <div class="form-group">
-                                        <input type="hidden" name="package_name" value="">
-                                        <input type="text" autocomplete="off" class="form-control" value=""
+                                        <input type="text" id="package" class="form-control" placeholder="Package Name"
                                             name="package_name" onfocus="this.placeholder = ''"
-                                            onblur="this.placeholder = 'Email'" disabled="" required="">
+                                            onblur="this.placeholder = 'Package Name'">
                                     </div>
                                 </div>
+                                <!-- Package Price -->
                                 <div class="col-md-6 mb-3">
                                     <div class="form-group">
-                                        <input type="hidden" name="package_price" value="">
-                                        <input type="text" autocomplete="off" class="form-control" value=""
+                                        <input id="packagePrice" type="text" class="form-control" placeholder="Package Price"
                                             name="package_price" onfocus="this.placeholder = ''"
-                                            onblur="this.placeholder = 'Email'" disabled="">
+                                            onblur="this.placeholder = 'Package Price'">
                                     </div>
                                 </div>
                             </div>
-                            <input name="" value="" type="hidden">
+
+                            <!-- Business Name -->
                             <div class="row">
                                 <div class="col-lg-4">
-                                    <label for="">
+                                    <label for="business_name">
                                         Exact name of your business/organization: *
-                                        <span class="initial"></span></label>
+                                        <span class="initial"></span>
+                                    </label>
                                 </div>
                                 <div class="col-lg-8">
-                                    <input type="text" class="form-control" placeholder="Your Business Name" required=""
+                                    <input type="text" class="form-control" placeholder="Your Business Name" required
                                         id="business_name" name="business_name">
                                 </div>
                             </div>
+
+                            <!-- Purpose -->
                             <div class="row">
                                 <div class="col-lg-4">
-                                    <label for="">Kindly state the purpose of your website: (Is it a selling/informative
-                                        website or a personal blog? etc.) *<span class="initial"></span></label>
+                                    <label for="purpose">
+                                        Kindly state the purpose of your website: (Is it a selling/informative
+                                        website or a personal blog? etc.) *
+                                        <span class="initial"></span>
+                                    </label>
                                 </div>
                                 <div class="col-lg-8">
-                                    <textarea placeholder="Describe Here " name="purpose" required=""
+                                    <textarea placeholder="Describe Here" name="purpose" required class="form-control"
+                                        rows="5"></textarea>
+                                </div>
+                            </div>
+
+                            <!-- Navigation -->
+                            <div class="row">
+                                <div class="col-lg-4">
+                                    <label for="navigation">
+                                        As per the navigation of your website, kindly state the title of your
+                                        WebPages: (E.g.: Company Profile, Contact us etc.) *
+                                        <span class="initial"></span>
+                                    </label>
+                                </div>
+                                <div class="col-lg-8">
+                                    <textarea placeholder="Describe Here" name="navigation" required
                                         class="form-control" rows="5"></textarea>
                                 </div>
                             </div>
 
-
+                            <!-- Feeling -->
                             <div class="row">
                                 <div class="col-lg-4">
-                                    <label for="">As per the navigation of your website, kindly state the title of your
-                                        WebPages: (E.g.: Company Profile, Contact us etc.) *<span
-                                            class="initial"></span></label>
-                                </div>
-                                <div class="col-lg-8">
-                                    <textarea placeholder="Describe Here " name="navigation" required=""
-                                        class="form-control" rows="5"></textarea>
-                                </div>
-                            </div>
-
-
-                            <div class="row">
-                                <div class="col-lg-4">
-                                    <label for="">What type of overall feeling would you like to project with your new
+                                    <label for="feeling">
+                                        What type of overall feeling would you like to project with your new
                                         Website Domain? (Corporate, fun, high-tech, etc...) Leave this field blank if
-                                        you would like us to make this determination. <span
-                                            class="initial"></span></label>
+                                        you would like us to make this determination.
+                                        <span class="initial"></span>
+                                    </label>
                                 </div>
                                 <div class="col-lg-8">
-                                    <textarea placeholder="Describe Here " name="feeling" class="form-control"
+                                    <textarea placeholder="Describe Here" name="feeling" class="form-control"
                                         rows="5"></textarea>
                                 </div>
                             </div>
 
-
-
+                            <!-- Description -->
                             <div class="row">
                                 <div class="col-lg-4">
-                                    <label for="">Please give a brief description of your business: (What type of
-                                        products or services does your company supply? etc...) *<span
-                                            class="initial"></span></label>
+                                    <label for="description">
+                                        Please give a brief description of your business: (What type of
+                                        products or services does your company supply? etc...) *
+                                        <span class="initial"></span>
+                                    </label>
                                 </div>
                                 <div class="col-lg-8">
-                                    <textarea placeholder="Describe Here " name="description" required=""
+                                    <textarea placeholder="Describe Here" name="description" required
                                         class="form-control" rows="5"></textarea>
                                 </div>
                             </div>
 
-
-
-
-
+                            <!-- Audience -->
                             <div class="row">
                                 <div class="col-lg-4">
-                                    <label for="">State the target audience of your website: <span
-                                            class="initial"></span></label>
+                                    <label for="audience">
+                                        State the target audience of your website:
+                                        <span class="initial"></span>
+                                    </label>
                                 </div>
                                 <div class="col-lg-8">
-                                    <textarea placeholder="Describe Here " name="audience" class="form-control"
+                                    <textarea placeholder="Describe Here" name="audience" class="form-control"
                                         rows="5"></textarea>
                                 </div>
                             </div>
 
-
-
+                            <!-- Design Specification -->
                             <div class="row">
                                 <div class="col-lg-4">
-                                    <label for="">Do you have any specific design, preferences? If yes, please mention a
+                                    <label for="design_specification">
+                                        Do you have any specific design preferences? If yes, please mention a
                                         reference: (If you have any particular likes or dislikes regarding any
-                                        competitor's website etc.) *<span class="initial"></span></label>
+                                        competitor's website etc.) *
+                                        <span class="initial"></span>
+                                    </label>
                                 </div>
                                 <div class="col-lg-8">
-                                    <textarea placeholder="Describe Here " name="design_specification" required=""
+                                    <textarea placeholder="Describe Here" name="design_specification" required
                                         class="form-control" rows="5"></textarea>
                                 </div>
                             </div>
 
-
-
+                            <!-- Comments -->
                             <div class="row">
                                 <div class="col-lg-4">
-                                    <label for="">Do you have any additional comments? <span
-                                            class="initial"></span></label>
+                                    <label for="comments">
+                                        Do you have any additional comments?
+                                        <span class="initial"></span>
+                                    </label>
                                 </div>
                                 <div class="col-lg-8">
-                                    <textarea placeholder="Describe Here " name="comments" class="form-control"
+                                    <textarea placeholder="Describe Here" name="comments" class="form-control"
                                         rows="5"></textarea>
                                 </div>
                             </div>
 
-
-
-
-
+                            <!-- Domain and Hosting Details -->
                             <div class="row mt-5">
                                 <div class="col-12 mb-3">
                                     <h5>Domain and Web Hosting Details</h5>
                                     <strong>Please give us a few details about the domain name and hosting of the
-                                        website. </strong>
+                                        website.</strong>
                                 </div>
                             </div>
 
+                            <!-- Domain Name -->
                             <div class="row">
                                 <div class="col-md-6">
-                                    <label for="">Do you have a Domain Name?: <span
-                                            class="red font-size-20">*</span></label>
+                                    <label for="domain">
+                                        Do you have a Domain Name?: <span class="red font-size-20">*</span>
+                                    </label>
                                 </div>
                                 <div class="col-md-6">
-                                    <input type="radio" name="domain" id="domainYes" required="" value="Yes">
+                                    <input type="radio" name="domain" id="domainYes" value="Yes" required>
                                     <label class="display-inline-block" for="domainYes">Yes</label>
-                                    <input type="radio" class="margin-left-two" name="domain" id="domainNo" required="" value="No">
+                                    <input type="radio" class="margin-left-two" name="domain" id="domainNo" value="No"
+                                        required>
                                     <label class="display-inline-block" for="domainNo">No</label>
                                 </div>
                             </div>
 
-
+                            <!-- Hosting -->
                             <div class="row">
                                 <div class="col-md-6">
-                                    <label for="">Do you want us to provide
-                                        hosting for your website?: <span class="red font-size-20">*</span> </label>
+                                    <label for="hosting">
+                                        Do you want us to provide hosting for your website?: <span
+                                            class="red font-size-20">*</span>
+                                    </label>
                                 </div>
                                 <div class="col-md-6">
-                                    <input type="radio" name="hosting" required="" id="hostingYes" value="Yes">
+                                    <input type="radio" name="hosting" id="hostingYes" value="Yes" required>
                                     <label class="display-inline-block" for="hostingYes">Yes</label>
-                                    <input type="radio" class="margin-left-two" name="hosting" id="hostingNo" required="" value="No">
+                                    <input type="radio" class="margin-left-two" name="hosting" id="hostingNo" value="No"
+                                        required>
                                     <label class="display-inline-block" for="hostingNo">No</label>
                                 </div>
                             </div>
+
+                            <!-- Consent Checkbox -->
                             <div class="row" style="margin:20px 0;">
                                 <div class="row margin-bottom-five">
-                                    <input type="checkbox" class="form-check-input" id="click" required="required">
-                                    <label class="form-check-label" for="click">by clicking the submit button below you
-                                        will be giving permission to contact via SMS regarding your digital
-                                        services</label>
+                                    <input type="checkbox" class="form-check-input" id="click" name="consent"
+                                        value="Yes" required>
+                                    <label class="form-check-label" for="click">
+                                        By clicking the submit button below you will be giving permission to contact via
+                                        SMS regarding your digital services
+                                    </label>
                                 </div>
                             </div>
+
+                            <!-- Note -->
                             <div class="row" style="margin:20px 0;">
                                 <div class="row margin-bottom-five">
-                                    <label class="display-inline-block" for=""><span class="mr-3"
-                                            style="color: red;">Note : </span>We will send you a "Page under
-                                        construction" template on your respective domain name, very soon. Meanwhile, our
-                                        professional designers will be working on your custom website design. It will
-                                        get uploaded as soon as you approve the final design.</label>
+                                    <label class="display-inline-block">
+                                        <span class="mr-3" style="color: red;">Note:</span>
+                                        We will send you a "Page under construction" template on your respective domain
+                                        name, very soon. Meanwhile, our professional designers will be working on your
+                                        custom website design. It will get uploaded as soon as you approve the final
+                                        design.
+                                    </label>
                                 </div>
                             </div>
+
+                            <!-- Message Display -->
+                            <div id="formMessage"></div>
+
+                            <!-- Submit Button -->
                             <div class="row">
                                 <div class="col-12">
-                                    <button type="submit" class=" submitform btn btn-1 p-3 px-5 "
-                                        disabled="disabled">Submit</button>
+                                    <button type="submit" class="submitform btn btn-1 p-3 px-5">
+                                        Submit
+                                    </button>
+
                                 </div>
                             </div>
-
-
-
                         </div>
-
-
                     </form>
+
 
                 </div>
 
@@ -244,6 +272,8 @@
         </div>
 
     </section>
+
+    <script src="js/web-brief.js"></script>
 </body>
 
 </html>

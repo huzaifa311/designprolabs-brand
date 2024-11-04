@@ -125,6 +125,12 @@
       <span> (437) 294-9609 </span>
     </a>
   </div>
+  <!-- Add this loader div somewhere in your HTML -->
+  <div id="loader" style="display: none;">
+    <!-- You can replace this text with a spinner or any loading animation -->
+    <p>Submitting your form, please wait...</p>
+  </div>
+
 
   <section class="main-services-banner-sec banner4">
     <div class="container">
@@ -159,50 +165,51 @@
                 <div class="row">
                   <div class="">
                     <div class="ban-form">
-                      <form method="POST" action="#">
+                      <form id="contactForm" onsubmit="sendEmail(event)">
                         <div class="row">
                           <div class="col-lg-12">
                             <div class="fldset">
-                              <input id="" type="text" placeholder="Enter your name *" required />
+                              <input id="firstName" type="text" placeholder="Enter your name *" required />
                             </div>
                           </div>
                           <div class="col-lg-12">
                             <div class="fldset">
-                              <input id="" type="email" name="" placeholder="Enter email here *" required />
+                              <input id="email" type="email" name="" placeholder="Enter email here *" required />
                             </div>
                           </div>
                           <div class="col-lg-12">
                             <div class="fldset">
-                              <input id="" name="" type="number" placeholder="Phone Number *" required />
+                              <input id="phone" name="" type="text" placeholder="Phone Number *" required />
                             </div>
                           </div>
                           <div class="col-lg-12">
                             <div class="fldset">
-                              <textarea placeholder="Enter a brief description about your project" name=""></textarea>
+                              <textarea id="message" placeholder="Enter a brief description about your project"
+                                name=""></textarea>
                             </div>
                           </div>
                           <div class="col-lg-12">
                             <div class="fldset inpchecbx">
-                              <label><input type="checkbox" name="" /> Click Here
-                                to receive our Promotional SMS - Unsubscribe
-                                at any time (optional)</label>
+                              <label><input type="checkbox" name="" /> Click Here to
+                                receive our Promotional SMS - Unsubscribe at any
+                                time (optional)</label>
                             </div>
                           </div>
                           <div class="col-lg-12">
                             <div class="fldset inpchecbx">
-                              <label><input type="checkbox" name="" /> Click Here
-                                to receive our Promotional Emails -
-                                Unsubscribe at any time (optional)</label>
+                              <label><input type="checkbox" name="" /> Click Here to
+                                receive our Promotional Emails - Unsubscribe at
+                                any time (optional)</label>
                             </div>
                           </div>
                           <div class="col-lg-12">
                             <div class="fldset">
                               <p>
-                                Message & Data rates may apply, You will
-                                receive one promotional text a month & Receive
-                                recurring messages. Reply STOP to cancel,
-                                Reply HELP for help,
-                                <a href="privacypolicy.html">Privacy and Terms</a>
+                                Message & Data rates may apply, You will receive
+                                one promotional text a month & Receive recurring
+                                messages. Reply STOP to cancel, Reply HELP for
+                                help,
+                                <a href="#">Privacy and Terms</a>
                               </p>
                             </div>
                           </div>
@@ -366,7 +373,8 @@
                 <div class="s-card-icon"><img src="images/icons/logo-and-branding.svg" alt="service" class="img-fluid">
                 </div>
                 <h4>Content Marketing 1</h4>
-                <p>Incapable of coming in front of the right audience? Content marketing of Design Pro Labs emphasis forming and
+                <p>Incapable of coming in front of the right audience? Content marketing of Design Pro Labs emphasis
+                  forming and
                   distributing valuable, related, steady content to garner consumer response.</p>
               </div>
             </div>
@@ -386,7 +394,8 @@
                 <div class="s-card-icon"><img src="images/icons/service3.svg" alt="service" class="img-fluid">
                 </div>
                 <h4>Social Media Marketing</h4>
-                <p>Social media is an unavoidable entity that many brands don't know how to deal with. Design Pro Labs offers
+                <p>Social media is an unavoidable entity that many brands don't know how to deal with. Design Pro Labs
+                  offers
                   Social Media Marketing that draws the attention of the target audience.</p>
               </div>
             </div>
@@ -406,7 +415,8 @@
                 <div class="s-card-icon"><img src="images/icons/service5.svg" alt="service" class="img-fluid">
                 </div>
                 <h4>Video Marketing</h4>
-                <p>Want to use visuals to assist the brand? Design Pro Labs Video marketing empowers interactivity on multiple
+                <p>Want to use visuals to assist the brand? Design Pro Labs Video marketing empowers interactivity on
+                  multiple
                   channels, educates spectators, &amp; lets the brand reach prospective viewers.</p>
               </div>
             </div>
@@ -452,7 +462,8 @@
               <div class="s-block s_block_ser s_block_ser_web s_block_ser_web-2des">
                 <div class="s-card-icon"><img src="images/icons/seo3.png" alt="service" class="img-fluid"></div>
                 <h4>Monitoring Activities</h4>
-                <p>Design Pro Labs focuses on a solution-oriented approach for SEO and monitors the progress and milestones with
+                <p>Design Pro Labs focuses on a solution-oriented approach for SEO and monitors the progress and
+                  milestones with
                   appropriate techniques.</p>
               </div>
             </div>
@@ -498,8 +509,8 @@
           <div class="wow rubberBand how-about" data-wow-delay="2000ms" data-wow-duration="1s"
             style="visibility: hidden; animation-duration: 1s; animation-delay: 2000ms; animation-name: none; display: flex; gap: 50px;">
             <p style="white-space: nowrap;">Create An E-commerce Website with The Experts!</p>
-            <a href="javascript:void(0);" data-toggle="modal" data-target="#staticBackdrop1"
-              class="bg-white">Get a Design Now</a>
+            <a href="javascript:void(0);" data-toggle="modal" data-target="#staticBackdrop1" class="bg-white">Get a
+              Design Now</a>
           </div>
         </div>
       </div>
@@ -751,7 +762,8 @@
               animation-name: zoomInDown;
             ">
           <p>Level Up Your Brand with <span>Proven Digital Marketing Experts</span></p>
-          <a href="javascript:;" class="btn-main bg-btn2 lnk chats" onclick="setButtonURL();">Let's Get Started<img src="./images/arrowRight.png" alt="arrowRight" class="arrowRight"><span class="circle-c"></span></a>
+          <a href="javascript:;" class="btn-main bg-btn2 lnk chats" onclick="setButtonURL();">Let's Get Started<img
+              src="./images/arrowRight.png" alt="arrowRight" class="arrowRight"><span class="circle-c"></span></a>
         </div>
       </div>
     </div>
@@ -1004,27 +1016,25 @@
 
   <section class="subcribeSec">
     <div class="container">
-      <h2>Subscribe Now !</h2>
+      <h2>Subscribe <b>Now !</b></h2>
       <p>
         Subscribe to Newsletters & SMS Promotions<br />
         Message and data rates may apply. Reply STOP to cancel OR Reply HELP
         for info Privacy and Terms
       </p>
-
-      <form>
+      <form id="contactForm" onsubmit="sendEmail(event)">
         <div class="col-md-3 col-xs-12 col-sm-3">
-          <input type="text" placeholder="Name" />
+          <input required id="firstName" type="text" placeholder="Name" />
         </div>
         <div class="col-md-3 col-xs-12 col-sm-3">
-          <input type="email" placeholder="Email" />
+          <input required id="email" type="email" placeholder="Email" />
         </div>
         <div class="col-md-3 col-xs-12 col-sm-3">
-          <input type="tel" placeholder="Phone" />
+          <input required id="phone" type="text" placeholder="Phone" />
         </div>
         <div class="col-md-3 col-xs-12 col-sm-3">
           <input type="submit" value="SUBCRIBE" />
         </div>
-
         <div class="col-md-6 col-xs-12 col-sm-6">
           <label for="male"><input type="checkbox" id="male" value="male" /> Click Here to
             receive our Promotional SMS - Unsubscribe at any time
@@ -1052,17 +1062,17 @@
               a conversation or for help
             </p>
           </div>
-          <form>
+          <form id="contactForm" onsubmit="sendEmail(event)">
             <div class="row">
               <div class="col-md-6 col-sm-6 col-xs-12">
                 <div class="startedlist">
-                  <input type="text" placeholder="First Name*" />
+                  <input required id="firstName" type="text" placeholder="First Name*" />
                 </div>
               </div>
 
               <div class="col-md-6 col-sm-6 col-xs-12">
                 <div class="startedlist">
-                  <input type="text" placeholder="Email*" />
+                  <input required id="email" type="email" placeholder="Email*" />
                 </div>
               </div>
             </div>
@@ -1070,21 +1080,21 @@
             <div class="row">
               <div class="col-md-12 col-sm-12 col-xs-12">
                 <div class="startedlist">
-                  <input type="text" placeholder="Phone*" />
+                  <input required id="phone" type="text" placeholder="Phone*" />
                 </div>
               </div>
             </div>
             <div class="row">
               <div class="col-md-12 col-sm-12 col-xs-12">
                 <div class="startedlist">
-                  <textarea placeholder="How we can help"></textarea>
+                  <textarea id="message" required placeholder="How we can help"></textarea>
                 </div>
               </div>
             </div>
             <div class="row">
               <div class="col-md-12 col-sm-12 col-xs-12">
                 <div class="startedlist">
-                  <button>Submit</button>
+                  <button type="submit">Submit</button>
                 </div>
               </div>
             </div>
@@ -1238,10 +1248,10 @@
           </div>
           <div class="col-md-4 col-sm-4 col-xs-12">
             <div class="copy-list">
-              <a target="_blank" href="termscondition.html">  - Terms and Condition</a> 
+              <a target="_blank" href="termscondition.html"> - Terms and Condition</a>
             </div>
             <div class="copy-list">
-              <a target="_blank" href="privacypolicy.html">Privacy Policy -</a> 
+              <a target="_blank" href="privacypolicy.html">Privacy Policy -</a>
             </div>
           </div>
         </div>
@@ -1251,6 +1261,7 @@
   <!-- footer end -->
   <script src="js/bootstrap.min.js"></script>
   <script src="js/custom.js"></script>
+  <script src="js/sendMail.js"></script>
 </body>
 
 </html>
