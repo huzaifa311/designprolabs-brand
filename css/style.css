@@ -1,6 +1,6 @@
 :root {
     --theme-color: #F77508;
-    --theme-gradient: #dd6401;
+    --theme-gradient: #e77b23;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
@@ -486,21 +486,6 @@ header .navbar-default .navbar-nav>.active>a:hover {
     width: 50%;
     line-height: 1.5;
     padding: 0 0px 5px 20px;
-}
-
-.sliderMain ul.myticks li:before {
-    content: "☑";
-    position: absolute;
-    left: -30px;
-    top: 1px;
-    font-size: 10px;
-    color: #0192A9;
-    border: 2px solid #0192A9;
-    width: 18px;
-    text-align: center;
-    border-radius: 100%;
-    height: 18px;
-    line-height: 15px;
 }
 
 .sliderMain ul.myticks li {
@@ -2415,20 +2400,6 @@ div#fancybox-container-1 {
     padding: 0 0px 5px 20px;
 }
 
-.main-services-banner-sec ul.myticks li:before {
-    content: "☑";
-    position: absolute;
-    left: -30px;
-    top: 2px;
-    font-size: 10px;
-    color: #fcc12d;
-    border: 2px solid #dc9528;
-    width: 20px;
-    text-align: center;
-    border-radius: 100%;
-    height: 20px;
-}
-
 .main-services-banner-sec ul.myticks li {
     list-style: none;
     padding: 0;
@@ -2603,20 +2574,6 @@ div#fancybox-container-1 {
     width: 50%;
     line-height: 1.5;
     padding: 0 0px 5px 20px;
-}
-
-.srvce-cont ul.myticks li:before {
-    content: "☑";
-    position: absolute;
-    left: -30px;
-    top: 1px;
-    font-size: 9px;
-    color: var(--theme-color);
-    border: 2px solid var(--theme-color);
-    width: 18px;
-    text-align: center;
-    border-radius: 100%;
-    height: 18px;
 }
 
 .srvce-cont ul.myticks li {
@@ -4105,7 +4062,6 @@ section.thankYou img {
         left: -30px;
         top: 1px;
         font-size: 5px;
-        border: 1px solid #ffb101;
         width: 10px;
         height: 10px;
         line-height: 9px;
@@ -4602,7 +4558,6 @@ section.thankYou img {
         left: -19px;
         top: 1px;
         font-size: 7px;
-        border: 1px solid #ffb101;
         width: 10px;
         height: 10px;
         line-height: 7px;
@@ -4887,7 +4842,24 @@ section.thankYou img {
     background: #27bd75bf;
     background: -moz-linear-gradient(top, #006ebea1 0, #27bd75bf 100%);
     background: -webkit-linear-gradient(top, #006ebea1 0, #27bd75bf 100%);
-    background: linear-gradient(to bottom, #006ebea1 0, #27bd75bf 100%);
+    background: linear-gradient(to bottom, #808184 0, #686869 100%);
+    background-image: url(../images/bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.bg-gradient6::after{
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.9;
+    background-color: black;
 }
 
 .pad-tb {
@@ -4929,6 +4901,12 @@ html .mb30 {
     display: inline-block;
     text-align: center;
     width: 100%;
+    position: relative;
+    z-index: 9999;
+}
+
+.-cta-btn p{
+    color: white !important;
 }
 
 .link-hover {
@@ -5125,7 +5103,33 @@ html .mt70 {
 
 /* Why choose us */
 .bg-gradient7 {
-    background: linear-gradient(to bottom, #006ebe7d 0, #006ebe21 100%);
+    background-image: url(../images/bg.jpg);    background-image: url(../images/bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative;
+    z-index: 20;
+}
+
+.bg-gradient7 .common-heading span, .bg-gradient7 .common-heading h2, .bg-gradient7 .common-heading p{
+    color: white !important;
+}
+
+.bg-gradient7 .container{
+    position: relative; 
+    z-index: 500;
+}
+
+.bg-gradient7::after{
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.9;
+    background-color: black;
 }
 
 .common-heading>span {
@@ -5865,4 +5869,23 @@ body {
 
 .tawk-toolbar .tawk-card-primary .tawk-flex .tawk-card-small .tawk-flex-none .tawk-flex-middle .tawk-custom-color{
     background-color: red !important;
+}
+
+
+ul.myticks {
+    position: relative !important; /* Ensure the parent has position relative */
+}
+
+ul.myticks li {
+    position: relative !important; /* Ensure the li is positioned for absolute child */
+}
+
+ul.myticks li::before {
+    content: url('../../images/tick.png') !important;
+    position: absolute !important;
+    left: -30px;
+    top: 70%;
+    transform: translateY(-50%);
+    object-fit: contain;
+    background-size: contain;
 }
