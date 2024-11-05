@@ -1,5 +1,6 @@
 :root {
-    --theme-color: #0192A9;
+    --theme-color: #F77508;
+    --theme-gradient: #dd6401;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
@@ -252,7 +253,7 @@ header .dropdown-menu li a {
 
 header .dropdown-menu li a:hover,
 header .dropdown-menu li a:focus {
-    background-image: linear-gradient(to right, var(--theme-color), #170761);
+    background-image: linear-gradient(to right, var(--theme-color), var(--theme-gradient));
     color: #fff;
 }
 
@@ -357,7 +358,7 @@ header .navbar-default .navbar-nav>.active>a:hover {
 }
 
 .sliderBtn {
-    background-image: linear-gradient(to right, var(--theme-color), #170761);
+    background-image: linear-gradient(to right, var(--theme-color), var(--theme-gradient));
     color: #444;
     padding: 15px 40px !Important;
     border-radius: 5px;
@@ -433,7 +434,7 @@ header .navbar-default .navbar-nav>.active>a:hover {
 
 .sliderMain h1 b {
     font-weight: 800;
-    background-image: linear-gradient(to right, var(--theme-color), #170761);
+    background-image: linear-gradient(to right, var(--theme-color), var(--theme-gradient));
     padding: 0 20px;
     color: #fff;
 }
@@ -458,7 +459,7 @@ header .navbar-default .navbar-nav>.active>a:hover {
 
 .sliderMain h2 b {
     font-weight: 800;
-    background-image: linear-gradient(to right, var(--theme-color), #170761);
+    background-image: linear-gradient(to right, var(--theme-color), var(--theme-gradient));
     padding: 0 20px;
     color: #fff;
 }
@@ -488,7 +489,7 @@ header .navbar-default .navbar-nav>.active>a:hover {
 }
 
 .sliderMain ul.myticks li:before {
-    content: "\f00c";
+    content: "☑";
     position: absolute;
     left: -30px;
     top: 1px;
@@ -756,7 +757,7 @@ header .navbar-default .navbar-nav>.active>a:hover {
     -moz-transition: 0.4s;
     -o-transition: 0.4s;
     transition: 0.4s;
-    background-image: linear-gradient(to right, var(--theme-color), #170761);
+    background-image: linear-gradient(to right, var(--theme-color), var(--theme-gradient));
 }
 
 .servicesec .boxwrap li.active i.two {
@@ -850,7 +851,7 @@ header .navbar-default .navbar-nav>.active>a:hover {
 }
 
 .servicesec .main-btn {
-    background-image: linear-gradient(to right, var(--theme-color), #170761);
+    background-image: linear-gradient(to right, var(--theme-color), var(--theme-gradient));
     color: #fff;
     padding: 15px 40px !Important;
     border-radius: 5px;
@@ -926,7 +927,7 @@ header .navbar-default .navbar-nav>.active>a:hover {
 
 .DigitalAgencyBox:hover {
     box-shadow: 8px 14px 92px rgba(0, 0, 0, .13) !important;
-    background-image: linear-gradient(to right, var(--theme-color), #170761);
+    background-image: linear-gradient(to right, var(--theme-color), var(--theme-gradient));
     filter: inherit;
 }
 
@@ -1052,7 +1053,7 @@ header .navbar-default .navbar-nav>.active>a:hover {
 }
 
 .subcribeSec {
-    background-image: linear-gradient(to right, var(--theme-color), #170761);
+    background-image: linear-gradient(to right, var(--theme-color), var(--theme-gradient));
     padding: 50px 0;
 }
 
@@ -1250,7 +1251,7 @@ header .navbar-default .navbar-nav>.active>a:hover {
 }
 
 .startedlist button {
-    background-image: linear-gradient(to right, var(--theme-color), #170761);
+    background-image: linear-gradient(to right, var(--theme-color), var(--theme-gradient));
     color: #fff;
     border: 0;
     padding: 16px 60px;
@@ -1425,7 +1426,7 @@ footer {
     /* Chrome10-25,Safari5.1-6 */
     /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     /* IE6-9 fallback on horizontal gradient */
-    background-image: linear-gradient(to right, var(--theme-color), #170761);
+    background-image: linear-gradient(to right, var(--theme-color), var(--theme-gradient));
 }
 
 .cmpo-prc-inner ul {
@@ -1671,7 +1672,7 @@ a.out-cmp-btn {
 .pakagesmain .nav-tabs>li.active>a,
 .pakagesmain .nav-tabs>li.active>a:focus,
 .pakagesmain .nav-tabs>li.active>a:hover {
-    background-image: linear-gradient(to right, var(--theme-color), #170761);
+    background-image: linear-gradient(to right, var(--theme-color), var(--theme-gradient));
     color: #fff;
 }
 
@@ -1737,7 +1738,7 @@ a.out-cmp-btn {
     -ms-transform: scale(1.03);
     -webkit-transform: scale(1.03);
     border-color: #fff;
-    background-image: linear-gradient(to right, var(--theme-color), #170761);
+    background-image: linear-gradient(to right, var(--theme-color), var(--theme-gradient));
     box-shadow: 0px 1px 17px 10px rgba(0, 0, 0, 0.06);
     -webkit-box-shadow: 0px 1px 17px 10px rgba(0, 0, 0, 0.06);
     -o-box-shadow: 0px 1px 17px 10px rgba(0, 0, 0, 0.06);
@@ -1898,7 +1899,7 @@ span.main_price {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-    background-image: linear-gradient(to right, var(--theme-color), #170761);
+    background-image: linear-gradient(to right, var(--theme-color), var(--theme-gradient));
 }
 
 /* Handle on hover */
@@ -2023,7 +2024,7 @@ span.main_price {
     line-height: 1.42857143;
     margin: 0px 6px 0;
     border: 1px solid transparent;
-    background-image: linear-gradient(to right, var(--theme-color), #170761);
+    background-image: linear-gradient(to right, var(--theme-color), var(--theme-gradient));
     padding: 9px 16px !important;
     border-radius: 5px;
     font-weight: 600;
@@ -2249,7 +2250,7 @@ span.main_price {
 .Portfolio .nav-tabs>li.active>a,
 .Portfolio .nav-tabs>li.active>a:focus,
 .Portfolio .nav-tabs>li.active>a:hover {
-    background-image: linear-gradient(to right, var(--theme-color), #170761);
+    background-image: linear-gradient(to right, var(--theme-color), var(--theme-gradient));
     color: #fff;
 }
 
@@ -2415,7 +2416,7 @@ div#fancybox-container-1 {
 }
 
 .main-services-banner-sec ul.myticks li:before {
-    content: "\f00c";
+    content: "☑";
     position: absolute;
     left: -30px;
     top: 2px;
@@ -2479,7 +2480,7 @@ div#fancybox-container-1 {
 
 .srvce-cont h1 {
     font-size: 54px;
-    color: #0B67B0 !important;
+    color: var(--theme-color) !important;
 }
 
 .srvce-cont p {
@@ -2495,7 +2496,7 @@ div#fancybox-container-1 {
     -o-transition: 0.4s;
     transition: 0.4s;
     color: #fff;
-    background-image: linear-gradient(to right, var(--theme-color), #170761);
+    background-image: linear-gradient(to right, var(--theme-color), var(--theme-gradient));
     padding: 15px 30px;
     display: inline-block;
     margin-top: 20px;
@@ -2605,7 +2606,7 @@ div#fancybox-container-1 {
 }
 
 .srvce-cont ul.myticks li:before {
-    content: "\f00c";
+    content: "☑";
     position: absolute;
     left: -30px;
     top: 1px;
@@ -2652,7 +2653,7 @@ div#fancybox-container-1 {
     width: 380px;
     height: 310px;
     position: absolute;
-    background-image: linear-gradient(to right, var(--theme-color), #170761);
+    background-image: linear-gradient(to right, var(--theme-color), var(--theme-gradient));
     z-index: -2;
     left: auto;
     right: -10px;
@@ -2665,7 +2666,7 @@ div#fancybox-container-1 {
     width: 430px;
     height: 310px;
     position: absolute;
-    background-image: linear-gradient(to right, var(--theme-color), #170761);
+    background-image: linear-gradient(to right, var(--theme-color), var(--theme-gradient));
     z-index: -2;
     left: 0px;
     right: 0;
@@ -2703,7 +2704,7 @@ div#fancybox-container-1 {
     font-weight: 800;
     letter-spacing: 0px;
     color: #000;
-    background-image: linear-gradient(to right, var(--theme-color), #170761);
+    background-image: linear-gradient(to right, var(--theme-color), var(--theme-gradient));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -2832,7 +2833,7 @@ div#fancybox-container-1 {
     -moz-transition: 0.4s;
     -o-transition: 0.4s;
     transition: 0.4s;
-    background-image: linear-gradient(to right, var(--theme-color), #170761);
+    background-image: linear-gradient(to right, var(--theme-color), var(--theme-gradient));
     margin: 20px 0 0 0;
     display: table;
     border-radius: 5px;
@@ -3115,7 +3116,7 @@ div#fancybox-container-1 {
     -o-transition: all 0.3s ease;
     transition: all 0.3s ease;
     z-index: 9999;
-    background-image: linear-gradient(to right, var(--theme-color), #170761);
+    background-image: linear-gradient(to right, var(--theme-color), var(--theme-gradient));
     font-weight: 600;
     font-size: 12px;
 }
@@ -3154,7 +3155,7 @@ div#fancybox-container-1 {
     transition: all 0.3s ease;
     border-radius: 3px 0px 0px 3px;
     z-index: 9999;
-    background-image: linear-gradient(to right, var(--theme-color), #170761);
+    background-image: linear-gradient(to right, var(--theme-color), var(--theme-gradient));
 }
 
 .btns_wrap .chat_wrap span.icoo,
@@ -3178,7 +3179,7 @@ div#fancybox-container-1 {
     vertical-align: middle;
     display: inline-block;
     border-radius: 10px 0px 0px 10px;
-    background-image: linear-gradient(to right, var(--theme-color), #170761);
+    background-image: linear-gradient(to right, var(--theme-color), var(--theme-gradient));
     width: 60px;
 }
 
@@ -3424,7 +3425,7 @@ section.what-our-client-sec h2 {
 
 section.what-our-client-sec h2 b {
     font-weight: 600;
-    color: #0B67B0;
+    color: var(--theme-color);
 }
 
 section.what-our-client-sec .our-client-text h6 {
@@ -3524,7 +3525,7 @@ section.what-our-client-sec .our-client-text h6 {
 }
 
 .reviews-box h6 {
-    color: #0B67B0;
+    color: var(--theme-color);
     line-height: 17px;
     font-size: 14px;
     font-weight: 500;
@@ -3862,7 +3863,7 @@ section.thankYou img {
 }
 
 .packagesInclude ul li:before {
-    content: "\f00c";
+    content: "☑";
     position: absolute;
     left: auto;
     right: 0;
@@ -4001,7 +4002,7 @@ section.thankYou img {
         padding: 5px 0;
         text-align: center;
         margin: 0;
-        background-image: linear-gradient(to right, var(--theme-color), #170761);
+        background-image: linear-gradient(to right, var(--theme-color), var(--theme-gradient));
     }
 
     .topBarList ul {
@@ -4907,7 +4908,7 @@ section.thankYou img {
 }
 
 .common-heading.ptag h2 b {
-    color: #0B67B0;
+    color: var(--theme-color);
 }
 
 html .mb30 {
@@ -5775,7 +5776,7 @@ body {
 }
 
 .popupForm input {
-    border: 1.8px solid #006ebe;
+    border: 1.8px solid var(--theme-color);
     margin-bottom: 18px;
     padding: 20px 12px;
     width: 100%;
