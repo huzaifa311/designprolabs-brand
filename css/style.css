@@ -119,7 +119,7 @@ ul {
 header {
     position: fixed;
     width: 100%;
-    z-index: 22;
+    z-index: 3632;
     transition: 0.5s;
     background: #ffffff;
     box-shadow: 0 0 80px rgb(0 0 0 / 20%);
@@ -4840,8 +4840,8 @@ section.thankYou img {
 
 .bg-gradient6 {
     background: #27bd75bf;
-    background: -moz-linear-gradient(top, #006ebea1 0, #27bd75bf 100%);
-    background: -webkit-linear-gradient(top, #006ebea1 0, #27bd75bf 100%);
+    background: -moz-linear-gradient(top, var(--theme-color)a1 0, #27bd75bf 100%);
+    background: -webkit-linear-gradient(top, var(--theme-color)a1 0, #27bd75bf 100%);
     background: linear-gradient(to bottom, #808184 0, #686869 100%);
     background-image: url(../images/bg.jpg);
     background-position: center;
@@ -4938,12 +4938,12 @@ html .mb30 {
 
 .-cta-btn p span {
     font-weight: 600;
-    color: #006ebe !important;
+    color: var(--theme-color) !important;
 }
 
 .-cta-btn p span {
     font-weight: 600;
-    color: #006ebe !important;
+    color: var(--theme-color) !important;
 }
 
 .-cta-btn a {
@@ -5030,7 +5030,7 @@ html .mt30 {
     border-radius: 8px;
 
     box-shadow: 0 3.4px 2.7px -30px rgba(0, 0, 0, .059), 0 8.2px 8.9px -30px rgba(0, 0, 0, .071), 0 25px 40px -30px rgba(0, 0, 0, .2);
-    border: 1px solid #006ebea1;
+    border: 1px solid var(--theme-color)a1;
 }
 
 .s-card-icon {
@@ -5790,7 +5790,7 @@ body {
 }
 
 .popupForm textarea {
-    border: 1.8px solid #006ebe;
+    border: 1.8px solid var(--theme-color);
     margin-bottom: 18px;
     width: 100%;
     padding: 10px 12px;
@@ -5912,4 +5912,8 @@ body {
         width: 12px;
         height: 12px;
     }
+}
+
+.-cta-btn{
+    z-index: 50 !important;
 }
