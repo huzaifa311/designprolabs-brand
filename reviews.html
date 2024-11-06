@@ -127,21 +127,23 @@
         </div>
     </header>
     <div class="btns_wrap">
-        <a href="javascript:;" class="chat_wrap sea-bg flex items-center px-4 py-2 bg-blue-500 text-white rounded-full shadow-lg hover:bg-blue-600 transition duration-300" onclick="openTawkChat();">
+        <a href="javascript:;"
+            class="chat_wrap sea-bg flex items-center px-4 py-2 bg-blue-500 text-white rounded-full shadow-lg hover:bg-blue-600 transition duration-300"
+            onclick="openTawkChat();">
             <span class="icoo sea-bg mr-2"><i class="fa fa-comment"></i></span>
             <span>Chat With Us</span>
-          </a>
+        </a>
         <a href="tel:4372949609" class="call_wrap sea-bg">
             <span class="icoo sea-bg"><i class="fa fa-phone"></i></span>
             <span> (437) 294-9609 </span>
         </a>
     </div>
     <!-- Add this loader div somewhere in your HTML -->
-<div id="loader" style="display: none;">
-    <!-- You can replace this text with a spinner or any loading animation -->
-    <p>Submitting your form, please wait...</p>
-  </div>
-  
+    <div id="loader" style="display: none;">
+        <!-- You can replace this text with a spinner or any loading animation -->
+        <p>Submitting your form, please wait...</p>
+    </div>
+
 
     <!-- banner started -->
 
@@ -161,11 +163,23 @@
                             they choose to work with no one else but us.
                         </p>
 
-                        <ul class="myticks clearfix">
-                            <li>Satisfaction Stories</li>
-                            <li>Experience Insights</li>
-                            <li>Innovation</li>
-                            <li>Expertise</li>
+                        <ul class="tickContainer">
+                            <div>
+                                <img src="images/tick.png" />
+                                <li>Satisfaction Stories</li>
+                            </div>
+                            <div>
+                                <img src="images/tick.png" />
+                                <li>Experience Insights</li>
+                            </div>
+                            <div>
+                                <img src="images/tick.png" />
+                                <li>Innovation</li>
+                            </div>
+                            <div>
+                                <img src="images/tick.png" />
+                                <li>Expertise</li>
+                            </div>
                         </ul>
 
                         <a href="javascript:;" class="book-call-now tc-image-effect-circle">Book your free consultation
@@ -183,58 +197,64 @@
                                         <div class="ban-form">
                                             <form id="contactForm" onsubmit="sendEmail(event)">
                                                 <div class="row">
-                                                  <div class="col-lg-12">
-                                                    <div class="fldset">
-                                                      <input id="firstName" type="text" placeholder="Enter your name *" required />
+                                                    <div class="col-lg-12">
+                                                        <div class="fldset">
+                                                            <input id="firstName" type="text"
+                                                                placeholder="Enter your name *" required />
+                                                        </div>
                                                     </div>
-                                                  </div>
-                                                  <div class="col-lg-12">
-                                                    <div class="fldset">
-                                                      <input id="email" type="email" name="" placeholder="Enter email here *" required />
+                                                    <div class="col-lg-12">
+                                                        <div class="fldset">
+                                                            <input id="email" type="email" name=""
+                                                                placeholder="Enter email here *" required />
+                                                        </div>
                                                     </div>
-                                                  </div>
-                                                  <div class="col-lg-12">
-                                                    <div class="fldset">
-                                                      <input id="phone" name="" type="text" placeholder="Phone Number *" required />
+                                                    <div class="col-lg-12">
+                                                        <div class="fldset">
+                                                            <input id="phone" name="" type="text"
+                                                                placeholder="Phone Number *" required />
+                                                        </div>
                                                     </div>
-                                                  </div>
-                                                  <div class="col-lg-12">
-                                                    <div class="fldset">
-                                                      <textarea id="message" placeholder="Enter a brief description about your project" name=""></textarea>
+                                                    <div class="col-lg-12">
+                                                        <div class="fldset">
+                                                            <textarea id="message"
+                                                                placeholder="Enter a brief description about your project"
+                                                                name=""></textarea>
+                                                        </div>
                                                     </div>
-                                                  </div>
-                                                  <div class="col-lg-12">
-                                                    <div class="fldset inpchecbx">
-                                                      <label><input type="checkbox" name="" /> Click Here to
-                                                        receive our Promotional SMS - Unsubscribe at any
-                                                        time (optional)</label>
+                                                    <div class="col-lg-12">
+                                                        <div class="fldset inpchecbx">
+                                                            <label><input type="checkbox" name="" /> Click Here to
+                                                                receive our Promotional SMS - Unsubscribe at any
+                                                                time (optional)</label>
+                                                        </div>
                                                     </div>
-                                                  </div>
-                                                  <div class="col-lg-12">
-                                                    <div class="fldset inpchecbx">
-                                                      <label><input type="checkbox" name="" /> Click Here to
-                                                        receive our Promotional Emails - Unsubscribe at
-                                                        any time (optional)</label>
+                                                    <div class="col-lg-12">
+                                                        <div class="fldset inpchecbx">
+                                                            <label><input type="checkbox" name="" /> Click Here to
+                                                                receive our Promotional Emails - Unsubscribe at
+                                                                any time (optional)</label>
+                                                        </div>
                                                     </div>
-                                                  </div>
-                                                  <div class="col-lg-12">
-                                                    <div class="fldset">
-                                                      <p>
-                                                        Message & Data rates may apply, You will receive
-                                                        one promotional text a month & Receive recurring
-                                                        messages. Reply STOP to cancel, Reply HELP for
-                                                        help,
-                                                        <a href="#">Privacy and Terms</a>
-                                                      </p>
+                                                    <div class="col-lg-12">
+                                                        <div class="fldset">
+                                                            <p>
+                                                                Message & Data rates may apply, You will receive
+                                                                one promotional text a month & Receive recurring
+                                                                messages. Reply STOP to cancel, Reply HELP for
+                                                                help,
+                                                                <a href="#">Privacy and Terms</a>
+                                                            </p>
+                                                        </div>
                                                     </div>
-                                                  </div>
-                                                  <div class="col-lg-12">
-                                                    <div class="submitbtn">
-                                                      <input name="submit" type="submit" placeholder="Connect With Us" required />
+                                                    <div class="col-lg-12">
+                                                        <div class="submitbtn">
+                                                            <input name="submit" type="submit"
+                                                                placeholder="Connect With Us" required />
+                                                        </div>
                                                     </div>
-                                                  </div>
                                                 </div>
-                                              </form>
+                                            </form>
                                         </div>
                                     </div>
                                 </div>

@@ -440,7 +440,7 @@ header .navbar-default .navbar-nav>.active>a:hover {
 }
 
 .sliderMain ul.myticks {
-    padding: 0 0 0 30px;
+    /* padding: 0 0 0 30px; */
 }
 
 .sliderMain h2 {
@@ -465,7 +465,7 @@ header .navbar-default .navbar-nav>.active>a:hover {
 }
 
 .sliderMain ul.myticks {
-    padding: 0 0 0 30px;
+    /* padding: 0 0 0 30px; */
 }
 
 .sliderMain p {
@@ -485,7 +485,7 @@ header .navbar-default .navbar-nav>.active>a:hover {
     float: left;
     width: 50%;
     line-height: 1.5;
-    padding: 0 0px 5px 20px;
+    padding: 0 0px 5px 0px;
 }
 
 .sliderMain ul.myticks li {
@@ -493,7 +493,7 @@ header .navbar-default .navbar-nav>.active>a:hover {
     padding: 0;
     margin: 4px 0;
     text-shadow: none;
-    padding-right: 30px;
+    /* padding-right: 30px; */
 }
 
 .sliderText {
@@ -2397,7 +2397,7 @@ div#fancybox-container-1 {
     float: left;
     width: 50%;
     line-height: 1.5;
-    padding: 0 0px 5px 20px;
+    padding: 0 0px 5px 0;
 }
 
 .main-services-banner-sec ul.myticks li {
@@ -2531,7 +2531,7 @@ div#fancybox-container-1 {
 }
 
 .srvce-cont ul.myticks {
-    padding: 0 0 0 30px;
+    padding: 0 0 0 0;
 }
 
 .srvce-cont h2 {
@@ -2553,7 +2553,7 @@ div#fancybox-container-1 {
 }
 
 .sliderMain ul.myticks {
-    padding: 10px 0 0 30px;
+    padding: 10px 0 0 0;
 }
 
 .srvce-cont p {
@@ -2573,7 +2573,7 @@ div#fancybox-container-1 {
     float: left;
     width: 50%;
     line-height: 1.5;
-    padding: 0 0px 5px 20px;
+    padding: 0 0px 5px 0;
 }
 
 .srvce-cont ul.myticks li {
@@ -2581,7 +2581,7 @@ div#fancybox-container-1 {
     padding: 0;
     margin: 5px 0;
     text-shadow: none;
-    padding-right: 30px;
+    padding-right: 0;
 }
 
 .banner-form {
@@ -3520,7 +3520,7 @@ section.what-our-client-sec .our-client-text h6 {
 
 #accordion a:hover,
 #accordion a:focus {
-    color: #0A68B0;
+    color: var(--theme-color);
     text-decoration: underline;
     outline: none !important;
 }
@@ -3537,7 +3537,7 @@ section.what-our-client-sec .our-client-text h6 {
     text-align: center;
     padding: 9px 9px;
     margin: -7px 0;
-    color: #0B65AD;
+    color: var(--theme-color);
     font-size: 21px;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -3547,7 +3547,7 @@ section.what-our-client-sec .our-client-text h6 {
 #accordion a.collapsed[data-toggle="collapse"]::before {
     content: "\f067";
     font: normal normal normal 14px/1 FontAwesome;
-    color: #0A68B0;
+    color: var(--theme-color);
     font-size: 21px;
 }
 
@@ -3569,7 +3569,7 @@ section.faq-sec h2 {
 
 section.faq-sec h2 b {
     font-weight: 600;
-    color: #0A68B0;
+    color: var(--theme-color);
 }
 
 section.faq-sec .panel {
@@ -3742,7 +3742,7 @@ section.thankYou img {
 
 .packageDetailMainBar h2 b {
     font-weight: 600;
-    color: #0A68B0;
+    color: var(--theme-color);
 }
 
 .packageDetailMainBar h6 {
@@ -4068,7 +4068,7 @@ section.thankYou img {
     }
 
     .sliderMain ul.myticks {
-        padding: 0px 0 0 30px;
+        padding: 0px 0 0 0;
     }
 
     .sliderMain a.right {
@@ -4564,7 +4564,7 @@ section.thankYou img {
     }
 
     .srvce-cont ul.myticks {
-        padding: 0 0 0 20px;
+        padding: 0 0 0 0;
         margin: 0;
     }
 
@@ -4851,7 +4851,7 @@ section.thankYou img {
     position: relative;
 }
 
-.bg-gradient6::after{
+.bg-gradient6::after {
     position: absolute;
     content: "";
     left: 0;
@@ -4905,7 +4905,7 @@ html .mb30 {
     z-index: 9999;
 }
 
-.-cta-btn p{
+.-cta-btn p {
     color: white !important;
 }
 
@@ -5103,7 +5103,8 @@ html .mt70 {
 
 /* Why choose us */
 .bg-gradient7 {
-    background-image: url(../images/bg.jpg);    background-image: url(../images/bg.jpg);
+    background-image: url(../images/bg.jpg);
+    background-image: url(../images/bg.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -5112,16 +5113,18 @@ html .mt70 {
     z-index: 20;
 }
 
-.bg-gradient7 .common-heading span, .bg-gradient7 .common-heading h2, .bg-gradient7 .common-heading p{
+.bg-gradient7 .common-heading span,
+.bg-gradient7 .common-heading h2,
+.bg-gradient7 .common-heading p {
     color: white !important;
 }
 
-.bg-gradient7 .container{
-    position: relative; 
+.bg-gradient7 .container {
+    position: relative;
     z-index: 500;
 }
 
-.bg-gradient7::after{
+.bg-gradient7::after {
     position: absolute;
     content: "";
     left: 0;
@@ -5291,7 +5294,7 @@ html .mt60 {
     font-size: 25px !important;
     font-weight: 600 !important;
     margin-bottom: 20px !important;
-    color: #09a9dd !important;
+    color: var(--theme-color) !important;
 }
 
 .customp {
@@ -5326,7 +5329,7 @@ html .mt60 {
     justify-content: center;
     align-items: center;
     font-size: xx-large;
-    color: var(--theme-color);
+    color: gray;
     font-weight: bolder;
 
 }
@@ -5853,11 +5856,12 @@ body {
     font-size: 1.5em;
 }
 
-.submitbtn{
+.submitbtn {
     display: flex;
     justify-content: center;
 }
-.submitbtn button{
+
+.submitbtn button {
     background-color: #FFB817;
     color: white;
     border: none;
@@ -5866,26 +5870,46 @@ body {
     font-size: medium;
 }
 
-
-.tawk-toolbar .tawk-card-primary .tawk-flex .tawk-card-small .tawk-flex-none .tawk-flex-middle .tawk-custom-color{
-    background-color: red !important;
+.tickContainer {
+    list-style-type: none;
+    padding-left: 0px;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    color: black !important;
+    margin-top: 15px;
+    row-gap: 1rem !important;
+    column-gap: 0.25rem !important;
 }
 
-
-ul.myticks {
-    position: relative !important; /* Ensure the parent has position relative */
+@media (max-width: 1200px) {
+    .tickContainer {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+        gap: 0.5rem;
+    }
 }
 
-ul.myticks li {
-    position: relative !important; /* Ensure the li is positioned for absolute child */
+.tickContainer img{
+    display: inline !important;
+    width: 19px;
+    height: 19px;
+    padding: 0 !important;
 }
 
-ul.myticks li::before {
-    content: url('../../images/tick.png') !important;
-    position: absolute !important;
-    left: -30px;
-    top: 70%;
-    transform: translateY(-50%);
-    object-fit: contain;
-    background-size: contain;
+.tickContainer div {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.tickContainer li {
+    display: inline-block !important;
+}
+@media (max-width: 500px) {
+    .tickContainer li{
+        font-size: 10px !important;
+    }
+    .tickContainer div img {
+        width: 12px;
+        height: 12px;
+    }
 }

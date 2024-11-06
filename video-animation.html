@@ -116,7 +116,9 @@
     </div>
   </header>
   <div class="btns_wrap">
-    <a href="javascript:;" class="chat_wrap sea-bg flex items-center px-4 py-2 bg-blue-500 text-white rounded-full shadow-lg hover:bg-blue-600 transition duration-300" onclick="openTawkChat();">
+    <a href="javascript:;"
+      class="chat_wrap sea-bg flex items-center px-4 py-2 bg-blue-500 text-white rounded-full shadow-lg hover:bg-blue-600 transition duration-300"
+      onclick="openTawkChat();">
       <span class="icoo sea-bg mr-2"><i class="fa fa-comment"></i></span>
       <span>Chat With Us</span>
     </a>
@@ -125,11 +127,11 @@
       <span>(437) 294-9609</span>
     </a>
   </div>
-<!-- Add this loader div somewhere in your HTML -->
-<div id="loader" style="display: none;">
-  <!-- You can replace this text with a spinner or any loading animation -->
-  <p>Submitting your form, please wait...</p>
-</div>
+  <!-- Add this loader div somewhere in your HTML -->
+  <div id="loader" style="display: none;">
+    <!-- You can replace this text with a spinner or any loading animation -->
+    <p>Submitting your form, please wait...</p>
+  </div>
 
   <section class="main-services-banner-sec banner3">
     <div class="container">
@@ -142,11 +144,23 @@
               We excel in custom video animation and vow to give you the best
               video animation experience.
             </p>
-            <ul class="myticks clearfix">
-              <li>Professional Script</li>
-              <li>Sample Theme</li>
-              <li>6 Weeks Delivery</li>
-              <li>90 Second Video</li>
+            <ul class="tickContainer">
+              <div>
+                <img src="images/tick.png" />
+                <li>Professional Script</li>
+              </div>
+              <div>
+                <img src="images/tick.png" />
+                <li>Sample Theme</li>
+              </div>
+              <div>
+                <img src="images/tick.png" />
+                <li>6 Weeks Delivery</li>
+              </div>
+              <div>
+                <img src="images/tick.png" />
+                <li>90 Second Video</li>
+              </div>
             </ul>
             <a href="get-started.html" class="book-call-now tc-image-effect-circle">Book your free consultation call</a>
             <img src="images/partners.png" />
@@ -179,7 +193,8 @@
                           </div>
                           <div class="col-lg-12">
                             <div class="fldset">
-                              <textarea id="message" placeholder="Enter a brief description about your project" name=""></textarea>
+                              <textarea id="message" placeholder="Enter a brief description about your project"
+                                name=""></textarea>
                             </div>
                           </div>
                           <div class="col-lg-12">
@@ -1003,41 +1018,41 @@
           </div>
           <form id="contactForm" onsubmit="sendEmail(event)">
             <div class="row">
-                <div class="col-md-6 col-sm-6 col-xs-12">
-                    <div class="startedlist">
-                        <input required id="firstName" type="text" placeholder="First Name*" />
-                    </div>
+              <div class="col-md-6 col-sm-6 col-xs-12">
+                <div class="startedlist">
+                  <input required id="firstName" type="text" placeholder="First Name*" />
                 </div>
+              </div>
 
-                <div class="col-md-6 col-sm-6 col-xs-12">
-                    <div class="startedlist">
-                        <input required id="email" type="email" placeholder="Email*" />
-                    </div>
+              <div class="col-md-6 col-sm-6 col-xs-12">
+                <div class="startedlist">
+                  <input required id="email" type="email" placeholder="Email*" />
                 </div>
+              </div>
             </div>
 
             <div class="row">
-                <div class="col-md-12 col-sm-12 col-xs-12">
-                    <div class="startedlist">
-                        <input required id="phone" type="text" placeholder="Phone*" />
-                    </div>
+              <div class="col-md-12 col-sm-12 col-xs-12">
+                <div class="startedlist">
+                  <input required id="phone" type="text" placeholder="Phone*" />
                 </div>
+              </div>
             </div>
             <div class="row">
-                <div class="col-md-12 col-sm-12 col-xs-12">
-                    <div class="startedlist">
-                        <textarea id="message" required placeholder="How we can help"></textarea>
-                    </div>
+              <div class="col-md-12 col-sm-12 col-xs-12">
+                <div class="startedlist">
+                  <textarea id="message" required placeholder="How we can help"></textarea>
                 </div>
+              </div>
             </div>
             <div class="row">
-                <div class="col-md-12 col-sm-12 col-xs-12">
-                    <div class="startedlist">
-                        <button type="submit">Submit</button>
-                    </div>
+              <div class="col-md-12 col-sm-12 col-xs-12">
+                <div class="startedlist">
+                  <button type="submit">Submit</button>
                 </div>
+              </div>
             </div>
-        </form>
+          </form>
         </div>
       </div>
     </div>
