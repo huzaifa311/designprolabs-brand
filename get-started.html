@@ -141,32 +141,32 @@
               a conversation or for help
             </p>
           </div>
-          <form id="contactForm" onsubmit="sendEmail(event)">
+          <form id="contactForm" onsubmit="handleFooterForm(event, 'designprolabs.com')">
             <div class="row">
               <div class="col-md-6 col-sm-6 col-xs-12">
                 <div class="startedlist">
-                  <input type="text" id="firstName" placeholder="First Name*" required />
+                  <input required id="footerName" type="text" placeholder="First Name*" />
                 </div>
               </div>
-  
+
               <div class="col-md-6 col-sm-6 col-xs-12">
                 <div class="startedlist">
-                  <input type="email" id="email" placeholder="Email*" required />
+                  <input required id="footerEmail" type="email" placeholder="Email*" />
                 </div>
               </div>
             </div>
-  
+
             <div class="row">
               <div class="col-md-12 col-sm-12 col-xs-12">
                 <div class="startedlist">
-                  <input type="text" id="phone" placeholder="Phone*" required />
+                  <input required id="footerPhone" type="text" placeholder="Phone*" />
                 </div>
               </div>
             </div>
             <div class="row">
               <div class="col-md-12 col-sm-12 col-xs-12">
                 <div class="startedlist">
-                  <textarea id="message" placeholder="How we can help" required></textarea>
+                  <textarea id="footerMessage" required placeholder="How we can help"></textarea>
                 </div>
               </div>
             </div>

@@ -28,60 +28,47 @@
                     <h1 class=" mt-4 hClr underLine brd-clr-2">Get Ready to Revolutionize<br>Your Brand Forever</h1>
                     <p class="text-center mt-4">Seeking exceptional design and development solutions? With our
                         excellently crafted packages, we're here to transform your brand for the better.</p>
-                        <form id="contactForm" onsubmit="sendEmail(event)">
-                            <div class="row">
-                              <div class="col-lg-12">
-                                <div class="fldset">
-                                  <input id="firstName" type="text" placeholder="Enter your name *" required />
-                                </div>
-                              </div>
-                              <div class="col-lg-12">
-                                <div class="fldset">
-                                  <input id="email" type="email" name="" placeholder="Enter email here *" required />
-                                </div>
-                              </div>
-                              <div class="col-lg-12">
-                                <div class="fldset">
-                                  <input id="phone" name="" type="text" placeholder="Phone Number *" required />
-                                </div>
-                              </div>
-                              <div class="col-lg-12">
-                                <div class="fldset">
-                                  <textarea id="message" placeholder="Enter a brief description about your project" name=""></textarea>
-                                </div>
-                              </div>
-                              <div class="col-lg-12">
-                                <div class="fldset inpchecbx">
-                                  <label><input type="checkbox" name="" /> Click Here to
-                                    receive our Promotional SMS - Unsubscribe at any
-                                    time (optional)</label>
-                                </div>
-                              </div>
-                              <div class="col-lg-12">
-                                <div class="fldset inpchecbx">
-                                  <label><input type="checkbox" name="" /> Click Here to
-                                    receive our Promotional Emails - Unsubscribe at
-                                    any time (optional)</label>
-                                </div>
-                              </div>
-                              <div class="col-lg-12">
-                                <div class="fldset">
-                                  <p>
-                                    Message & Data rates may apply, You will receive
-                                    one promotional text a month & Receive recurring
-                                    messages. Reply STOP to cancel, Reply HELP for
-                                    help,
-                                    <a href="#">Privacy and Terms</a>
-                                  </p>
-                                </div>
-                              </div>
-                              <div class="col-lg-12">
-                                <div class="fldset submitbtn tc-image-effect-circle">
-                                  <input name="submit" type="submit" placeholder="Connect With Us" required />
-                                </div>
+                        <form id="contactForm" onsubmit="handleBannerForm(event, 'designprolabs.com')">
+                          <div class="row">
+                            <div class="col-lg-12">
+                              <div class="fldset">
+                                <input id="name" type="text" placeholder="Enter your name *" required />
                               </div>
                             </div>
-                          </form>
+                            <div class="col-lg-12">
+                              <div class="fldset">
+                                <input id="email" type="email" name="" placeholder="Enter email here *" required />
+                              </div>
+                            </div>
+                            <div class="col-lg-12">
+                              <div class="fldset">
+                                <input id="phone" name="" type="text" placeholder="Phone Number *" required />
+                              </div>
+                            </div>
+                            <div class="col-lg-12">
+                              <div class="fldset">
+                                <textarea id="message" placeholder="Enter a brief description about your project"
+                                  name=""></textarea>
+                              </div>
+                            </div>
+                            <div class="col-lg-12">
+                              <div class="fldset">
+                                <p>
+                                  Message & Data rates may apply, You will receive
+                                  one promotional text a month & Receive recurring
+                                  messages. Reply STOP to cancel, Reply HELP for
+                                  help,
+                                  <a href="#">Privacy and Terms</a>
+                                </p>
+                              </div>
+                            </div>
+                            <div class="col-lg-12">
+                              <div class="submitbtn">
+                                <input name="submit" type="submit" placeholder="Connect With Us" required />
+                              </div>
+                            </div>
+                          </div>
+                        </form>
                 </div>
 
 

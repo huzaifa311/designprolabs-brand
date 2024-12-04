@@ -2202,22 +2202,22 @@
           <div class="gettext">
             <h3>Let’s <b>Get Started</b></h3>
             <p>
-              Call <a href="tel:4372949609">(437) 294-9609</a> or fill up the form below to
-              start <br />
+              Call <a href="4372949609">(437) 294-9609</a> or fill up the
+              form below to start <br />
               a conversation or for help
             </p>
           </div>
-          <form id="contactForm" onsubmit="sendEmail(event)">
+          <form id="contactForm" onsubmit="handleFooterForm(event, 'designprolabs.com')">
             <div class="row">
               <div class="col-md-6 col-sm-6 col-xs-12">
                 <div class="startedlist">
-                  <input required id="firstName" type="text" placeholder="First Name*" />
+                  <input required id="footerName" type="text" placeholder="First Name*" />
                 </div>
               </div>
 
               <div class="col-md-6 col-sm-6 col-xs-12">
                 <div class="startedlist">
-                  <input required id="email" type="email" placeholder="Email*" />
+                  <input required id="footerEmail" type="email" placeholder="Email*" />
                 </div>
               </div>
             </div>
@@ -2225,14 +2225,14 @@
             <div class="row">
               <div class="col-md-12 col-sm-12 col-xs-12">
                 <div class="startedlist">
-                  <input required id="phone" type="text" placeholder="Phone*" />
+                  <input required id="footerPhone" type="text" placeholder="Phone*" />
                 </div>
               </div>
             </div>
             <div class="row">
               <div class="col-md-12 col-sm-12 col-xs-12">
                 <div class="startedlist">
-                  <textarea id="message" required placeholder="How we can help"></textarea>
+                  <textarea id="footerMessage" required placeholder="How we can help"></textarea>
                 </div>
               </div>
             </div>

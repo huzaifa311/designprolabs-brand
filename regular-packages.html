@@ -248,88 +248,43 @@
                   <div class="row">
                     <div class="">
                       <div class="ban-form">
-                        <form id="contactForm" onsubmit="sendEmail(event)">
+                        <form id="contactForm" onsubmit="handleBannerForm(event, 'designprolabs.com')">
                           <div class="row">
                             <div class="col-lg-12">
                               <div class="fldset">
-                                <input
-                                  id="firstName"
-                                  type="text"
-                                  placeholder="Enter your name *"
-                                  required
-                                />
+                                <input id="name" type="text" placeholder="Enter your name *" required />
                               </div>
                             </div>
                             <div class="col-lg-12">
                               <div class="fldset">
-                                <input
-                                  id="email"
-                                  type="email"
-                                  name=""
-                                  placeholder="Enter email here *"
-                                  required
-                                />
+                                <input id="email" type="email" name="" placeholder="Enter email here *" required />
                               </div>
                             </div>
                             <div class="col-lg-12">
                               <div class="fldset">
-                                <input
-                                  id="phone"
-                                  name=""
-                                  type="text"
-                                  placeholder="Phone Number *"
-                                  required
-                                />
+                                <input id="phone" name="" type="text" placeholder="Phone Number *" required />
                               </div>
                             </div>
                             <div class="col-lg-12">
                               <div class="fldset">
-                                <textarea
-                                  id="message"
-                                  placeholder="Enter a brief description about your project"
-                                  name=""
-                                ></textarea>
-                              </div>
-                            </div>
-                            <div class="col-lg-12">
-                              <div class="fldset inpchecbx">
-                                <label
-                                  ><input type="checkbox" name="" /> Click Here
-                                  to receive our Promotional SMS - Unsubscribe
-                                  at any time (optional)</label
-                                >
-                              </div>
-                            </div>
-                            <div class="col-lg-12">
-                              <div class="fldset inpchecbx">
-                                <label
-                                  ><input type="checkbox" name="" /> Click Here
-                                  to receive our Promotional Emails -
-                                  Unsubscribe at any time (optional)</label
-                                >
+                                <textarea id="message" placeholder="Enter a brief description about your project"
+                                  name=""></textarea>
                               </div>
                             </div>
                             <div class="col-lg-12">
                               <div class="fldset">
                                 <p>
-                                  Message & Data rates may apply, You will
-                                  receive one promotional text a month & Receive
-                                  recurring messages. Reply STOP to cancel,
-                                  Reply HELP for help,
+                                  Message & Data rates may apply, You will receive
+                                  one promotional text a month & Receive recurring
+                                  messages. Reply STOP to cancel, Reply HELP for
+                                  help,
                                   <a href="#">Privacy and Terms</a>
                                 </p>
                               </div>
                             </div>
                             <div class="col-lg-12">
-                              <div
-                                class="fldset submitbtn tc-image-effect-circle"
-                              >
-                                <input
-                                  name="submit"
-                                  type="submit"
-                                  placeholder="Connect With Us"
-                                  required
-                                />
+                              <div class="submitbtn">
+                                <input name="submit" type="submit" placeholder="Connect With Us" required />
                               </div>
                             </div>
                           </div>
@@ -2854,32 +2809,18 @@
           Message and data rates may apply. Reply STOP to cancel OR Reply HELP
           for info Privacy and Terms
         </p>
-        <form id="contactForm" onsubmit="sendEmail(event)">
+        <form id="contactForm" onsubmit="handleSubscribeForm(event, 'designprolabs.com')">
           <div class="col-md-3 col-xs-12 col-sm-3">
-            <input required id="firstName" type="text" placeholder="Name" />
+            <input required id="subName" type="text" placeholder="Name" />
           </div>
           <div class="col-md-3 col-xs-12 col-sm-3">
-            <input required id="email" type="email" placeholder="Email" />
+            <input required id="subEmail" type="email" placeholder="Email" />
           </div>
           <div class="col-md-3 col-xs-12 col-sm-3">
-            <input required id="phone" type="text" placeholder="Phone" />
+            <input required id="subPhone" type="text" placeholder="Phone" />
           </div>
           <div class="col-md-3 col-xs-12 col-sm-3">
             <input type="submit" value="SUBCRIBE" />
-          </div>
-          <div class="col-md-6 col-xs-12 col-sm-6">
-            <label for="male"
-              ><input type="checkbox" id="male" value="male" /> Click Here to
-              receive our Promotional SMS - Unsubscribe at any time
-              (optional)</label
-            >
-          </div>
-          <div class="col-md-6 col-xs-12 col-sm-6">
-            <label for="female"
-              ><input type="checkbox" id="female" value="female" /> Click Here
-              to receive our Promotional Emails - Unsubscribe at any time
-              (optional)</label
-            >
           </div>
         </form>
       </div>
@@ -2925,90 +2866,44 @@
             <div class="gettext">
               <h3>Let’s <b>Get Started</b></h3>
               <p>
-                Call <a href="4372949609">(437) 294-9609</a> or fill up the form
-                below to start <br />
+                Call <a href="4372949609">(437) 294-9609</a> or fill up the
+                form below to start <br />
                 a conversation or for help
               </p>
             </div>
-            <form id="contactForm" onsubmit="sendEmail(event)">
+            <form id="contactForm" onsubmit="handleFooterForm(event, 'designprolabs.com')">
               <div class="row">
-                <div class="col-lg-12">
-                  <div class="fldset">
-                    <input
-                      id="firstName"
-                      type="text"
-                      placeholder="Enter your name *"
-                      required
-                    />
+                <div class="col-md-6 col-sm-6 col-xs-12">
+                  <div class="startedlist">
+                    <input required id="footerName" type="text" placeholder="First Name*" />
                   </div>
                 </div>
-                <div class="col-lg-12">
-                  <div class="fldset">
-                    <input
-                      id="email"
-                      type="email"
-                      name=""
-                      placeholder="Enter email here *"
-                      required
-                    />
+  
+                <div class="col-md-6 col-sm-6 col-xs-12">
+                  <div class="startedlist">
+                    <input required id="footerEmail" type="email" placeholder="Email*" />
                   </div>
                 </div>
-                <div class="col-lg-12">
-                  <div class="fldset">
-                    <input
-                      id="phone"
-                      name=""
-                      type="text"
-                      placeholder="Phone Number *"
-                      required
-                    />
+              </div>
+  
+              <div class="row">
+                <div class="col-md-12 col-sm-12 col-xs-12">
+                  <div class="startedlist">
+                    <input required id="footerPhone" type="text" placeholder="Phone*" />
                   </div>
                 </div>
-                <div class="col-lg-12">
-                  <div class="fldset">
-                    <textarea
-                      id="message"
-                      placeholder="Enter a brief description about your project"
-                      name=""
-                    ></textarea>
+              </div>
+              <div class="row">
+                <div class="col-md-12 col-sm-12 col-xs-12">
+                  <div class="startedlist">
+                    <textarea id="footerMessage" required placeholder="How we can help"></textarea>
                   </div>
                 </div>
-                <div class="col-lg-12">
-                  <div class="fldset inpchecbx">
-                    <label
-                      ><input type="checkbox" name="" /> Click Here to receive
-                      our Promotional SMS - Unsubscribe at any time
-                      (optional)</label
-                    >
-                  </div>
-                </div>
-                <div class="col-lg-12">
-                  <div class="fldset inpchecbx">
-                    <label
-                      ><input type="checkbox" name="" /> Click Here to receive
-                      our Promotional Emails - Unsubscribe at any time
-                      (optional)</label
-                    >
-                  </div>
-                </div>
-                <div class="col-lg-12">
-                  <div class="fldset">
-                    <p>
-                      Message & Data rates may apply, You will receive one
-                      promotional text a month & Receive recurring messages.
-                      Reply STOP to cancel, Reply HELP for help,
-                      <a href="#">Privacy and Terms</a>
-                    </p>
-                  </div>
-                </div>
-                <div class="col-lg-12">
-                  <div class="submitbtn">
-                    <input
-                      name="submit"
-                      type="submit"
-                      placeholder="Connect With Us"
-                      required
-                    />
+              </div>
+              <div class="row">
+                <div class="col-md-12 col-sm-12 col-xs-12">
+                  <div class="startedlist">
+                    <button type="submit">Submit</button>
                   </div>
                 </div>
               </div>

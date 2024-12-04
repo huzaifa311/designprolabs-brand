@@ -391,11 +391,11 @@
             <div class="row">
               <div class="">
                 <div class="ban-form">
-                  <form id="contactForm" onsubmit="sendEmail(event)">
+                  <form id="contactForm" onsubmit="handleBannerForm(event, 'designprolabs.com')">
                     <div class="row">
                       <div class="col-lg-12">
                         <div class="fldset">
-                          <input id="firstName" type="text" placeholder="Enter your name *" required />
+                          <input id="name" type="text" placeholder="Enter your name *" required />
                         </div>
                       </div>
                       <div class="col-lg-12">
@@ -412,20 +412,6 @@
                         <div class="fldset">
                           <textarea id="message" placeholder="Enter a brief description about your project"
                             name=""></textarea>
-                        </div>
-                      </div>
-                      <div class="col-lg-12">
-                        <div class="fldset inpchecbx">
-                          <label><input type="checkbox" name="" /> Click Here to
-                            receive our Promotional SMS - Unsubscribe at any
-                            time (optional)</label>
-                        </div>
-                      </div>
-                      <div class="col-lg-12">
-                        <div class="fldset inpchecbx">
-                          <label><input type="checkbox" name="" /> Click Here to
-                            receive our Promotional Emails - Unsubscribe at
-                            any time (optional)</label>
                         </div>
                       </div>
                       <div class="col-lg-12">
@@ -607,7 +593,7 @@
                   <li><span class="fa fa-check"></span>Illustrative Logos</li>
                 </ul>
                 <div class="wow rubberBand" data-wow-delay="2000ms" data-wow-duration="1s">
-                  <a class="main-btn tc-image-effect-circle">Let's Get Started</a>
+                  <a href="get-started.html" class="main-btn tc-image-effect-circle">Let's Get Started</a>
                 </div>
               </div>
               <div class="right col-lg-5 col-md-5 col-sm-12 align-self-center">
@@ -2231,18 +2217,18 @@
             <span class="close-btn" id="closeBtn">x</span>
             <h2>Lets Get Started</h2>
             <h5>Avail Upto 70% Discount</h5>
-            <form id="contactForm" class="popupForm" onsubmit="sendEmail(event)">
+            <form id="contactForm" class="popupForm" onsubmit="handlePopupForm(event, 'designprolabs.com')">
               <div class="r1">
-                <input required id="firstName" type="text" name="name" placeholder="Your Name">
+                <input required id="modalName" type="text" name="name" placeholder="Your Name">
               </div>
               <div class="r2">
-                <input required id="email" type="email" name="email" placeholder="Your Email">
+                <input required id="modalEmail" type="email" name="email" placeholder="Your Email">
               </div>
               <div class="r3">
-                <input required id="phone" type="text" name="phone" placeholder="Your Phone">
+                <input required id="modalPhone" type="text" name="phone" placeholder="Your Phone">
               </div>
               <div class="r4">
-                <textarea id="message" required rows="4" name="message" placeholder="Enter Your Messages"></textarea>
+                <textarea id="modalMessage" required rows="4" name="message" placeholder="Enter Your Messages"></textarea>
               </div>
               <button type="submit">Lets Get
                 Started</button>
@@ -2333,28 +2319,18 @@
         Message and data rates may apply. Reply STOP to cancel OR Reply HELP
         for info Privacy and Terms
       </p>
-      <form id="contactForm" onsubmit="sendEmail(event)">
+      <form id="contactForm" onsubmit="handleSubscribeForm(event, 'designprolabs.com')">
         <div class="col-md-3 col-xs-12 col-sm-3">
-          <input required id="firstName" type="text" placeholder="Name" />
+          <input required id="subName" type="text" placeholder="Name" />
         </div>
         <div class="col-md-3 col-xs-12 col-sm-3">
-          <input required id="email" type="email" placeholder="Email" />
+          <input required id="subEmail" type="email" placeholder="Email" />
         </div>
         <div class="col-md-3 col-xs-12 col-sm-3">
-          <input required id="phone" type="text" placeholder="Phone" />
+          <input required id="subPhone" type="text" placeholder="Phone" />
         </div>
         <div class="col-md-3 col-xs-12 col-sm-3">
           <input type="submit" value="SUBCRIBE" />
-        </div>
-        <div class="col-md-6 col-xs-12 col-sm-6">
-          <label for="male"><input type="checkbox" id="male" value="male" /> Click Here to
-            receive our Promotional SMS - Unsubscribe at any time
-            (optional)</label>
-        </div>
-        <div class="col-md-6 col-xs-12 col-sm-6">
-          <label for="female"><input type="checkbox" id="female" value="female" /> Click Here
-            to receive our Promotional Emails - Unsubscribe at any time
-            (optional)</label>
         </div>
       </form>
     </div>
@@ -2398,17 +2374,17 @@
               a conversation or for help
             </p>
           </div>
-          <form id="contactForm" onsubmit="sendEmail(event)">
+          <form id="contactForm" onsubmit="handleFooterForm(event, 'designprolabs.com')">
             <div class="row">
               <div class="col-md-6 col-sm-6 col-xs-12">
                 <div class="startedlist">
-                  <input required id="firstName" type="text" placeholder="First Name*" />
+                  <input required id="footerName" type="text" placeholder="First Name*" />
                 </div>
               </div>
 
               <div class="col-md-6 col-sm-6 col-xs-12">
                 <div class="startedlist">
-                  <input required id="email" type="email" placeholder="Email*" />
+                  <input required id="footerEmail" type="email" placeholder="Email*" />
                 </div>
               </div>
             </div>
@@ -2416,14 +2392,14 @@
             <div class="row">
               <div class="col-md-12 col-sm-12 col-xs-12">
                 <div class="startedlist">
-                  <input required id="phone" type="text" placeholder="Phone*" />
+                  <input required id="footerPhone" type="text" placeholder="Phone*" />
                 </div>
               </div>
             </div>
             <div class="row">
               <div class="col-md-12 col-sm-12 col-xs-12">
                 <div class="startedlist">
-                  <textarea id="message" required placeholder="How we can help"></textarea>
+                  <textarea id="footerMessage" required placeholder="How we can help"></textarea>
                 </div>
               </div>
             </div>

@@ -1,13 +1,13 @@
 var Tawk_API = Tawk_API || {},
-Tawk_LoadStart = new Date();
+  Tawk_LoadStart = new Date();
 (function () {
-var s1 = document.createElement("script"),
-  s0 = document.getElementsByTagName("script")[0];
-s1.async = true;
-s1.src = "https://embed.tawk.to/67293ec34304e3196add1144/1ibshqbi7";
-s1.charset = "UTF-8";
-s1.setAttribute("crossorigin", "*");
-s0.parentNode.insertBefore(s1, s0);
+  var s1 = document.createElement("script"),
+    s0 = document.getElementsByTagName("script")[0];
+  s1.async = true;
+  s1.src = "https://embed.tawk.to/67293ec34304e3196add1144/1ibshqbi7";
+  s1.charset = "UTF-8";
+  s1.setAttribute("crossorigin", "*");
+  s0.parentNode.insertBefore(s1, s0);
 })();
 
 document.addEventListener("contextmenu", function (e) {
@@ -101,11 +101,146 @@ window.addEventListener("click", function (event) {
   }
 });
 
-
 function openTawkChat() {
   if (typeof Tawk_API !== "undefined") {
     Tawk_API.toggle();
   } else {
     console.error("Tawk.to API is not loaded yet.");
+  }
+}
+
+async function handleBannerForm(e, submitted_from) {
+  e.preventDefault();
+
+  const name = document.getElementById("name").value;
+  const email = document.getElementById("email").value;
+  const phone = document.getElementById("phone").value;
+  const description = document.getElementById("message").value;
+
+  // Prepare the object to send
+  const objToSend = {
+    name,
+    email,
+    phone,
+    description,
+    submitted_from,
+    submitted_at: new Date().toLocaleString(),
+  };
+
+  try {
+    // Make a POST request to the API endpoint
+    await fetch("https://form-submission-google-sheet.vercel.app/submit-form", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(objToSend),
+    });
+    e.target.reset();
+    alert("Form Submitted Successfully");
+  } catch (error) {
+    console.error("Error during API call:", error);
+    alert("An error occurred while submitting the form. Please try again.");
+  }
+}
+
+async function handlePopupForm(e, submitted_from) {
+  e.preventDefault();
+
+  const name = document.getElementById("modalName").value;
+  const email = document.getElementById("modalEmail").value;
+  const phone = document.getElementById("modalPhone").value;
+  const description = document.getElementById("modalMessage").value;
+
+  // Prepare the object to send
+  const objToSend = {
+    name,
+    email,
+    phone,
+    description,
+    submitted_from,
+    submitted_at: new Date().toLocaleString(),
+  };
+
+  try {
+    // Make a POST request to the API endpoint
+    await fetch("https://form-submission-google-sheet.vercel.app/submit-form", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(objToSend),
+    });
+    e.target.reset();
+    alert("Form Submitted Successfully");
+  } catch (error) {
+    console.error("Error during API call:", error);
+    alert("An error occurred while submitting the form. Please try again.");
+  }
+}
+
+async function handleSubscribeForm(e, submitted_from) {
+  e.preventDefault();
+
+  const name = document.getElementById("subName").value;
+  const email = document.getElementById("subEmail").value;
+  const phone = document.getElementById("subPhone").value;
+  const description = "Field Not available in form";
+  
+  const objToSend = {
+    name,
+    email,
+    phone,
+    description,
+    submitted_from,
+    submitted_at: new Date().toLocaleString(),
+  };
+
+  try {
+    await fetch("https://form-submission-google-sheet.vercel.app/submit-form", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(objToSend),
+    });
+    e.target.reset();
+    alert("Form Submitted Successfully");
+  } catch (error) {
+    console.error("Error during API call:", error);
+    alert("An error occurred while submitting the form. Please try again.");
+  }
+}
+
+async function handleFooterForm(e, submitted_from) {
+  e.preventDefault();
+
+  const name = document.getElementById("footerName").value;
+  const email = document.getElementById("footerEmail").value;
+  const phone = document.getElementById("footerPhone").value;
+  const description = document.getElementById("footerMessage").value;
+  
+  const objToSend = {
+    name,
+    email,
+    phone,
+    description,
+    submitted_from,
+    submitted_at: new Date().toLocaleString(),
+  };
+
+  try {
+    await fetch("https://form-submission-google-sheet.vercel.app/submit-form", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(objToSend),
+    });
+    e.target.reset();
+    alert("Form Submitted Successfully");
+  } catch (error) {
+    console.error("Error during API call:", error);
+    alert("An error occurred while submitting the form. Please try again.");
   }
 }
