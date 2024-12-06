@@ -172,6 +172,7 @@ async function handlePopupForm(e, submitted_from) {
       body: JSON.stringify(objToSend),
     });
     e.target.reset();
+    document.getElementById("orderModal").style.display = "none"
     alert("Form Submitted Successfully");
   } catch (error) {
     console.error("Error during API call:", error);

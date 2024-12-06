@@ -2,235 +2,376 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Design Pro Labs - Logo Brief</title>
-  <link rel="icon" type="png" href="images/favicon.png" />
-    <link href="css/logo-brief.css" rel="stylesheet" />
-    <link href="css/logo-brief2.css" rel="stylesheet" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Logo Design Form</title>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body>
-  <!-- Add this loader div somewhere in your HTML -->
-<div id="loader" style="display: none;">
-  <!-- You can replace this text with a spinner or any loading animation -->
-  <p>Submitting your form, please wait...</p>
-</div>
-
-    <section class="main-bg-color-2 padding-b get_quote pt-5"
-        style="background-color: rgba(var(--main-bg-color), .015);color: rgba(var(--main-bg-color), .895);">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-12">
-                    <a href="index.html"><img style="width: 250px" src="./images/logo3.png" alt="logo">
-                    </a>
-                    <h5 class="subHeading mt-5">Order logo design</h5>
-                    <h1 class=" mt-4 hClr underLine brd-clr-2">Get Ready to Revolutionize<br>Your Brand Forever</h1>
-                    <p class="text-center mt-4">Seeking exceptional design and development solutions? With our
-                        excellently crafted packages, we're here to transform your brand for the better.</p>
-                        <form id="contactForm" onsubmit="handleBannerForm(event, 'designprolabs.com')">
-                          <div class="row">
-                            <div class="col-lg-12">
-                              <div class="fldset">
-                                <input id="name" type="text" placeholder="Enter your name *" required />
-                              </div>
-                            </div>
-                            <div class="col-lg-12">
-                              <div class="fldset">
-                                <input id="email" type="email" name="" placeholder="Enter email here *" required />
-                              </div>
-                            </div>
-                            <div class="col-lg-12">
-                              <div class="fldset">
-                                <input id="phone" name="" type="text" placeholder="Phone Number *" required />
-                              </div>
-                            </div>
-                            <div class="col-lg-12">
-                              <div class="fldset">
-                                <textarea id="message" placeholder="Enter a brief description about your project"
-                                  name=""></textarea>
-                              </div>
-                            </div>
-                            <div class="col-lg-12">
-                              <div class="fldset">
-                                <p>
-                                  Message & Data rates may apply, You will receive
-                                  one promotional text a month & Receive recurring
-                                  messages. Reply STOP to cancel, Reply HELP for
-                                  help,
-                                  <a href="#">Privacy and Terms</a>
-                                </p>
-                              </div>
-                            </div>
-                            <div class="col-lg-12">
-                              <div class="submitbtn">
-                                <input name="submit" type="submit" placeholder="Connect With Us" required />
-                              </div>
-                            </div>
-                          </div>
-                        </form>
-                </div>
-
-
-
-                <div class="col-12 mb-3">
-                    <h3 class="hClr underLine brd-clr-2">Business Card Details</h3>
-                </div>
-
-                <div class="col-md-6 mb-3">
-
-                    <div class="form-group">
-
-                        <span class="help-text">Person name</span>
-
-                        <input type="text" autocomplete="off" class="form-control  mt-3" placeholder="Person' Name"
-                            maxlenght="30" name="person_name" onfocus="this.placeholder = ''"
-                            onblur="this.placeholder = 'Persons Name'">
-
-                    </div>
-
-                </div>
-
-                <div class="col-md-6 mb-3">
-
-                    <div class="form-group">
-
-                        <span class="help-text">Person's Email</span>
-
-                        <input type="text" autocomplete="off" class="form-control  mt-3" placeholder="Person's Email"
-                            maxlenght="70" name="person_email" onfocus="this.placeholder = ''"
-                            onblur="this.placeholder = 'Person Email'">
-
-                    </div>
-
-                </div>
-
-                <div class="col-md-6 mb-3">
-
-                    <div class="form-group">
-
-                        <span class="help-text">Person Designation</span>
-
-                        <input type="text" autocomplete="off" class="form-control  mt-3" placeholder="Designation"
-                            maxlenght="50" name="designation" onfocus="this.placeholder = ''"
-                            onblur="this.placeholder = 'Designation'">
-
-                    </div>
-
-                </div>
-
-                <div class="col-md-6 mb-3">
-
-                    <div class="form-group">
-
-                        <span class="help-text">Person Phone Number#</span>
-
-                        <input type="text" autocomplete="off" class="form-control phone_new mt-3" maxlength="13"
-                            placeholder="Person Phone Number" maxlenght="15" name="person_phone"
-                            onfocus="this.placeholder = ''" onblur="this.placeholder = 'Person Phone Number'">
-
-                    </div>
-
-                </div>
-
-                <div class="col-md-6 mb-3">
-
-                    <div class="form-group">
-
-                        <span class="help-text">Company Address</span>
-
-                        <input type="text" autocomplete="off" class="form-control  mt-3" placeholder="Company Address"
-                            maxlenght="100" name="company_address" onfocus="this.placeholder = ''"
-                            onblur="this.placeholder = 'Company Address'">
-
-                    </div>
-
-                </div>
-
-                <div class="col-md-6 mb-3">
-
-                    <div class="form-group">
-
-                        <span class="help-text">Company Phone#</span>
-
-                        <input type="text" autocomplete="off" class="form-control phone_new mt-3" maxlength="13"
-                            placeholder="Company Phone" maxlenght="15" name="company_phone"
-                            onfocus="this.placeholder = ''" onblur="this.placeholder = 'Company Phone'">
-
-                    </div>
-
-                </div>
-
-
-
-                <div class="col-md-12 mb-3">
-
-                    <label>Attach a file</label>
-
-                    <div class="form-group">
-
-                        <input type="file" autocomplete="off" class="form-control  padd" id="attachment" name="LogoFile"
-                            onfocus="this.placeholder = ''">
-
-                    </div>
-
-                </div>
-                <div class="col-md-12 mb-3">
-
-
-                    <div class="form-group">
-
-                        <input type="checkbox" class="form-check-input" id="click" required="required">
-                        <label class="form-check-label" for="click">by clicking the submit button below you will be
-                            giving permission to contact via SMS regarding your digital services</label>
-                    </div>
-
-                </div>
-
-                <div class="col-md-12 mb-3 field-mergedleft">
-
-                    <div class="clearfix">
-
-                        <div class="col-lg-12">
-
-                            <div class="company_profile fill-help pull-left">
-
-                                <label class="control control--checkbox">
-
-                                    *Please Fill all the field
-
-                                </label>
-
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                    <input type="hidden" name="page" value="">
-
-                    <div class="text-center">
-
-                        <button type="submit" class="btn btn-1 p-3 px-5 submitform" style="color: white;" disabled="disabled">Submit</button>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-
-
+<body class="bg-gray-50">
+  <div class="max-w-6xl mx-auto p-6">
+    <div class="text-center mb-10">
+      <img src="images/logo3.png" alt="Logo" class="mx-auto mb-4 w-44">
+      <h1 class="text-3xl font-bold">Get Ready to Revolutionize Your Brand Forever</h1>
+      <p class="text-gray-600 mt-2">
+        Seeking exceptional design and development solutions? With our excellently crafted packages, we're here
+        to transform your brand for the better.
+      </p>
+    </div>
+    <form id="logoDesignForm" class="bg-white shadow-md rounded-lg p-8">
+      <!-- Business Information -->
+      <h2 class="text-xl font-semibold mb-4">Business Information</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+        <div>
+          <label for="fullName" class="block text-gray-700 font-medium">Full Name *</label>
+          <input type="text" id="fullName" name="fullName"
+            class="w-full mt-2 p-3 border rounded-lg focus:ring focus:ring-red-300" required>
         </div>
+        <div>
+          <label for="email" class="block text-gray-700 font-medium">Email *</label>
+          <input type="email" id="email" name="email"
+            class="w-full mt-2 p-3 border rounded-lg focus:ring focus:ring-red-300" required>
+        </div>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+        <div>
+          <label for="logoName" class="block text-gray-700 font-medium">Logo Name * which you want to use in
+            Logo</label>
+          <input type="text" id="logoName" name="logoName"
+            class="w-full mt-2 p-3 border rounded-lg focus:ring focus:ring-red-300" required>
+        </div>
+        <div>
+          <label for="companySlogan" class="block text-gray-700 font-medium">Company Slogan which you want to use in
+            Logo</label>
+          <input type="text" id="companySlogan" name="companySlogan"
+            class="w-full mt-2 p-3 border rounded-lg focus:ring focus:ring-red-300">
+        </div>
+      </div>
+      <div class="mb-6">
+        <label for="competitorsReference" class="block text-gray-700 font-medium">Competitors Reference * you can enter
+          multiple Linksc</label>
+        <textarea id="competitorsReference" name="competitorsReference"
+          class="w-full mt-2 p-3 border rounded-lg focus:ring focus:ring-red-300" rows="3" required></textarea>
+      </div>
+      <div class="mb-6">
+        <label for="businessDescription" class="block text-gray-700 font-medium">Describe Your Business * you can enter
+          multiple Links</label>
+        <textarea id="businessDescription" name="businessDescription"
+          class="w-full mt-2 p-3 border rounded-lg focus:ring focus:ring-red-300" rows="3" required></textarea>
+      </div>
+      <div class="mb-6">
+        <label for="logoDetails" class="block text-gray-700 font-medium">What You Want in Your Logo * Any additional
+          details</label>
+        <textarea id="logoDetails" name="logoDetails"
+          class="w-full mt-2 p-3 border rounded-lg focus:ring focus:ring-red-300" rows="3" required></textarea>
+      </div>
+      <!-- Select Colors -->
+      <h2 class="text-xl font-semibold mb-4">Select Colors</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+        <div>
+          <label for="primaryColor" class="block text-gray-700 font-medium">Primary Color * Write the name or code, Like
+            Blue, #FFFF00</label>
+          <input type="text" id="primaryColor" name="primaryColor"
+            class="w-full mt-2 p-3 border rounded-lg focus:ring focus:ring-red-300 lowercase" placeholder="0F00F0"
+            required>
+          <div class="grid grid-cols-8 gap-y-1 gap-x-2 mt-3 w-[92%]">
+            <div class="!w-full" onclick="setPrimaryColor('d80002')">
+              <div
+                class="cursor-pointer bg-[#d80002] hover:scale-90 transition transition-transform duration-100 !w-full h-12">
+              </div>
+              <div class="text-[11px] text-center uppercase">d80002</div>
+            </div>
+            <div class="!w-full" onclick="setPrimaryColor('fc6605')">
+              <div
+                class="cursor-pointer bg-[#fc6605] hover:scale-90 transition transition-transform duration-100 !w-full h-12">
+              </div>
+              <div class="text-[11px] text-center uppercase">fc6605</div>
+            </div>
+            <div class="!w-full" onclick="setPrimaryColor('fc9a03')">
+              <div
+                class="cursor-pointer bg-[#fc9a03] hover:scale-90 transition transition-transform duration-100 !w-full h-12">
+              </div>
+              <div class="text-[11px] text-center uppercase">fc9a03</div>
+            </div>
+            <div class="!w-full" onclick="setPrimaryColor('fcfe03')">
+              <div
+                class="cursor-pointer bg-[#fcfe03] hover:scale-90 transition transition-transform duration-100 !w-full h-12">
+              </div>
+              <div class="text-[11px] text-center uppercase">fcfe03</div>
+            </div>
+            <div class="!w-full" onclick="setPrimaryColor('329804')">
+              <div
+                class="cursor-pointer bg-[#329804] hover:scale-90 transition transition-transform duration-100 !w-full h-12">
+              </div>
+              <div class="text-[11px] text-center uppercase">329804</div>
+            </div>
+            <div class="!w-full" onclick="setPrimaryColor('036564')">
+              <div
+                class="cursor-pointer bg-[#036564] hover:scale-90 transition transition-transform duration-100 !w-full h-12">
+              </div>
+              <div class="text-[11px] text-center uppercase">036564</div>
+            </div>
+            <div class="!w-full" onclick="setPrimaryColor('03349d')">
+              <div
+                class="cursor-pointer bg-[#03349d] hover:scale-90 transition transition-transform duration-100 !w-full h-12">
+              </div>
+              <div class="text-[11px] text-center uppercase">03349d</div>
+            </div>
+            <div class="!w-full" onclick="setPrimaryColor('040263')">
+              <div
+                class="cursor-pointer bg-[#040263] hover:scale-90 transition transition-transform duration-100 !w-full h-12">
+              </div>
+              <div class="text-[11px] text-center uppercase">040263</div>
+            </div>
+            <div class="!w-full" onclick="setPrimaryColor('d80002')">
+              <div
+                class="cursor-pointer bg-[#d80002] hover:scale-90 transition transition-transform duration-100 !w-full h-12">
+              </div>
+              <div class="text-[11px] text-center uppercase">d80002</div>
+            </div>
+            <div class="!w-full" onclick="setPrimaryColor('151515')">
+              <div
+                class="cursor-pointer bg-[#151515] hover:scale-90 transition transition-transform duration-100 !w-full h-12">
+              </div>
+              <div class="text-[11px] text-center uppercase">151515</div>
+            </div>
+            <div class="!w-full" onclick="setPrimaryColor('0F00F0')">
+              <div
+                class="cursor-pointer bg-[#0F00F0] hover:scale-90 transition transition-transform duration-100 !w-full h-12">
+              </div>
+              <div class="text-[11px] text-center uppercase">0F00F0</div>
+            </div>
+            <div class="!w-full" onclick="setPrimaryColor('C3F')">
+              <div
+                class="cursor-pointer bg-[#C3F] hover:scale-90 transition transition-transform duration-100 !w-full h-12">
+              </div>
+              <div class="text-[11px] text-center uppercase">C3F</div>
+            </div>
+            <div class="!w-full" onclick="setPrimaryColor('16CB1C')">
+              <div
+                class="cursor-pointer bg-[#16CB1C] hover:scale-90 transition transition-transform duration-100 !w-full h-12">
+              </div>
+              <div class="text-[11px] text-center uppercase">16CB1C</div>
+            </div>
+            <div class="!w-full" onclick="setPrimaryColor('CBA716')">
+              <div
+                class="cursor-pointer bg-[#CBA716] hover:scale-90 transition transition-transform duration-100 !w-full h-12">
+              </div>
+              <div class="text-[11px] text-center uppercase">CBA716</div>
+            </div>
+            <div class="!w-full" onclick="setPrimaryColor('16ADCB')">
+              <div
+                class="cursor-pointer bg-[#16ADCB] hover:scale-90 transition transition-transform duration-100 !w-full h-12">
+              </div>
+              <div class="text-[11px] text-center uppercase">16ADCB</div>
+            </div>
+            <div class="!w-full" onclick="setPrimaryColor('4400FF')">
+              <div
+                class="cursor-pointer bg-[#4400FF] hover:scale-90 transition transition-transform duration-100 !w-full h-12">
+              </div>
+              <div class="text-[11px] text-center uppercase">4400FF</div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <label for="secondaryColor" class="block text-gray-700 font-medium">Secondary Color * Write the name or code,
+            Like Blue, #FFFF00</label>
+          <input type="text" id="secondaryColor" name="secondaryColor"
+            class="w-full mt-2 p-3 border rounded-lg focus:ring focus:ring-red-300 lowercase" placeholder="CBA716"
+            required>
+          <div class="grid grid-cols-8 gap-y-1 gap-x-2 mt-3 w-[92%]">
+            <div class="!w-full" onclick="setSecondaryColor('d80002')">
+              <div
+                class="cursor-pointer bg-[#d80002] hover:scale-90 transition transition-transform duration-100 !w-full h-12">
+              </div>
+              <div class="text-[11px] text-center uppercase">d80002</div>
+            </div>
+            <div class="!w-full" onclick="setSecondaryColor('fc6605')">
+              <div
+                class="cursor-pointer bg-[#fc6605] hover:scale-90 transition transition-transform duration-100 !w-full h-12">
+              </div>
+              <div class="text-[11px] text-center uppercase">fc6605</div>
+            </div>
+            <div class="!w-full" onclick="setSecondaryColor('fc9a03')">
+              <div
+                class="cursor-pointer bg-[#fc9a03] hover:scale-90 transition transition-transform duration-100 !w-full h-12">
+              </div>
+              <div class="text-[11px] text-center uppercase">fc9a03</div>
+            </div>
+            <div class="!w-full" onclick="setSecondaryColor('fcfe03')">
+              <div
+                class="cursor-pointer bg-[#fcfe03] hover:scale-90 transition transition-transform duration-100 !w-full h-12">
+              </div>
+              <div class="text-[11px] text-center uppercase">fcfe03</div>
+            </div>
+            <div class="!w-full" onclick="setSecondaryColor('329804')">
+              <div
+                class="cursor-pointer bg-[#329804] hover:scale-90 transition transition-transform duration-100 !w-full h-12">
+              </div>
+              <div class="text-[11px] text-center uppercase">329804</div>
+            </div>
+            <div class="!w-full" onclick="setSecondaryColor('036564')">
+              <div
+                class="cursor-pointer bg-[#036564] hover:scale-90 transition transition-transform duration-100 !w-full h-12">
+              </div>
+              <div class="text-[11px] text-center uppercase">036564</div>
+            </div>
+            <div class="!w-full" onclick="setSecondaryColor('03349d')">
+              <div
+                class="cursor-pointer bg-[#03349d] hover:scale-90 transition transition-transform duration-100 !w-full h-12">
+              </div>
+              <div class="text-[11px] text-center uppercase">03349d</div>
+            </div>
+            <div class="!w-full" onclick="setSecondaryColor('040263')">
+              <div
+                class="cursor-pointer bg-[#040263] hover:scale-90 transition transition-transform duration-100 !w-full h-12">
+              </div>
+              <div class="text-[11px] text-center uppercase">040263</div>
+            </div>
+            <div class="!w-full" onclick="setSecondaryColor('d80002')">
+              <div
+                class="cursor-pointer bg-[#d80002] hover:scale-90 transition transition-transform duration-100 !w-full h-12">
+              </div>
+              <div class="text-[11px] text-center uppercase">d80002</div>
+            </div>
+            <div class="!w-full" onclick="setSecondaryColor('151515')">
+              <div
+                class="cursor-pointer bg-[#151515] hover:scale-90 transition transition-transform duration-100 !w-full h-12">
+              </div>
+              <div class="text-[11px] text-center uppercase">151515</div>
+            </div>
+            <div class="!w-full" onclick="setSecondaryColor('0F00F0')">
+              <div
+                class="cursor-pointer bg-[#0F00F0] hover:scale-90 transition transition-transform duration-100 !w-full h-12">
+              </div>
+              <div class="text-[11px] text-center uppercase">0F00F0</div>
+            </div>
+            <div class="!w-full" onclick="setSecondaryColor('C3F')">
+              <div
+                class="cursor-pointer bg-[#C3F] hover:scale-90 transition transition-transform duration-100 !w-full h-12">
+              </div>
+              <div class="text-[11px] text-center uppercase">C3F</div>
+            </div>
+            <div class="!w-full" onclick="setSecondaryColor('16CB1C')">
+              <div
+                class="cursor-pointer bg-[#16CB1C] hover:scale-90 transition transition-transform duration-100 !w-full h-12">
+              </div>
+              <div class="text-[11px] text-center uppercase">16CB1C</div>
+            </div>
+            <div class="!w-full" onclick="setSecondaryColor('CBA716')">
+              <div
+                class="cursor-pointer bg-[#CBA716] hover:scale-90 transition transition-transform duration-100 !w-full h-12">
+              </div>
+              <div class="text-[11px] text-center uppercase">CBA716</div>
+            </div>
+            <div class="!w-full" onclick="setSecondaryColor('16ADCB')">
+              <div
+                class="cursor-pointer bg-[#16ADCB] hover:scale-90 transition transition-transform duration-100 !w-full h-12">
+              </div>
+              <div class="text-[11px] text-center uppercase">16ADCB</div>
+            </div>
+            <div class="!w-full" onclick="setSecondaryColor('4400FF')">
+              <div
+                class="cursor-pointer bg-[#4400FF] hover:scale-90 transition transition-transform duration-100 !w-full h-12">
+              </div>
+              <div class="text-[11px] text-center uppercase">4400FF</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Business Card Details -->
+      <h2 class="text-xl font-semibold mb-4">Business Card Details</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+        <div>
+          <label for="personName" class="block text-gray-700 font-medium">Person Name</label>
+          <input type="text" id="personName" name="personName"
+            class="w-full mt-2 p-3 border rounded-lg focus:ring focus:ring-red-300">
+        </div>
+        <div>
+          <label for="personEmail" class="block text-gray-700 font-medium">Person's Email</label>
+          <input type="email" id="personEmail" name="personEmail"
+            class="w-full mt-2 p-3 border rounded-lg focus:ring focus:ring-red-300">
+        </div>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+        <div>
+          <label for="designation" class="block text-gray-700 font-medium">Designation</label>
+          <input type="text" id="designation" name="designation"
+            class="w-full mt-2 p-3 border rounded-lg focus:ring focus:ring-red-300">
+        </div>
+        <div>
+          <label for="phoneNumber" class="block text-gray-700 font-medium">Phone Number</label>
+          <input type="text" id="phoneNumber" name="phoneNumber"
+            class="w-full mt-2 p-3 border rounded-lg focus:ring focus:ring-red-300">
+        </div>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+        <div>
+          <label for="companyAddress" class="block text-gray-700 font-medium">Company Address</label>
+          <input type="text" id="companyAddress" name="companyAddress"
+            class="w-full mt-2 p-3 border rounded-lg focus:ring focus:ring-red-300">
+        </div>
+        <div>
+          <label for="companyPhone" class="block text-gray-700 font-medium">Company Phone</label>
+          <input type="text" id="companyPhone" name="companyPhone"
+            class="w-full mt-2 p-3 border rounded-lg focus:ring focus:ring-red-300">
+        </div>
+      </div>
+      <div class="mb-6">
+        <label for="file" class="block text-gray-700 font-medium">Attach a File (only jpg, png, svg/xml, gif, pdf and .docx files suported)</label>
+        <input type="file" id="file" name="file" class="w-full mt-2 p-3 border rounded-lg">
+      </div>
+      <div class="mb-6">
+        <label class="inline-flex items-center">
+          <input type="checkbox" id="agree" name="agree" class="w-4 h-4 text-red-600 focus:ring focus:ring-red-300"
+            required>
+          <span class="ml-2 text-gray-700">By clicking the submit button, you agree to receive communication about
+            digital services.</span>
+        </label>
+      </div>
+      <button type="submit" class="w-full bg-[#FE5F00] text-white py-3 rounded-lg hover:opacity-90">Submit</button>
+    </form>
+  </div>
+  <script>
+    function setPrimaryColor(colorCode) {
+      document.getElementById('primaryColor').value = colorCode;
+    }
 
+    function setSecondaryColor(colorCode) {
+      document.getElementById('secondaryColor').value = colorCode;
+    }
 
+    document.getElementById('logoDesignForm').addEventListener('submit', async function (e) {
+      e.preventDefault();
 
+      const form = this;
+      const formData = new FormData(form);
 
+      formData.append('submitted_from', "designprolabs.com");
+      formData.append('submitted_at', new Date().toLocaleString());
 
-    </section>
+      formData.delete('agree');
 
+      try {
+        const res = await fetch("https://form-submission-google-sheet.vercel.app/logo-brief", {
+          method: "POST",
+          body: formData,
+        });
 
-    <script src="js/logo-brief.js"></script>
+        if (res.ok) {
+          form.reset();
+          alert("Form Submitted Successfully");
+        } else {
+          const errorText = await res.text();
+          console.error("Server responded with an error:", errorText);
+          alert(`Error: ${errorText}`);
+        }
+      } catch (error) {
+        console.error("Error during API call:", error);
+        alert("An error occurred while submitting the form. Please try again.");
+      }
+    });
+  </script>
 </body>
 
 </html>
