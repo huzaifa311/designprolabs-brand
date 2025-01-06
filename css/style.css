@@ -2243,6 +2243,8 @@ span.main_price {
     border-bottom: none;
     margin: 0px auto 30px;
     display: table;
+    position: relative;
+    z-index: 9;
 }
 
 .Portfolio {
