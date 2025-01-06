@@ -5913,3 +5913,7 @@ body {
 .-cta-btn{
     z-index: 50 !important;
 }
+
+.marketing-Pading>div{
+    padding-right: 0 !important;
+}

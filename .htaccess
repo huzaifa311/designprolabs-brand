@@ -1,0 +1,9 @@
+RewriteEngine On
+
+# Remove .html extension from URLs
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^([^/]+)$ $1.html [L]
+
+# Redirect from URLs with .html to clean URLs (optional)
+RewriteCond %{THE_REQUEST} \s(.+)\.html[\s?]
+RewriteRule ^(.+)\.html$ /$1 [R=301,L]
