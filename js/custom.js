@@ -45,14 +45,14 @@ jQuery(document).ready(function () {
 // ScrollBar End
 // -------------------------------------------------------------
 
-let values = ["Home", "👋 Hi there! Looking for a website?"];
+/* let values = ["Home", "👋 Hi there! Looking for a website?"];
 let index = 0;
 
 setInterval(() => {
   document.title = values[index];
 
   index = (index + 1) % values.length;
-}, 2000);
+}, 2000); */
 
 document.addEventListener("DOMContentLoaded", function () {
   function toggleActiveClass() {
