@@ -25,7 +25,7 @@
         />
         <h1 class="text-center text-3xl font-bold mt-2">Thank you!</h1>
         <p class="text-center text-gray-500 mt-2">
-          Your Submission has been saved. <br>You'll soon receive a call regarding your logo
+          We have received your request. <br>Our Project Manager will be in touch shortly.
         </p>
       </div>
     </div>

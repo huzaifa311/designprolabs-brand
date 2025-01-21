@@ -11,7 +11,7 @@ include 'include/header.php';?>
     <input id="companyName" type="text" required class="focus:outline-none border-white border-2 bg-transparent pr-[25px] py-[20px] pl-[55px] w-full rounded-lg text-white banner-form-input" placeholder="Enter your company name">
     <img src="assets/images/pencil.png" alt="pencil" class="absolute left-3 top-5 h-[25px] w-[25px] object-contain text-lg">
   </div>
-  <button class="bg-white w-fit text-[#F77508] mt-3 text-lg mx-auto py-[15px] px-[25px] font-bold rounded-lg capitalize">Let our design amaze you</button>
+  <button class="bg-white w-fit text-[#F77508] mt-3 text-lg mx-auto py-[15px] px-[25px] font-bold rounded-lg capitalize">Let our design amaze you!</button>
 </form>
   </div>
 
