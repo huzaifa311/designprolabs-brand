@@ -95,7 +95,7 @@
               <img
                 src="https://cdn.shopify.com/s/files/1/0637/4798/1473/files/nature-Green.png?v=1737489875"
                 alt=""
-                class="w-full h-full"
+                class="w-full h-full rounded-full"
               />
             </div>
             <p class="text-center text-[14px] leading-[1.4] font-semibold">Nature Green</p>
@@ -107,7 +107,7 @@
               <img
                 src="https://cdn.shopify.com/s/files/1/0637/4798/1473/files/juicy-Grape.png?v=1737489874"
                 alt=""
-                class="w-full h-full"
+                class="w-full h-full rounded-full"
               />
             </div>
             <p class="text-center text-[14px] leading-[1.4] font-semibold">Juicy Grape</p>
@@ -119,7 +119,7 @@
               <img
                 src="https://cdn.shopify.com/s/files/1/0637/4798/1473/files/light-Grey.png?v=1737489875"
                 alt=""
-                class="w-full h-full"
+                class="w-full h-full rounded-full"
               />
             </div>
             <p class="text-center text-[14px] leading-[1.4] font-semibold capitalize">light grey</p>
@@ -131,7 +131,7 @@
               <img
                 src="https://cdn.shopify.com/s/files/1/0637/4798/1473/files/dolomites-Black.png?v=1737489874"
                 alt=""
-                class="w-full h-full"
+                class="w-full h-full rounded-full"
               />
             </div>
             <p class="text-center text-[14px] leading-[1.4] font-semibold capitalize">Dolomites Black</p>
@@ -143,7 +143,7 @@
               <img
                 src="https://cdn.shopify.com/s/files/1/0637/4798/1473/files/hot-Red.png?v=1737489874"
                 alt=""
-                class="w-full h-full"
+                class="w-full h-full rounded-full"
               />
             </div>
             <p class="text-center text-[14px] leading-[1.4] font-semibold capitalize">Hot Red</p>
@@ -155,7 +155,7 @@
               <img
                 src="https://cdn.shopify.com/s/files/1/0637/4798/1473/files/red-Wine.png?v=1737489875"
                 alt=""
-                class="w-full h-full"
+                class="w-full h-full rounded-full"
               />
             </div>
             <p class="text-center text-[14px] leading-[1.4] font-semibold capitalize">Red Wine</p>
@@ -167,7 +167,7 @@
               <img
                 src="https://cdn.shopify.com/s/files/1/0637/4798/1473/files/royal-Blue.png?v=1737489874"
                 alt=""
-                class="w-full h-full"
+                class="w-full h-full rounded-full"
               />
             </div>
             <p class="text-center text-[14px] leading-[1.4] font-semibold capitalize">Royal Blue</p>
@@ -179,7 +179,7 @@
               <img
                 src="https://cdn.shopify.com/s/files/1/0637/4798/1473/files/teal.png?v=1737489875"
                 alt=""
-                class="w-full h-full"
+                class="w-full h-full rounded-full"
               />
             </div>
             <p class="text-center text-[14px] leading-[1.4] font-semibold capitalize">Teal</p>
@@ -191,7 +191,7 @@
               <img
                 src="https://cdn.shopify.com/s/files/1/0637/4798/1473/files/vintage-Brown.png?v=1737489875"
                 alt=""
-                class="w-full h-full"
+                class="w-full h-full rounded-full"
               />
             </div>
             <p class="text-center text-[14px] leading-[1.4] font-semibold capitalize">Vintage Brown</p>
@@ -203,7 +203,7 @@
               <img
                 src="https://cdn.shopify.com/s/files/1/0637/4798/1473/files/royal-Pink.png?v=1737489875"
                 alt=""
-                class="w-full h-full"
+                class="w-full h-full rounded-full"
               />
             </div>
             <p class="text-center text-[14px] leading-[1.4] font-semibold capitalize">Royal Pink</p>
@@ -215,7 +215,7 @@
               <img
                 src="https://cdn.shopify.com/s/files/1/0637/4798/1473/files/orange.png?v=1737489874"
                 alt=""
-                class="w-full h-full"
+                class="w-full h-full rounded-full"
               />
             </div>
             <p class="text-center text-[14px] leading-[1.4] font-semibold capitalize">Orange</p>
@@ -227,7 +227,7 @@
               <img
                 src="https://cdn.shopify.com/s/files/1/0637/4798/1473/files/neon-Yellow.png?v=1737489874"
                 alt=""
-                class="w-full h-full"
+                class="w-full h-full rounded-full"
               />
             </div>
             <p class="text-center text-[14px] leading-[1.4] font-semibold capitalize">Neon Yellow</p>
@@ -239,7 +239,7 @@
               <img
                 src="https://cdn.shopify.com/s/files/1/0637/4798/1473/files/designer-Choice.png?v=1737489875"
                 alt=""
-                class="w-full h-full"
+                class="w-full h-full rounded-full"
               />
             </div>
             <p class="text-center text-[14px] leading-[1.4] font-semibold capitalize">Designer's Choice</p>

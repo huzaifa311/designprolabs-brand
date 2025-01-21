@@ -93,7 +93,7 @@
               <img
                 src="../assets/images/stepForm/logoType/abstract.png"
                 alt=""
-                class="w-full h-full"
+                class="w-full h-full rounded-full"
               />
             </div>
             <p class="text-center text-[14px] leading-[1.4] font-semibold">Abstract & Combination
@@ -106,7 +106,7 @@
               <img
                 src="../assets/images/stepForm/logoType/calligraphy.png"
                 alt=""
-                class="w-full h-full"
+                class="w-full h-full rounded-full"
               />
             </div>
             <p class="text-center text-[14px] leading-[1.4] font-semibold">Calligraphy & Handwritten
@@ -120,7 +120,7 @@
               <img
                 src="../assets/images/stepForm/logoType/emblem.png"
                 alt=""
-                class="w-full h-full"
+                class="w-full h-full rounded-full"
               />
             </div>
             <p class="text-center text-[14px] leading-[1.4] font-semibold">Emblem & Crest
@@ -133,7 +133,7 @@
               <img
                 src="../assets/images/stepForm/logoType/lettermark.png"
                 alt=""
-                class="w-full h-full"
+                class="w-full h-full rounded-full"
               />
             </div>
             <p class="text-center text-[14px] leading-[1.4] font-semibold">Lettermark & Initials
@@ -147,7 +147,7 @@
               <img
                 src="../assets/images/stepForm/logoType/pictorial.png"
                 alt=""
-                class="w-full h-full"
+                class="w-full h-full rounded-full"
               />
             </div>
             <p class="text-center text-[14px] leading-[1.4] font-semibold">Pictorial & Icon
