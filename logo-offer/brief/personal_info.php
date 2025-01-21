@@ -77,7 +77,7 @@
       </div>
     </header>
 
-    <section class="w-[95%] sm:w-[73%] 2xl:w-[1500px] mx-auto sm:py-32 pt-48">
+    <section class="w-[95%] sm:w-[73%] 2xl:w-[1500px] mx-auto sm:py-32 py-48">
       <h1 class="sm:text-5xl text-4xl font-bold text-center">
         Congrats, <span id="companyName" class="text-[#FE5F00] whitespace-nowrap"></span> logo is<br> almost ready! 😊
       </h1>

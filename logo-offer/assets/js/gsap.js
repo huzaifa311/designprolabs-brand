@@ -1,5 +1,5 @@
 let sentenceEl = document.getElementById("sentence");
-let text = "Online Logo Maker for Every Business Idea";
+let text = "Online Logo Maker for Every Business Idea!";
 
 let splittedText = text.split("")
 console.log(splittedText);

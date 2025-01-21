@@ -93,7 +93,7 @@
               class="bg-white shadow rounded-full w-32 h-32 whitespace-nowrap flex justify-center items-center mx-auto step-inner"
             >
               <img
-                src="../assets/images/stepForm/colorSchemes/nature-green.png"
+                src="https://cdn.shopify.com/s/files/1/0637/4798/1473/files/nature-Green.png?v=1737489875"
                 alt=""
                 class="w-full h-full"
               />
@@ -105,7 +105,7 @@
               class="bg-white shadow rounded-full w-32 h-32 whitespace-nowrap flex justify-center items-center mx-auto step-inner"
             >
               <img
-                src="../assets/images/stepForm/colorSchemes/juicy-grape.png"
+                src="https://cdn.shopify.com/s/files/1/0637/4798/1473/files/juicy-Grape.png?v=1737489874"
                 alt=""
                 class="w-full h-full"
               />
@@ -117,7 +117,7 @@
               class="bg-white shadow rounded-full w-32 h-32 whitespace-nowrap flex justify-center items-center mx-auto step-inner"
             >
               <img
-                src="../assets/images/stepForm/colorSchemes/light-grey.png"
+                src="https://cdn.shopify.com/s/files/1/0637/4798/1473/files/light-Grey.png?v=1737489875"
                 alt=""
                 class="w-full h-full"
               />
@@ -129,7 +129,7 @@
               class="bg-white shadow rounded-full w-32 h-32 whitespace-nowrap flex justify-center items-center mx-auto step-inner"
             >
               <img
-                src="../assets/images/stepForm/colorSchemes/dolomites-black.png"
+                src="https://cdn.shopify.com/s/files/1/0637/4798/1473/files/dolomites-Black.png?v=1737489874"
                 alt=""
                 class="w-full h-full"
               />
@@ -141,7 +141,7 @@
               class="bg-white shadow rounded-full w-32 h-32 whitespace-nowrap flex justify-center items-center mx-auto step-inner"
             >
               <img
-                src="../assets/images/stepForm/colorSchemes/hot-red.png"
+                src="https://cdn.shopify.com/s/files/1/0637/4798/1473/files/hot-Red.png?v=1737489874"
                 alt=""
                 class="w-full h-full"
               />
@@ -153,7 +153,7 @@
               class="bg-white shadow rounded-full w-32 h-32 whitespace-nowrap flex justify-center items-center mx-auto step-inner"
             >
               <img
-                src="../assets/images/stepForm/colorSchemes/red-wine.png"
+                src="https://cdn.shopify.com/s/files/1/0637/4798/1473/files/red-Wine.png?v=1737489875"
                 alt=""
                 class="w-full h-full"
               />
@@ -165,7 +165,7 @@
               class="bg-white shadow rounded-full w-32 h-32 whitespace-nowrap flex justify-center items-center mx-auto step-inner"
             >
               <img
-                src="../assets/images/stepForm/colorSchemes/royal-blue.png"
+                src="https://cdn.shopify.com/s/files/1/0637/4798/1473/files/royal-Blue.png?v=1737489874"
                 alt=""
                 class="w-full h-full"
               />
@@ -177,7 +177,7 @@
               class="bg-white shadow rounded-full w-32 h-32 whitespace-nowrap flex justify-center items-center mx-auto step-inner"
             >
               <img
-                src="../assets/images/stepForm/colorSchemes/teal.png"
+                src="https://cdn.shopify.com/s/files/1/0637/4798/1473/files/teal.png?v=1737489875"
                 alt=""
                 class="w-full h-full"
               />
@@ -189,7 +189,7 @@
               class="bg-white shadow rounded-full w-32 h-32 whitespace-nowrap flex justify-center items-center mx-auto step-inner"
             >
               <img
-                src="../assets/images/stepForm/colorSchemes/vintage-brown.png"
+                src="https://cdn.shopify.com/s/files/1/0637/4798/1473/files/vintage-Brown.png?v=1737489875"
                 alt=""
                 class="w-full h-full"
               />
@@ -201,7 +201,7 @@
               class="bg-white shadow rounded-full w-32 h-32 whitespace-nowrap flex justify-center items-center mx-auto step-inner"
             >
               <img
-                src="../assets/images/stepForm/colorSchemes/royal-pink.png"
+                src="https://cdn.shopify.com/s/files/1/0637/4798/1473/files/royal-Pink.png?v=1737489875"
                 alt=""
                 class="w-full h-full"
               />
@@ -213,7 +213,7 @@
               class="bg-white shadow rounded-full w-32 h-32 whitespace-nowrap flex justify-center items-center mx-auto step-inner"
             >
               <img
-                src="../assets/images/stepForm/colorSchemes/orange.png"
+                src="https://cdn.shopify.com/s/files/1/0637/4798/1473/files/orange.png?v=1737489874"
                 alt=""
                 class="w-full h-full"
               />
@@ -225,7 +225,7 @@
               class="bg-white shadow rounded-full w-32 h-32 whitespace-nowrap flex justify-center items-center mx-auto step-inner"
             >
               <img
-                src="../assets/images/stepForm/colorSchemes/neon-yellow.png"
+                src="https://cdn.shopify.com/s/files/1/0637/4798/1473/files/neon-Yellow.png?v=1737489874"
                 alt=""
                 class="w-full h-full"
               />
@@ -237,7 +237,7 @@
               class="bg-white shadow rounded-full w-32 h-32 whitespace-nowrap flex justify-center items-center mx-auto step-inner"
             >
               <img
-                src="../assets/images/stepForm/colorSchemes/designer-Choice.png"
+                src="https://cdn.shopify.com/s/files/1/0637/4798/1473/files/designer-Choice.png?v=1737489875"
                 alt=""
                 class="w-full h-full"
               />

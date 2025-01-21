@@ -25108,11 +25108,12 @@ footer .logo-div {
 /* Keep your existing styles */
 .step-inner {
     position: relative;
-    overflow: hidden; /* Ensures animation stays within bounds */
-  }
-  
-  /* The hover animation as before */
-  .step-inner::before {
+    overflow: hidden;
+    /* Ensures animation stays within bounds */
+}
+
+/* The hover animation as before */
+.step-inner::before {
     content: "";
     position: absolute;
     top: 0;
@@ -25120,59 +25121,75 @@ footer .logo-div {
     width: 100%;
     height: 100%;
     border: 2px solid transparent;
-    border-radius: 50%; /* circle */
+    border-radius: 50%;
+    /* circle */
     box-sizing: border-box;
     z-index: 1;
     animation: border-animation 1s cubic-bezier(0.4, 0, 0.2, 1) infinite;
     pointer-events: none;
     display: none;
-  }
-  
-  .step-inner:hover::before {
+}
+
+.step-inner:hover::before {
     display: block;
-  }
-  
-  /* When selected, we want a continuous border */
-  .step-inner.selected {
-    border: 3px solid #FE5F00; /* Always shows the solid border */
-  }
-  
-  /* Optionally, disable the hover animation if you prefer a static border once selected: */
-  .step-inner.selected:hover::before {
-    display: none; /* This line ensures no animation overlays the selected border */
-  }
-  
-  /* The keyframes remain unchanged */
-  @keyframes border-animation {
+}
+
+/* When selected, we want a continuous border */
+.step-inner.selected {
+    border: 3px solid #FE5F00;
+    /* Always shows the solid border */
+}
+
+/* Optionally, disable the hover animation if you prefer a static border once selected: */
+.step-inner.selected:hover::before {
+    display: none;
+    /* This line ensures no animation overlays the selected border */
+}
+
+/* The keyframes remain unchanged */
+@keyframes border-animation {
     0% {
-      border-top: 3px solid #FE5F00;
-      border-right: 3px solid transparent;
-      border-bottom: 3px solid transparent;
-      border-left: 3px solid transparent;
+        border-top: 3px solid #FE5F00;
+        border-right: 3px solid transparent;
+        border-bottom: 3px solid transparent;
+        border-left: 3px solid transparent;
     }
+
     25% {
-      border-top: 3px solid #FE5F00;
-      border-right: 3px solid #FE5F00;
-      border-bottom: 3px solid transparent;
-      border-left: 3px solid transparent;
+        border-top: 3px solid #FE5F00;
+        border-right: 3px solid #FE5F00;
+        border-bottom: 3px solid transparent;
+        border-left: 3px solid transparent;
     }
+
     50% {
-      border-top: 3px solid #FE5F00;
-      border-right: 3px solid #FE5F00;
-      border-bottom: 3px solid #FE5F00;
-      border-left: 3px solid transparent;
+        border-top: 3px solid #FE5F00;
+        border-right: 3px solid #FE5F00;
+        border-bottom: 3px solid #FE5F00;
+        border-left: 3px solid transparent;
     }
+
     75% {
-      border-top: 3px solid #FE5F00;
-      border-right: 3px solid #FE5F00;
-      border-bottom: 3px solid #FE5F00;
-      border-left: 3px solid #FE5F00;
+        border-top: 3px solid #FE5F00;
+        border-right: 3px solid #FE5F00;
+        border-bottom: 3px solid #FE5F00;
+        border-left: 3px solid #FE5F00;
     }
+
     100% {
-      border-top: 3px solid #FE5F00;
-      border-right: 3px solid #FE5F00;
-      border-bottom: 3px solid #FE5F00;
-      border-left: 3px solid #FE5F00;
+        border-top: 3px solid #FE5F00;
+        border-right: 3px solid #FE5F00;
+        border-bottom: 3px solid #FE5F00;
+        border-left: 3px solid #FE5F00;
     }
-  }
-  
+}
+
+header img {
+    filter: brightness(0) invert(1);
+    transition: filter 0.3s ease;
+}
+
+/* When the header has the 'navbar-shrink' class, remove the filter */
+header.navbar-shrink img {
+    filter: none;
+}
