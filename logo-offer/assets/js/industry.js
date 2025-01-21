@@ -38,9 +38,7 @@ document.addEventListener("DOMContentLoaded", () => {
       const cname = getQueryParam("cname") || "defaultCName";
       const slogan = getQueryParam("slogan") || "defaultSlogan";
   
-      const nextUrl = `logo_style.php?cname=${encodeURIComponent(cname)}&slogan=${encodeURIComponent(
-        slogan
-      )}&${queryParams}`;
+      const nextUrl = `color_picker.php?cname=${encodeURIComponent(cname)}&slogan=${encodeURIComponent(slogan)}&${queryParams}`;
   
       // Navigate to the next page
       window.location.href = nextUrl;

@@ -83,10 +83,10 @@
         <span id="companyName" class="text-[#FE5F00]"></span> dominate?
       </h1>
       <div class="flex justify-center mt-4">
-        <div class="grid grid-cols-6 gap-4">
+        <div class="flex flex-wrap justify-center gap-x-16 gap-y-8">
           <div class="space-y-2 cursor-pointer step-box">
             <div
-              class="bg-white shadow rounded-full w-28 h-28 whitespace-nowrap flex justify-center items-center mx-auto step-inner"
+              class="bg-white shadow rounded-full w-32 h-32 whitespace-nowrap flex justify-center items-center mx-auto step-inner"
             >
               <img
                 src="../assets/images/stepForm/1.png"
@@ -100,7 +100,7 @@
           </div>
           <div class="space-y-2 cursor-pointer step-box">
             <div
-              class="bg-white shadow rounded-full w-28 h-28 whitespace-nowrap flex justify-center items-center mx-auto step-inner"
+              class="bg-white shadow rounded-full w-32 h-32 whitespace-nowrap flex justify-center items-center mx-auto step-inner"
             >
               <img
                 src="../assets/images/stepForm/2.png"
@@ -114,7 +114,7 @@
           </div>
           <div class="space-y-2 cursor-pointer step-box">
             <div
-              class="bg-white shadow rounded-full w-28 h-28 whitespace-nowrap flex justify-center items-center mx-auto step-inner"
+              class="bg-white shadow rounded-full w-32 h-32 whitespace-nowrap flex justify-center items-center mx-auto step-inner"
             >
               <img
                 src="../assets/images/stepForm/3.png"
@@ -128,7 +128,7 @@
           </div>
           <div class="space-y-2 cursor-pointer step-box">
             <div
-              class="bg-white shadow rounded-full w-28 h-28 whitespace-nowrap flex justify-center items-center mx-auto step-inner"
+              class="bg-white shadow rounded-full w-32 h-32 whitespace-nowrap flex justify-center items-center mx-auto step-inner"
             >
               <img
                 src="../assets/images/stepForm/4.png"
@@ -142,7 +142,7 @@
           </div>
           <div class="space-y-2 cursor-pointer step-box">
             <div
-              class="bg-white shadow rounded-full w-28 h-28 whitespace-nowrap flex justify-center items-center mx-auto step-inner"
+              class="bg-white shadow rounded-full w-32 h-32 whitespace-nowrap flex justify-center items-center mx-auto step-inner"
             >
               <img
                 src="../assets/images/stepForm/5.png"
@@ -154,7 +154,7 @@
           </div>
           <div class="space-y-2 cursor-pointer step-box">
             <div
-              class="bg-white shadow rounded-full w-28 h-28 whitespace-nowrap flex justify-center items-center mx-auto step-inner"
+              class="bg-white shadow rounded-full w-32 h-32 whitespace-nowrap flex justify-center items-center mx-auto step-inner"
             >
               <img
                 src="../assets/images/stepForm/6.png"
@@ -166,7 +166,7 @@
           </div>
           <div class="space-y-2 cursor-pointer step-box">
             <div
-              class="bg-white shadow rounded-full w-28 h-28 whitespace-nowrap flex justify-center items-center mx-auto step-inner"
+              class="bg-white shadow rounded-full w-32 h-32 whitespace-nowrap flex justify-center items-center mx-auto step-inner"
             >
               <img
                 src="../assets/images/stepForm/7.png"
@@ -178,7 +178,7 @@
           </div>
           <div class="space-y-2 cursor-pointer step-box">
             <div
-              class="bg-white shadow rounded-full w-28 h-28 whitespace-nowrap flex justify-center items-center mx-auto step-inner"
+              class="bg-white shadow rounded-full w-32 h-32 whitespace-nowrap flex justify-center items-center mx-auto step-inner"
             >
               <img
                 src="../assets/images/stepForm/8.png"
@@ -190,7 +190,7 @@
           </div>
           <div class="space-y-2 cursor-pointer step-box">
             <div
-              class="bg-white shadow rounded-full w-28 h-28 whitespace-nowrap flex justify-center items-center mx-auto step-inner"
+              class="bg-white shadow rounded-full w-32 h-32 whitespace-nowrap flex justify-center items-center mx-auto step-inner"
             >
               <img
                 src="../assets/images/stepForm/9.png"
@@ -202,7 +202,7 @@
           </div>
           <div class="space-y-2 cursor-pointer step-box">
             <div
-              class="bg-white shadow rounded-full w-28 h-28 whitespace-nowrap flex justify-center items-center mx-auto step-inner"
+              class="bg-white shadow rounded-full w-32 h-32 whitespace-nowrap flex justify-center items-center mx-auto step-inner"
             >
               <img
                 src="../assets/images/stepForm/10.png"
@@ -216,7 +216,7 @@
           </div>
           <div class="space-y-2 cursor-pointer step-box">
             <div
-              class="bg-white shadow rounded-full w-28 h-28 whitespace-nowrap flex justify-center items-center mx-auto step-inner"
+              class="bg-white shadow rounded-full w-32 h-32 whitespace-nowrap flex justify-center items-center mx-auto step-inner"
             >
               <img
                 src="../assets/images/stepForm/11.png"
@@ -230,7 +230,7 @@
           </div>
           <div class="space-y-2 cursor-pointer step-box">
             <div
-              class="bg-white shadow rounded-full w-28 h-28 whitespace-nowrap flex justify-center items-center mx-auto step-inner"
+              class="bg-white shadow rounded-full w-32 h-32 whitespace-nowrap flex justify-center items-center mx-auto step-inner"
             >
               <img
                 src="../assets/images/stepForm/12.png"
@@ -242,7 +242,7 @@
           </div>
           <div class="space-y-2 cursor-pointer step-box">
             <div
-              class="bg-white shadow rounded-full w-28 h-28 whitespace-nowrap flex justify-center items-center mx-auto step-inner"
+              class="bg-white shadow rounded-full w-32 h-32 whitespace-nowrap flex justify-center items-center mx-auto step-inner"
             >
               <img
                 src="../assets/images/stepForm/13.png"
@@ -254,7 +254,7 @@
           </div>
           <div class="space-y-2 cursor-pointer step-box">
             <div
-              class="bg-white shadow rounded-full w-28 h-28 whitespace-nowrap flex justify-center items-center mx-auto step-inner"
+              class="bg-white shadow rounded-full w-32 h-32 whitespace-nowrap flex justify-center items-center mx-auto step-inner"
             >
               <img
                 src="../assets/images/stepForm/14.png"
@@ -266,7 +266,7 @@
           </div>
           <div class="space-y-2 cursor-pointer step-box">
             <div
-              class="bg-white shadow rounded-full w-28 h-28 whitespace-nowrap flex justify-center items-center mx-auto step-inner"
+              class="bg-white shadow rounded-full w-32 h-32 whitespace-nowrap flex justify-center items-center mx-auto step-inner"
             >
               <img
                 src="../assets/images/stepForm/15.png"
@@ -278,7 +278,7 @@
           </div>
           <div class="space-y-2 cursor-pointer step-box">
             <div
-              class="bg-white shadow rounded-full w-28 h-28 whitespace-nowrap flex justify-center items-center mx-auto step-inner"
+              class="bg-white shadow rounded-full w-32 h-32 whitespace-nowrap flex justify-center items-center mx-auto step-inner"
             >
               <img
                 src="../assets/images/stepForm/16.png"
@@ -290,7 +290,7 @@
           </div>
           <div class="space-y-2 cursor-pointer step-box">
             <div
-              class="bg-white shadow rounded-full w-28 h-28 whitespace-nowrap flex justify-center items-center mx-auto step-inner"
+              class="bg-white shadow rounded-full w-32 h-32 whitespace-nowrap flex justify-center items-center mx-auto step-inner"
             >
               <img
                 src="../assets/images/stepForm/17.png"
@@ -302,7 +302,7 @@
           </div>
           <div class="space-y-2 cursor-pointer step-box">
             <div
-              class="bg-white shadow rounded-full w-28 h-28 whitespace-nowrap flex justify-center items-center mx-auto step-inner"
+              class="bg-white shadow rounded-full w-32 h-32 whitespace-nowrap flex justify-center items-center mx-auto step-inner"
             >
               <img
                 src="../assets/images/stepForm/18.png"
@@ -314,7 +314,7 @@
           </div>
           <div class="space-y-2 cursor-pointer step-box">
             <div
-              class="bg-white shadow rounded-full w-28 h-28 whitespace-nowrap flex justify-center items-center mx-auto step-inner"
+              class="bg-white shadow rounded-full w-32 h-32 whitespace-nowrap flex justify-center items-center mx-auto step-inner"
             >
               <img
                 src="../assets/images/stepForm/19.png"
@@ -326,7 +326,7 @@
           </div>
           <div class="space-y-2 cursor-pointer step-box">
             <div
-              class="bg-white shadow rounded-full w-28 h-28 whitespace-nowrap flex justify-center items-center mx-auto step-inner"
+              class="bg-white shadow rounded-full w-32 h-32 whitespace-nowrap flex justify-center items-center mx-auto step-inner"
             >
               <img
                 src="../assets/images/stepForm/20.png"
@@ -338,7 +338,7 @@
           </div>
           <div class="space-y-2 cursor-pointer step-box">
             <div
-              class="bg-white shadow rounded-full w-28 h-28 whitespace-nowrap flex justify-center items-center mx-auto step-inner"
+              class="bg-white shadow rounded-full w-32 h-32 whitespace-nowrap flex justify-center items-center mx-auto step-inner"
             >
               <img
                 src="../assets/images/stepForm/21.png"
@@ -350,7 +350,7 @@
           </div>
           <div class="space-y-2 cursor-pointer step-box">
             <div
-              class="bg-white shadow rounded-full w-28 h-28 whitespace-nowrap flex justify-center items-center mx-auto step-inner"
+              class="bg-white shadow rounded-full w-32 h-32 whitespace-nowrap flex justify-center items-center mx-auto step-inner"
             >
               <img
                 src="../assets/images/stepForm/22.png"
@@ -362,7 +362,7 @@
           </div>
           <div class="space-y-2 cursor-pointer step-box">
             <div
-              class="bg-white shadow rounded-full w-28 h-28 whitespace-nowrap flex justify-center items-center mx-auto step-inner"
+              class="bg-white shadow rounded-full w-32 h-32 whitespace-nowrap flex justify-center items-center mx-auto step-inner"
             >
               <img
                 src="../assets/images/stepForm/23.png"
@@ -374,7 +374,7 @@
           </div>
           <div class="space-y-2 cursor-pointer step-box">
             <div
-              class="bg-white shadow rounded-full w-28 h-28 whitespace-nowrap flex justify-center items-center mx-auto step-inner"
+              class="bg-white shadow rounded-full w-32 h-32 whitespace-nowrap flex justify-center items-center mx-auto step-inner"
             >
               <img
                 src="../assets/images/stepForm/24.png"

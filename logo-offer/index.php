@@ -1,7 +1,7 @@
 <?php $title = "Design Pro Labs | Special Offer";
 include 'include/header.php';?>
 
-<section id="home" class="sm:!h-[109vh] !h-fit w-full relative flex items-center">
+<section id="home" class="sm:!h-[109vh] !h-fit sm:py-0 pt-40 pb-28 w-full relative flex items-center">
   <div
     class="sm:w-[80%] md:w-[43%] w-[90%] mx-auto z-20 2xl:w-[1500px] text-white">
     <h3 class="text-center text-sm font-semibold">Custom Logo Creator</h3>

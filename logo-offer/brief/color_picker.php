@@ -87,7 +87,7 @@
         <span class="text-[#FE5F00]" id="companyName"></span>
       </p>
       <div class="flex justify-center mt-4">
-        <div class="grid grid-cols-5 justify-center items-center gap-7">
+        <div class="flex justify-center gap-x-16 flex-wrap justify-center gap-y-10 ">
           <div class="space-y-2 cursor-pointer step-box">
             <div
               class="bg-white shadow rounded-full w-32 h-32 whitespace-nowrap flex justify-center items-center mx-auto step-inner"
@@ -208,7 +208,6 @@
             </div>
             <p class="text-center text-[14px] leading-[1.4] font-semibold capitalize">Royal Pink</p>
           </div>
-          <div></div>
           <div class="space-y-2 cursor-pointer step-box">
             <div
               class="bg-white shadow rounded-full w-32 h-32 whitespace-nowrap flex justify-center items-center mx-auto step-inner"
@@ -245,12 +244,11 @@
             </div>
             <p class="text-center text-[14px] leading-[1.4] font-semibold capitalize">Designer's Choice</p>
           </div>
-          <div></div>
         </div>
       </div>
     </section>
     <div
-      class="fixed bottom-0 left-0 w-full py-4 flex justify-center customBorder bg-white"
+      class="fixed z-50 bottom-0 left-0 w-full py-4 flex justify-center customBorder bg-white"
     >
       <button
         id="skipBtn"
@@ -260,6 +258,6 @@
         <img src="../assets/images/arrowForward.png" alt="arrowForward" />
       </button>
     </div>
-    <script src="../assets/js/logo_style.js"></script>
+    <script src="../assets/js/color_picker.js"></script>
   </body>
 </html>

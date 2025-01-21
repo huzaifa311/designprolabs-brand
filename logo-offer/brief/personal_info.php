@@ -77,33 +77,50 @@
       </div>
     </header>
 
-    <section class="flex justify-center items-center h-screen">
-  <div>
-    <h1 class="text-4xl font-bold text-center">
-      Does <span id="companyName" class="text-[#FE5F00]"></span> have a slogan?
-    </h1>
-    <form id="sloganForm" class="flex flex-col justify-center mt-4">
+    <section class="w-[95%] sm:w-[73%] 2xl:w-[1500px] mx-auto sm:py-32 pt-48">
+      <h1 class="sm:text-5xl text-4xl font-bold text-center">
+        Congrats, <span id="companyName" class="text-[#FE5F00] whitespace-nowrap"></span> logo is<br> almost ready! 😊
+      </h1>
+      <p class="text-center text-[14px] mt-3">
+      Please fill in the following details to recieve your logo.
+      </p>
+      <div class="mt-8 space-y-4 flex flex-col">
       <input
-        id="sloganInput"
+        id="name"
         type="text"
-        class="w-[80%] border-[#d7d7d7] border-[2px] rounded-lg mx-auto py-[14px] px-[15px] focus:outline-[#FE5F00]"
-        placeholder="Company Slogan (Optional)"
+        class="md:w-[70%] w-[80%] border-[#d7d7d7] border-[2px] rounded-lg mx-auto py-[14px] px-[15px] focus:outline-[#FE5F00]"
+        required
+        placeholder="Please Enter Your Name"
+        name="name"
       />
-    </form>
-  </div>
-</section>
-
-<div class="fixed bottom-0 left-0 w-full py-4 flex justify-center customBorder">
-  <button
-    id="skipBtn"
-    class="text-lg font-semibold text-white bg-[#FE5F00] py-[10px] px-10 flex items-center gap-2"
-  >
-    <span id="skipText">Skip</span>
-    <img src="../assets/images/arrowForward.png" alt="arrowForward" />
-  </button>
-</div>
-
-
-    <script src="../assets/js/slogan.js"></script>
+      <input
+        id="email"
+        type="text"
+        class="md:w-[70%] w-[80%] border-[#d7d7d7] border-[2px] rounded-lg mx-auto py-[14px] px-[15px] focus:outline-[#FE5F00]"
+        required
+        placeholder="Please Enter Your Email"
+        name="email"
+      />
+      <input
+        id="phone"
+        type="text"
+        class="md:w-[70%] w-[80%] border-[#d7d7d7] border-[2px] rounded-lg mx-auto py-[14px] px-[15px] focus:outline-[#FE5F00]"
+        required
+        placeholder="Please Enter Your Phone Number"
+        name="phone"
+      />
+      </div>
+    </section>
+    <div
+      class="fixed z-50 bottom-0 left-0 w-full py-4 flex justify-center customBorder bg-white"
+    >
+      <button
+        id="submitBtn"
+        class="text-lg font-semibold text-white bg-[#FE5F00] py-[12px] px-10 flex items-center gap-2"
+      >
+        Submit
+      </button>
+    </div>
+    <script src="../assets/js/personal_info.js"></script>
   </body>
 </html>
