@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <?php include 'include/css.php'; ?>
     <title><?php echo isset($title) ? $title : 'Home'; ?></title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
 
 <body class="hompg">
@@ -15,7 +16,7 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-3">
-                    <a href="/index" class="logo md:pl-14 pl-2">
+                    <a href="../index" class="logo md:pl-14 pl-2">
                         <img src="assets/images/logo-white.png" alt="" class="logo-main md:ml-8">
                         <img src="assets/images/logo.png" alt="" class="logo-fixed md:ml-8">
                     </a>

@@ -625,10 +625,10 @@
     }
 }
 
-@media only screen and (min-device-width :1247px) and (max-device-width :1406px) {
+@media only screen and (min-device-width: 1247px) and (max-device-width: 1406px) {
     header .menu ul li a {
-        font-size: 11px;
-        font-weight: 400
+        font-size: 16px !important;
+        font-weight: 400;
     }
 }
 

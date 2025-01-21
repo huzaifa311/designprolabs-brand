@@ -1,106 +1,22 @@
 <?php $title = "Design Pro Labs | Special Offer";
 include 'include/header.php';?>
 
-<section id="home" class="sm:!h-[109vh] !h-fit w-full pt-28 relative pb-20 flex items-center">
+<section id="home" class="sm:!h-[109vh] !h-fit w-full relative flex items-center">
   <div
-    class="grid md:grid-cols-5 grid-cols-1 md:gap-0 gap-10 items-center sm:w-[85%] w-[90%] mx-auto z-20  2xl:w-[1500px]">
-    <div class="col-span-3 relative">
-      <h1 class="sm:text-5xl text-2xl font-bold text-white md:leading-[55px]">
-        Professional Logo Design Starting From
-        <span class="text-[#FE5F00]">$39</span>
-        Only
-      </h1>
-      <p class="text-white mt-2 md:mt-0 text-xl">
-        Make a strong first impression with a custom, attention-grabbing,
-        customer-centric logo design.
-      </p>
-      <ul class="space-y-2 my-3">
-        <li>
-          <div class="flex items-center gap-2">
-            <div class="h-4 w-4 rounded-full flex items-center justify-center bg-white whitespace-nowrap">
-              <img src="assets/images/check.png" alt="tick" class="h-[11px] object-fit">
-            </div>
-            <p class="text-white text-[15px] font-light	">3 Unique Logo Design Concepts</p>
-          </div>
-        </li>
-        <li>
-          <div class="flex items-center gap-2">
-            <div class="h-4 w-4 rounded-full flex items-center justify-center bg-white whitespace-nowrap">
-              <img src="assets/images/check.png" alt="tick" class="h-[11px] object-fit">
-            </div>
-            <p class="text-white text-[15px] font-light	">5 Revisions
-            </p>
-          </div>
-        </li>
-        <li>
-          <div class="flex items-center gap-2">
-            <div class="h-4 w-4 rounded-full flex items-center justify-center bg-white whitespace-nowrap">
-              <img src="assets/images/check.png" alt="tick" class="h-[11px] object-fit">
-            </div>
-            <p class="text-white text-[15px] font-light	">Free Color Options
-            </p>
-          </div>
-        </li>
-        <li>
-          <div class="flex items-center gap-2">
-            <div class="h-4 w-4 rounded-full flex items-center justify-center bg-white whitespace-nowrap">
-              <img src="assets/images/check.png" alt="tick" class="h-[11px] object-fit">
-            </div>
-            <p class="text-white text-[15px] font-light	">24-48 Hours Turnaround Time
-            </p>
-          </div>
-        </li>
-        <li>
-          <div class="flex items-center gap-2">
-            <div class="h-4 w-4 rounded-full flex items-center justify-center bg-white whitespace-nowrap">
-              <img src="assets/images/check.png" alt="tick" class="h-[11px] object-fit">
-            </div>
-            <p class="text-white text-[15px] font-light	">100% Money Back Guarantee
-            </p>
-          </div>
-        </li>
-      </ul>
-      <div class="gap-3 mt-3 flex flex-wrap items-center">
-        <div
-          class="bg-transparent text-white border border-white text-xl hover:opacity-90 rounded transition-all duration-300 active:scale-90 w-fit py-3 px-4">
-          <a href="javascript:;" class="chat hover:!text-white">Talk With Expert
-          </a>
-        </div>
-        <a href="javascript:;" name="for $244" data-fancybox="" title="Lets Get Started"
-          class="px-4 flex item-center rounded-lg text-lg h-16 !hover:text-black bg-[#FE6F19] !border-[#FE6F19] text-white border focus:outline-none transition-all"
-          data-src="#popupform2"><button style="outline:none;"
-            class="hover:text-black transition-all hover:!text-white hover:!opacity-90">Claim Your Logo Now</button></a>
-      </div>
-    </div>
-    <form onSubmit="handleBannerForm(event, 'BannerFormLogo')"
-      class="bg-white shadow-2xl !border-2 !border-[#E4FF3E] !outline-[#E4FF3E] py-4 px-8 md:w-[93%] col-span-2 w-full h-fit mx-auto rounded-xl relative">
-      <h1 class="text-center text-[#FE5F00] text-2xl font-bold mb-3">Limited Time Offer</h1>
-      <div class="space-y-4">
-        <div>
-          <input placeholder="Name" type="text" id="name"
-            class="w-full text-black p-3 text-base focus:outline-none border rounded !border-[#C6C6C6] bg-[#F3F3F3]" />
-        </div>
-        <div>
-          <input required placeholder="Your Email Address?" type="text" id="email"
-            class="w-full text-black p-3 text-base focus:outline-none border rounded !border-[#C6C6C6] bg-[#F3F3F3]" />
-        </div>
-        <div>
-          <input required placeholder="Your Phone No?" type="text" id="phone"
-            class="w-full text-black p-3 text-base focus:outline-none border rounded !border-[#C6C6C6] bg-[#F3F3F3]" />
-        </div>
-        <div>
-          <textarea placeholder="Share any specific ideas or requirements you have in mind" type="text" id="description"
-            class="w-full text-black p-3 text-base focus:outline-none border rounded !border-[#C6C6C6] bg-[#F3F3F3]"></textarea>
-        </div>
-      </div>
-      <button type="submit" class="w-full py-3 text-xl font-medium bg-[#FE5F00] mt-3 rounded-lg text-white">Get Started
-        Now</button>
-      <img src="asets/images/blackfriday-tag.jpg" alt="" class="left-0 -top-11 absolute !z-30">
-    </form>
+    class="sm:w-[80%] md:w-[43%] w-[90%] mx-auto z-20 2xl:w-[1500px] text-white">
+    <h3 class="text-center text-sm font-semibold">Custom Logo Creator</h3>
+    <h1 class="text-center font-bold text-[48px] leading-[1.2] mt-2 flex flex-wrap justify-center" id="sentence"></h1>
+    <form id="companyForm" class="flex flex-col justify-center mt-6">
+  <div class="relative flex justify-center md:w-[75%] mx-auto">
+    <input id="companyName" type="text" required class="focus:outline-none border-white border-2 bg-transparent pr-[25px] py-[20px] pl-[55px] w-full rounded-lg text-white banner-form-input" placeholder="Enter your company name">
+    <img src="assets/images/pencil.png" alt="pencil" class="absolute left-3 top-5 h-[25px] w-[25px] object-contain text-lg">
+  </div>
+  <button class="bg-white w-fit text-[#F77508] mt-3 text-lg mx-auto py-[15px] px-[25px] font-bold rounded-lg capitalize">Let our design amaze you</button>
+</form>
   </div>
 
-  <video autoplay muted loop src="assets/videos/hero.mp4"
-    class="absolute top-0 left-0 z-10 w-full md:h-[109vh] h-full object-cover"></video>
+  <img src="assets/images/Animated-Banner.gif"
+    class="absolute top-0 left-0 z-10 w-full md:h-[109vh] h-full object-cover" />
 </section>
 
 <section id="portfolio" class="sm:w-[85%] w-[90%] mx-auto my-20 2xl:w-[1500px]">

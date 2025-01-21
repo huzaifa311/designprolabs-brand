@@ -24851,25 +24851,25 @@ p.lgo-titles {
     top: 10px
 }
 
-.logoVideo{
+.logoVideo {
     width: 510px !important;
     height: 382.5px !important;
     object-fit: cover !important;
     object-position: top left;
 }
 
-footer .logo-div{
+footer .logo-div {
     border-bottom: 0.5px solid gray !important;
     padding-bottom: 1.5rem !important;
 }
 
 
-.customShadow{
+.customShadow {
     box-shadow: 0 0 31px #ddd !important;
 }
 
-.navbar-shrink{
-    border-bottom: 1px solid gray !important;
+.navbar-shrink {
+    border-bottom: 1px solid #ddd !important;
 }
 
 .fa-check-circle:before {
@@ -24889,6 +24889,7 @@ footer .logo-div{
     margin: 5px 0;
     display: inline-block;
 }
+
 .popupform2 ul li input[type="email"],
 .popupform2 ul li input[type="text"],
 .popupform2 ul li select#packages,
@@ -24906,6 +24907,7 @@ footer .logo-div{
     height: 40px;
     line-height: normal;
 }
+
 .popupform2 ul li i {
     position: absolute;
     top: 15px;
@@ -24917,6 +24919,7 @@ footer .logo-div{
 .popupform2 ul li.last {
     text-align: center;
 }
+
 .popupform2 ul li input[type="submit"] {
     width: 100%;
     color: #fff;
@@ -24930,11 +24933,13 @@ footer .logo-div{
     cursor: pointer;
     background: #FE6F19;
 }
+
 .popupform2 ul li input[type="email"]:focus,
 .popupform2 ul li input[type="text"]:focus,
 .popupform2 ul li textarea:focus {
     border: none;
 }
+
 .popupform2 {
     width: 67%;
     border-radius: 10px;
@@ -24957,11 +24962,13 @@ footer .logo-div{
     line-height: 35px;
     margin-top: 0;
 }
-.popupform2 h2 + p {
+
+.popupform2 h2+p {
     line-height: 19px;
     font-size: 13px;
     color: #fff;
 }
+
 .popupform2 .fancybox-close-small {
     border: none;
     background: #fff;
@@ -24977,16 +24984,18 @@ footer .logo-div{
     padding: 0;
     border-radius: 3px;
 }
+
 .popupform2 .fancybox-close-small:after {
     color: #de443a;
     font-size: 25px;
     right: 4px;
 }
+
 .popupform2 ul {
     margin: 0;
 }
 
-.logo-fixed .desk-menu{
+.logo-fixed .desk-menu {
     border: 1px solid black;
     color: black;
 }
@@ -25064,12 +25073,106 @@ footer .logo-div{
     .navbar-shrink .desk-menu {
         background: #fcce01;
     }
+
     .our-testimonial .container {
         max-width: 400px !important;
     }
-    
+
     .owl-item.active {
         width: 370px !important;
     }
 }
 
+
+
+.banner-form-input::placeholder {
+    color: white !important;
+    /* Change to your desired color */
+    opacity: 1;
+    /* Ensures consistent visibility across browsers */
+}
+
+.banner-form-input:focus::placeholder {
+    color: white !important;
+    /* Optional: Change color when the input is focused */
+}
+
+.glow {
+    text-shadow: 0 0 8px #fff, 0 0 16px #ff69b4, 0 0 24px #ff69b4 !important;
+}
+
+.customBorder {
+    border: 2px solid #ddd !important;
+}
+
+/* Keep your existing styles */
+.step-inner {
+    position: relative;
+    overflow: hidden; /* Ensures animation stays within bounds */
+  }
+  
+  /* The hover animation as before */
+  .step-inner::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 2px solid transparent;
+    border-radius: 50%; /* circle */
+    box-sizing: border-box;
+    z-index: 1;
+    animation: border-animation 1s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+    pointer-events: none;
+    display: none;
+  }
+  
+  .step-inner:hover::before {
+    display: block;
+  }
+  
+  /* When selected, we want a continuous border */
+  .step-inner.selected {
+    border: 3px solid #FE5F00; /* Always shows the solid border */
+  }
+  
+  /* Optionally, disable the hover animation if you prefer a static border once selected: */
+  .step-inner.selected:hover::before {
+    display: none; /* This line ensures no animation overlays the selected border */
+  }
+  
+  /* The keyframes remain unchanged */
+  @keyframes border-animation {
+    0% {
+      border-top: 3px solid #FE5F00;
+      border-right: 3px solid transparent;
+      border-bottom: 3px solid transparent;
+      border-left: 3px solid transparent;
+    }
+    25% {
+      border-top: 3px solid #FE5F00;
+      border-right: 3px solid #FE5F00;
+      border-bottom: 3px solid transparent;
+      border-left: 3px solid transparent;
+    }
+    50% {
+      border-top: 3px solid #FE5F00;
+      border-right: 3px solid #FE5F00;
+      border-bottom: 3px solid #FE5F00;
+      border-left: 3px solid transparent;
+    }
+    75% {
+      border-top: 3px solid #FE5F00;
+      border-right: 3px solid #FE5F00;
+      border-bottom: 3px solid #FE5F00;
+      border-left: 3px solid #FE5F00;
+    }
+    100% {
+      border-top: 3px solid #FE5F00;
+      border-right: 3px solid #FE5F00;
+      border-bottom: 3px solid #FE5F00;
+      border-left: 3px solid #FE5F00;
+    }
+  }
+  
