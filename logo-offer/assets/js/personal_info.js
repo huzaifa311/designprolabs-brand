@@ -27,7 +27,7 @@ function buildPayloadObject() {
 
 async function sendFormData(obj) {
     try {
-        await fetch("https://form-submission-google-sheet.vercel.app/logo-offer", {
+        await fetch("http://localhost:3000/logo-offer", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify(obj)
@@ -39,17 +39,22 @@ async function sendFormData(obj) {
 
 const submitBtn = document.getElementById("submitBtn");
 submitBtn.addEventListener("click", async () => {
-    const obj = buildPayloadObject();
-    if (!obj.name) {
-        alert("Name is required");
-        return;
+    try {
+        
+        const obj = buildPayloadObject();
+        if (!obj.name) {
+            alert("Name is required");
+            return;
+        }
+        if (!obj.email) {
+            alert("Email is required");
+            return;
+        }
+        await sendFormData(obj);
+        window.location.href = "../formsubmitted.php";
+    } catch (error) {
+        alert(error)
     }
-    if (!obj.email) {
-        alert("Email is required");
-        return;
-    }
-    await sendFormData(obj);
-    window.location.href = "../formsubmitted.php";
 });
 
 const emailInput = document.getElementById("email");
