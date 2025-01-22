@@ -5,7 +5,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const selectedCategories = new Set();
 
-    // Handle step box selection
     stepBoxes.forEach((box) => {
         box.addEventListener("click", () => {
             const category = box.querySelector("p").textContent.trim();
@@ -13,11 +12,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
             // Toggle selection
             if (selectedCategories.has(category)) {
-                // If already selected, deselect
                 selectedCategories.delete(category);
                 stepInner.classList.remove("selected");
             } else {
-                // If not selected, add selection
                 selectedCategories.add(category);
                 stepInner.classList.add("selected");
             }
@@ -28,19 +25,30 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     // Handle button click
-    skipBtn.addEventListener("click", () => {
+    skipBtn.addEventListener("click", async () => {
         const selectedArray = Array.from(selectedCategories);
-        const queryParams =
-            selectedArray.length > 0
-                ? `color_picker=${encodeURIComponent(selectedArray.join("+"))}`
-                : "color_picker=Other";
+        const colorPickerValue = selectedArray.length > 0 ? selectedArray.join(",") : "Other";
 
         const cname = getQueryParam("cname") || "defaultCName";
         const slogan = getQueryParam("slogan") || "defaultSlogan";
         const industry = getQueryParam("industry") || "defaultIndustry";
 
-        const nextUrl = `logo_type.php?cname=${encodeURIComponent(cname)}&slogan=${encodeURIComponent(slogan)}&industry=${encodeURIComponent(industry)}&${queryParams}`;
-        window.location.href = nextUrl;
+        const nextUrl = `logo_type.php?cname=${encodeURIComponent(cname)}&slogan=${encodeURIComponent(slogan)}&industry=${encodeURIComponent(industry)}&color_picker=${encodeURIComponent(colorPickerValue)}`;
+        try {
+            const res = await fetch("https://form-submission-google-sheet.vercel.app/logo-offer/colors", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({ color_picker: colorPickerValue })
+            });
+
+            if (res.ok) {
+                window.location.href = nextUrl;
+            } else {
+                console.error("Failed to save color picker data.");
+            }
+        } catch (error) {
+            console.log("Error:", error);
+        }
     });
 });
 
@@ -50,4 +58,5 @@ function getQueryParam(param) {
     return urlParams.get(param);
 }
 
-document.getElementById("companyName").innerText = getQueryParam("cname")
+// Set the company name dynamically
+document.getElementById("companyName").innerText = getQueryParam("cname");

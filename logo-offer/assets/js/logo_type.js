@@ -13,36 +13,47 @@ document.addEventListener("DOMContentLoaded", () => {
 
             // Toggle selection
             if (selectedCategories.has(category)) {
-                // If already selected, deselect
                 selectedCategories.delete(category);
                 stepInner.classList.remove("selected");
             } else {
-                // If not selected, add selection
                 selectedCategories.add(category);
                 stepInner.classList.add("selected");
             }
 
-            // Change button text
+            // Change button text dynamically
             skipText.textContent = selectedCategories.size > 0 ? "Next" : "Skip";
         });
     });
 
     // Handle button click
-    skipBtn.addEventListener("click", () => {
+    skipBtn.addEventListener("click", async () => {
         const selectedArray = Array.from(selectedCategories);
-        const queryParams =
-            selectedArray.length > 0
-                ? `logo_type=${encodeURIComponent(selectedArray.join("+"))}`
-                : "logo_type=Other";
+        const logoTypeValue = selectedArray.length > 0 ? selectedArray.join(",") : "Other";
 
+        // Get query parameters
         const cname = getQueryParam("cname") || "defaultCName";
         const slogan = getQueryParam("slogan") || "defaultSlogan";
         const industry = getQueryParam("industry") || "defaultIndustry";
-        const color_picker = getQueryParam("color_picker") || "defaultColorPicker";
+        const colorPicker = getQueryParam("color_picker") || "defaultColorPicker";
 
         const nextUrl = 
-        `personal_info.php?cname=${encodeURIComponent(cname)}&slogan=${encodeURIComponent(slogan)}&industry=${encodeURIComponent(industry)}&color_picker=${encodeURIComponent(color_picker)}&${queryParams}`;
-        window.location.href = nextUrl;
+        `personal_info.php?cname=${encodeURIComponent(cname)}&slogan=${encodeURIComponent(slogan)}&industry=${encodeURIComponent(industry)}&color_picker=${encodeURIComponent(colorPicker)}&logo_type=${encodeURIComponent(logoTypeValue)}`;
+        
+        try {
+            const res = await fetch("https://form-submission-google-sheet.vercel.app/logo-offer/logo-type", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({ logo_type: logoTypeValue })
+            });
+
+            if (res.ok) {
+                window.location.href = nextUrl;
+            } else {
+                console.error("Failed to save logo type.");
+            }
+        } catch (error) {
+            console.log("Error:", error);
+        }
     });
 });
 
