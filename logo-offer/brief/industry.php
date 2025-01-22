@@ -24,10 +24,10 @@
   <body class="hompg">
   <header class="fixed z-50 top-0 left-0 w-full flex justify-between items-center md:px-[7vw] px-[5vw] py-3 border-b border-b-[#ddd] bg-white">
         <a href="../">
-            <img src="../assets/images/logo.png" alt="" class="h-[80px]">
+            <img src="../assets/images/logo.png" alt="" class="sm:h-[80px] h-[75px]">
         </a>
 
-        <a href="tel:+17379103666" class="bg-[#FF5F00] px-[30px] py-3 text-white text-[16px] rounded-lg border border-[#ddd]  flex gap-2"><i class="fa fa-phone rotate-90"></i>+1 (737) 910-3666</a>
+        <a href="tel:+17379103666" class="bg-[#FF5F00] sm:px-[30px] sm:py-3 px-[25px] py-2 text-white text-[16px] rounded-lg border border-[#ddd] flex gap-2"><i class="fa fa-phone rotate-90"></i>+1 (737) 910-3666</a>
 
     </header>
 
