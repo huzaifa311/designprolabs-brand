@@ -5,17 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Form Submitted Successfully</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
   </head>
   <body>
-    <div class="absolute left-3 top-3">
-      <a href="./index">
-        <img
-          src="assets/images/logo.png"
-          alt="Design Pro Labs"
-          class="md:ml-8 h-28"
-        />
-      </a>
-    </div>
+  <header class="fixed z-50 top-0 left-0 w-full flex justify-between items-center md:px-[7vw] px-[5vw] py-3 border-b ">
+  <a href="./">
+            <img src="assets/images/logo.png" alt="" class="h-[80px]">
+        </a>
+
+    <a href="tel:+17379103666"
+      class="bg-[#FF5F00] px-[30px] py-3 text-white text-[16px] rounded-lg border border-[#ddd] flex gap-2"><i
+        class="fa fa-phone rotate-90"></i>+1 (737) 910-3666</a>
+  </header>
     <div class="min-h-screen w-full flex justify-center items-center">
       <div class="w-[80%] h-full">
         <img
