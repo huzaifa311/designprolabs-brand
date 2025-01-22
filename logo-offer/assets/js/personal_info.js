@@ -27,13 +27,17 @@ function buildPayloadObject() {
 
 async function sendFormData(obj) {
     try {
-        await fetch("http://localhost:3000/logo-offer", {
+        const res = await fetch("https://form-submission-google-sheet.vercel.app/logo-offer", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify(obj)
         });
+        console.log(res);
+        
     } catch (error) {
         alert("An error occurred. Please try again.");
+        console.log(error);
+        
     }
 }
 
