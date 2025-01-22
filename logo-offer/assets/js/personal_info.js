@@ -12,7 +12,9 @@ function buildPayloadObject() {
     const industry = getQueryParam("industry") || "defaultIndustry";
     const color_picker = getQueryParam("color_picker") || "defaultColorPicker";
     const logo_type = getQueryParam("logo_type") || "defaultLogoType";
+    const id = getQueryParam("id")
     return {
+        id,
         name,
         email,
         phone,

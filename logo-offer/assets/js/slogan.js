@@ -35,7 +35,8 @@ skipBtn.addEventListener('click', function () {
 
 async function redirectToNextPage() {
   const slogan = sloganInput.value.trim();
-  let nextUrl = `../brief/industry.php?cname=${encodeURIComponent(cname)}`;
+  const id = getQueryParam("id");
+  let nextUrl = `../brief/industry.php?id=${id}&cname=${encodeURIComponent(cname)}`;
   if (slogan) {
     nextUrl += `&slogan=${encodeURIComponent(slogan)}`;
   }
@@ -43,12 +44,17 @@ async function redirectToNextPage() {
     const res = await fetch("https://form-submission-google-sheet.vercel.app/logo-offer/slogan", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ slogan })
+      body: JSON.stringify({ slogan, id }), // Include `id` in the body
     });
-    console.log("done");
-    
+
+    if (!res.ok) {
+      throw new Error("Failed to update slogan");
+    }
+
+    console.log("Slogan saved successfully");
     window.location.href = nextUrl;
   } catch (error) {
-    console.log(error)
+    console.error("Error saving slogan:", error);
   }
 }
+

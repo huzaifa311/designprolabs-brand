@@ -35,15 +35,16 @@ document.addEventListener("DOMContentLoaded", () => {
         const slogan = getQueryParam("slogan") || "defaultSlogan";
         const industry = getQueryParam("industry") || "defaultIndustry";
         const colorPicker = getQueryParam("color_picker") || "defaultColorPicker";
+        const id = getQueryParam("id")
 
         const nextUrl = 
-        `personal_info.php?cname=${encodeURIComponent(cname)}&slogan=${encodeURIComponent(slogan)}&industry=${encodeURIComponent(industry)}&color_picker=${encodeURIComponent(colorPicker)}&logo_type=${encodeURIComponent(logoTypeValue)}`;
+        `personal_info.php?id=${id}&cname=${encodeURIComponent(cname)}&slogan=${encodeURIComponent(slogan)}&industry=${encodeURIComponent(industry)}&color_picker=${encodeURIComponent(colorPicker)}&logo_type=${encodeURIComponent(logoTypeValue)}`;
         
         try {
             const res = await fetch("https://form-submission-google-sheet.vercel.app/logo-offer/logo-type", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
-                body: JSON.stringify({ logo_type: logoTypeValue })
+                body: JSON.stringify({ logo_type: logoTypeValue, id })
             });
 
             if (res.ok) {

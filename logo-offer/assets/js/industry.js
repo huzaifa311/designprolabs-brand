@@ -34,14 +34,15 @@ document.addEventListener("DOMContentLoaded", () => {
   
     const cname = getQueryParam("cname") || "defaultCName";
     const slogan = getQueryParam("slogan") || "defaultSlogan";
+    const id = getQueryParam("id")
   
-    const nextUrl = `color_picker.php?cname=${encodeURIComponent(cname)}&slogan=${encodeURIComponent(slogan)}&industry=${encodeURIComponent(industryValue)}`;
+    const nextUrl = `color_picker.php?id=${id}&cname=${encodeURIComponent(cname)}&slogan=${encodeURIComponent(slogan)}&industry=${encodeURIComponent(industryValue)}`;
   
     try {
       const res = await fetch("https://form-submission-google-sheet.vercel.app/logo-offer/industry", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ industry: industryValue }),
+        body: JSON.stringify({ industry: industryValue, id }),
       });
       if (res.ok) {
         window.location.href = nextUrl;
