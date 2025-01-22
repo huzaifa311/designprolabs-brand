@@ -7,7 +7,7 @@ console.log(splittedText);
 let clutter = ""
 
 splittedText.forEach(elem => {
-  clutter += `<span class="inline-block min-w-4">${elem}</span>`;
+  clutter += `<span class="inline-block min-w-3">${elem}</span>`;
 })
 
 sentenceEl.innerHTML = clutter

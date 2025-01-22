@@ -29,18 +29,18 @@
   <noscript><iframe src="ns " height="0" width="0" style="display: none; visibility: hidden"></iframe></noscript>
   <header class="fixed z-50 top-0 left-0 w-full flex justify-between items-center md:px-[7vw] px-[5vw] py-3">
     <a href="./">
-      <img src="assets/images/logo-white.png" alt="" class="h-[80px] invert-[1] brightness-[0]" />
+      <img src="assets/images/logo-white.png" alt="" class="sm:h-[80px] h-[75px] invert-[1] brightness-[0]" />
     </a>
 
     <a href="tel:+17379103666"
-      class="bg-[#FF5F00] px-[30px] py-3 text-white text-[16px] rounded-lg border border-[#ddd] flex gap-2"><i
+      class="bg-[#FF5F00] sm:px-[30px] sm:py-3 px-[25px] py-2 text-white text-[16px] rounded-lg border border-[#ddd] flex gap-2"><i
         class="fa fa-phone rotate-90"></i>+1 (737) 910-3666</a>
   </header>
 
-  <section id="home" class="sm:!h-screen !h-fit sm:py-0 pt-40 pb-28 w-full relative flex items-center">
+  <section id="home" class="sm:!h-screen min-h-screen !h-fit sm:py-0 pt-40 pb-28 w-full relative flex items-center">
     <div class="sm:w-[80%] w-full mx-auto z-20 2xl:w-[1500px] text-white">
       <h3 class="text-center text-sm font-semibold">Custom Logo Creator</h3>
-      <h1 class="text-center font-bold text-[48px] leading-[1.2] mt-1 flex flex-wrap justify-center sm:w-[560px] w-[343px] mx-auto" id="sentence"></h1>
+      <h1 class="text-center font-bold sm:text-[48px] text-[36px] leading-[1.2] mt-1 flex flex-wrap justify-center sm:w-[560px] w-[340px] mx-auto" id="sentence"></h1>
       <form id="companyForm" class="flex flex-col justify-center mt-8">
         <div class="relative flex justify-center mx-auto md:w-[400px]">
           <input id="companyName" type="text" required
