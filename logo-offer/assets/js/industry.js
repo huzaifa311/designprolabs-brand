@@ -29,12 +29,15 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Handle button click
   skipBtn.addEventListener("click", async () => {
+    // Disable the button to prevent multiple submissions
+    skipBtn.disabled = true;
+    
     const selectedArray = Array.from(selectedCategories);
     const industryValue = selectedArray.length > 0 ? selectedArray.join(",") : "Other";
   
     const cname = getQueryParam("cname") || "defaultCName";
     const slogan = getQueryParam("slogan") || "defaultSlogan";
-    const id = getQueryParam("id")
+    const id = getQueryParam("id");
   
     const nextUrl = `color_picker.php?id=${id}&cname=${encodeURIComponent(cname)}&slogan=${encodeURIComponent(slogan)}&industry=${encodeURIComponent(industryValue)}`;
   
@@ -44,15 +47,21 @@ document.addEventListener("DOMContentLoaded", () => {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ industry: industryValue, id }),
       });
+  
       if (res.ok) {
         window.location.href = nextUrl;
       } else {
         console.error("Failed to submit industry");
+        // Re-enable the button if the submission fails
+        skipBtn.disabled = false;
       }
     } catch (error) {
       console.log("Error:", error);
+      // Re-enable the button if an error occurs
+      skipBtn.disabled = false;
     }
   });
+  
   
 });
 

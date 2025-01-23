@@ -34,6 +34,7 @@ async function sendFormData(obj) {
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify(obj)
         });
+
         console.log(res);
         
     } catch (error) {
@@ -45,6 +46,7 @@ async function sendFormData(obj) {
 
 const submitBtn = document.getElementById("submitBtn");
 submitBtn.addEventListener("click", async () => {
+    submitBtn.disabled = true;
     try {
         
         const obj = buildPayloadObject();
@@ -57,9 +59,13 @@ submitBtn.addEventListener("click", async () => {
             return;
         }
         await sendFormData(obj);
+        localStorage.setItem("email", obj.email)
+        localStorage.setItem("phone", obj.phone)
         window.location.href = "../formsubmitted.php";
+        submitBtn.disabled = false;
     } catch (error) {
         alert(error)
+        submitBtn.disabled = false;
     }
 });
 

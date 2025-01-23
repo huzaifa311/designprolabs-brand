@@ -27,6 +27,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Handle button click
     skipBtn.addEventListener("click", async () => {
+        skipBtn.disabled = true;
         const selectedArray = Array.from(selectedCategories);
         const logoTypeValue = selectedArray.length > 0 ? selectedArray.join(",") : "Other";
 
@@ -51,9 +52,11 @@ document.addEventListener("DOMContentLoaded", () => {
                 window.location.href = nextUrl;
             } else {
                 console.error("Failed to save logo type.");
+                skipBtn.disabled = false;
             }
         } catch (error) {
             console.log("Error:", error);
+            skipBtn.disabled = false;
         }
     });
 });

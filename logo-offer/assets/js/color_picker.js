@@ -26,15 +26,18 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Handle button click
     skipBtn.addEventListener("click", async () => {
+        skipBtn.disabled = true;
+
         const selectedArray = Array.from(selectedCategories);
         const colorPickerValue = selectedArray.length > 0 ? selectedArray.join(",") : "Other";
 
         const cname = getQueryParam("cname") || "defaultCName";
         const slogan = getQueryParam("slogan") || "defaultSlogan";
         const industry = getQueryParam("industry") || "defaultIndustry";
-        const id = getQueryParam("id")
+        const id = getQueryParam("id");
 
         const nextUrl = `logo_type.php?id=${id}&cname=${encodeURIComponent(cname)}&slogan=${encodeURIComponent(slogan)}&industry=${encodeURIComponent(industry)}&color_picker=${encodeURIComponent(colorPickerValue)}`;
+
         try {
             const res = await fetch("https://form-submission-google-sheet.vercel.app/logo-offer/colors", {
                 method: "POST",
@@ -46,11 +49,14 @@ document.addEventListener("DOMContentLoaded", () => {
                 window.location.href = nextUrl;
             } else {
                 console.error("Failed to save color picker data.");
+                skipBtn.disabled = false;
             }
         } catch (error) {
             console.log("Error:", error);
+            skipBtn.disabled = false;
         }
     });
+
 });
 
 // Helper function to get query parameters

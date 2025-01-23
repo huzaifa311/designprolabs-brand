@@ -30,7 +30,9 @@ sloganForm.addEventListener('submit', function (event) {
 
 // Handle click on the entire button
 skipBtn.addEventListener('click', function () {
+  skipBtn.disabled = true;
   redirectToNextPage();
+  skipBtn.disabled = false;
 });
 
 async function redirectToNextPage() {

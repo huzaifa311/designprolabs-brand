@@ -40,7 +40,7 @@
   <section id="home" class="sm:!h-screen min-h-screen !h-fit sm:py-0 pt-40 pb-28 w-full relative flex items-center">
     <div class="sm:w-[80%] w-full mx-auto z-20 2xl:w-[1500px] text-white">
       <h3 class="text-center text-sm font-semibold">Custom Logo Creator</h3>
-      <h1 class="text-center font-bold sm:text-[48px] text-[36px] leading-[1.2] mt-1 flex flex-wrap justify-center sm:w-[560px] w-[340px] mx-auto" id="sentence"></h1>
+      <h1 class="text-center font-bold sm:text-[48px] text-[36px] leading-[1.2] mt-1 flex flex-wrap justify-center sm:w-[530px] w-[340px] mx-auto" id="sentence"></h1>
       <form id="companyForm" class="flex flex-col justify-center mt-8">
         <div class="relative flex justify-center mx-auto md:w-[400px]">
           <input id="companyName" type="text" required
@@ -50,6 +50,7 @@
             class="absolute left-3 top-5 h-[25px] w-[25px] object-contain text-lg" />
         </div>
         <button
+          type="submit"
           class="bg-white w-fit text-[#F77508] mt-3 sm:text-lg mx-auto sm:py-[15px] py-[12px] sm:px-[25px] px-5 font-bold rounded-lg capitalize">
           Let our design amaze you!
         </button>
