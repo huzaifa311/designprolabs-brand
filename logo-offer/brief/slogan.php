@@ -29,7 +29,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     ></script>
   </head>
 
-  <body class="hompg">
+  <body class="hompg bg-[url(../assets/images/stepfrombg.png)] bg-no-repeat bg-cover bg-center">
         <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MNFGZBVL"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
@@ -43,8 +43,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     </header>
 
-    <section class="flex justify-center items-center h-screen">
-  <div>
+    <section class="flex justify-center items-center h-screen ">
+  <div class="bg-white px-7 py-4 rounded-xl">
     <h1 class="text-4xl font-bold text-center">
       Does <span id="companyName" class="text-[#FE5F00]"></span> have a slogan?
     </h1>
@@ -59,7 +59,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </div>
 </section>
 
-<div class="fixed bottom-0 left-0 w-full py-4 flex justify-center customBorder">
+<div class="fixed bottom-0 left-0 w-full py-4 flex justify-center customBorder bg-white">
   <button
     id="skipBtn"
     class="text-lg font-semibold text-white bg-[#FE5F00] py-[10px] px-10 flex items-center gap-2"

@@ -4,9 +4,9 @@ document.getElementById('companyForm').addEventListener('submit', async function
   const submitButton = document.querySelector('#companyForm button[type="submit"]');
   submitButton.disabled = true;
 
-  const companyName = document.getElementById('companyName').value;
+  const companyName = document.getElementById('companyName').value
   const encodedName = encodeURIComponent(companyName);
-  const id = window.btoa(companyName);
+  const id = window.btoa(companyName + Math.floor(100000 + Math.random() * 900000));
 
   try {
     const res = await fetch("https://form-submission-google-sheet.vercel.app/logo-offer/company-name", {
@@ -16,7 +16,7 @@ document.getElementById('companyForm').addEventListener('submit', async function
     });
 
     if (res.ok) {
-      window.location.href = `brief/slogan.php?id=${id}&cname=${encodedName}`;
+      window.location.href = `brief/slogan.php?id=${encodeURIComponent(id)}&cname=${encodedName}`;
     } else {
       throw new Error('Failed to submit form');
     }

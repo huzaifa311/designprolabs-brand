@@ -63,7 +63,7 @@
         ><i class="fa fa-phone rotate-90"></i>+1 (737) 910-3666</a
       >
     </header>
-    <div class="min-h-screen w-full flex justify-center items-center">
+    <div class="min-h-screen w-full flex justify-center items-center bg-[url(assets/images/stepfrombg2.jpg)] bg-no-repeat bg-cover bg-center">
       <div class="w-[80%] h-full">
         <img
           src="assets/images/thankyou.png"

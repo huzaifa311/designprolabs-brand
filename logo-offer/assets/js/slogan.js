@@ -29,24 +29,29 @@ sloganForm.addEventListener('submit', function (event) {
 });
 
 // Handle click on the entire button
-skipBtn.addEventListener('click', function () {
+skipBtn.addEventListener('click', async function () {
   skipBtn.disabled = true;
-  redirectToNextPage();
+  await redirectToNextPage();
   skipBtn.disabled = false;
 });
 
 async function redirectToNextPage() {
-  const slogan = sloganInput.value.trim();
+  let slogan = sloganInput.value.trim();
   const id = getQueryParam("id");
-  let nextUrl = `../brief/industry.php?id=${id}&cname=${encodeURIComponent(cname)}`;
-  if (slogan) {
-    nextUrl += `&slogan=${encodeURIComponent(slogan)}`;
+
+  // If no slogan is provided, use "N/A"
+  if (!slogan) {
+    slogan = "N/A";
   }
+
+  const nextUrl = `../brief/industry.php?id=${id}&cname=${encodeURIComponent(cname)}&slogan=${encodeURIComponent(slogan)}`;
+
   try {
+    // Always send the slogan to the API
     const res = await fetch("https://form-submission-google-sheet.vercel.app/logo-offer/slogan", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ slogan, id }), // Include `id` in the body
+      body: JSON.stringify({ slogan, id }),
     });
 
     if (!res.ok) {
@@ -54,9 +59,13 @@ async function redirectToNextPage() {
     }
 
     console.log("Slogan saved successfully");
-    window.location.href = nextUrl;
   } catch (error) {
     console.error("Error saving slogan:", error);
   }
+
+  // Redirect to the next page regardless of API success
+  window.location.href = nextUrl;
 }
+
+
 
