@@ -44,11 +44,32 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </header>
 
     <section class="w-[90%] sm:w-[75%] 2xl:w-[1500px] mx-auto py-36">
+        <div class="flex justify-center mb-10 items-center whitespace-nowrap">
+          <div class="w-9 h-9 rounded-full flex justify-center items-center  bg-[#FE5F00] text-white">
+            1
+          </div>
+          <div class="sm:w-20 w-14 h-px bg-[#FE5F00]"></div>
+          <div class="w-9 h-9 rounded-full flex justify-center items-center  bg-[#FE5F00] text-white">
+            2
+          </div>
+          <div class="sm:w-20 w-14 h-px bg-[#FE5F00]"></div>
+          <div class="w-9 h-9 rounded-full flex justify-center items-center  bg-[#FE5F00] text-white">
+            3
+          </div>
+          <div class="sm:w-20 w-14 h-px bg-black"></div>
+          <div class="w-8 h-8 rounded-full flex justify-center items-center border border-black">
+            4
+          </div>
+          <div class="sm:w-20 w-14 h-px bg-black"></div>
+          <div class="w-8 h-8 rounded-full flex justify-center items-center border border-black">
+            5
+          </div>
+        </div>
       <h1 class="text-4xl font-bold text-center">
         Every Design Needs Some Colors
       </h1>
       <p class="text-center text-[13px] mt-2">
-        If you're confused, <a class="text-[#FE5F00]">click here</a> to chat
+        If you're confused, <span onclick="openChat()" class="text-[#FE5F00] cursor-pointer">click here</span> to chat
         with an expert for the best logo colours for
         <span class="text-[#FE5F00]" id="companyName"></span>
       </p>
@@ -239,6 +260,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     s1.setAttribute("crossorigin", "*");
     s0.parentNode.insertBefore(s1, s0);
     })();
+    function openChat() {
+    if (Tawk_API && Tawk_API.maximize) {
+      Tawk_API.maximize();
+    } else {
+      console.log("Tawk.to chat not yet initialized.");
+    }
+  }
 </script>
 <!--End of Tawk.to Script-->
   </body>

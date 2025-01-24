@@ -43,6 +43,27 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </header>
 
     <section class="w-[90%] sm:w-[75%] 2xl:w-[1500px] mx-auto py-36">
+        <div class="flex justify-center mb-10 items-center whitespace-nowrap">
+          <div class="w-9 h-9 rounded-full flex justify-center items-center  bg-[#FE5F00] text-white">
+            1
+          </div>
+          <div class="sm:w-20 w-14 h-px bg-[#FE5F00]"></div>
+          <div class="w-9 h-9 rounded-full flex justify-center items-center  bg-[#FE5F00] text-white">
+            2
+          </div>
+          <div class="sm:w-20 w-14 h-px bg-black"></div>
+          <div class="w-8 h-8 rounded-full flex justify-center items-center border border-black">
+            3
+          </div>
+          <div class="sm:w-20 w-14 h-px bg-black"></div>
+          <div class="w-8 h-8 rounded-full flex justify-center items-center border border-black">
+            4
+          </div>
+          <div class="sm:w-20 w-14 h-px bg-black"></div>
+          <div class="w-8 h-8 rounded-full flex justify-center items-center border border-black">
+            5
+          </div>
+        </div>
       <h1 class="text-4xl font-bold text-center">
         Which industry will
         <span id="companyName" class="text-[#FE5F00]"></span> dominate?

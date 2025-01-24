@@ -44,19 +44,40 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </header>
 
     <section class="flex justify-center items-center h-screen ">
-  <div class="bg-white px-7 py-4 rounded-xl">
-    <h1 class="text-4xl font-bold text-center">
-      Does <span id="companyName" class="text-[#FE5F00]"></span> have a slogan?
-    </h1>
-    <form id="sloganForm" class="flex flex-col justify-center mt-4">
-      <input
-        id="sloganInput"
-        type="text"
-        class="w-[80%] border-[#d7d7d7] border-[2px] rounded-lg mx-auto py-[14px] px-[15px] focus:outline-[#FE5F00]"
-        placeholder="Company Slogan (Optional)"
-      />
-    </form>
-  </div>
+      <div class="bg-white sm:p-7 px-0 py-10 rounded-xl border border-[#ddd]">
+        <div class="flex justify-center mb-10 items-center whitespace-nowrap">
+          <div class="w-9 h-9 rounded-full flex justify-center items-center  bg-[#FE5F00] text-white">
+            1
+          </div>
+          <div class="sm:w-20 w-14 h-px bg-black"></div>
+          <div class="w-8 h-8 rounded-full flex justify-center items-center border border-black">
+            2
+          </div>
+          <div class="sm:w-20 w-14 h-px bg-black"></div>
+          <div class="w-8 h-8 rounded-full flex justify-center items-center border border-black">
+            3
+          </div>
+          <div class="sm:w-20 w-14 h-px bg-black"></div>
+          <div class="w-8 h-8 rounded-full flex justify-center items-center border border-black">
+            4
+          </div>
+          <div class="sm:w-20 w-14 h-px bg-black"></div>
+          <div class="w-8 h-8 rounded-full flex justify-center items-center border border-black">
+            5
+          </div>
+        </div>
+        <h1 class="text-4xl font-bold text-center">
+          Does <span id="companyName" class="text-[#FE5F00]"></span> have a slogan?
+        </h1>
+        <form id="sloganForm" class="flex flex-col justify-center mt-4">
+          <input
+            id="sloganInput"
+            type="text"
+            class="w-[80%] border-[#d7d7d7] border-[2px] rounded-lg mx-auto py-[14px] px-[15px] focus:outline-[#FE5F00]"
+            placeholder="Company Slogan (Optional)"
+          />
+        </form>
+      </div>
 </section>
 
 <div class="fixed bottom-0 left-0 w-full py-4 flex justify-center customBorder bg-white">
