@@ -1,4 +1,4 @@
-<?php $title = "Design Pro Labs | Special Offer";
+<?php $title = "Design Pro Labs | Web Offer";
 include 'include/header.php'; ?>
 
 <section

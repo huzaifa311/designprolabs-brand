@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="A multi-step form for website requirements."
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Brief Form</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      input:focus,
+      textarea:focus {
+        outline: none;
+        box-shadow: 0 0 0 3px rgba(254, 95, 0, 0.3); /* custom orange focus ring */
+      }
+    </style>
+  </head>
+
+  <body class="bg-gray-100">
+    <img src="../images/logo3.png" alt="Logo" class="w-40 ml-10 mt-4" />
+    <div class="max-w-5xl mx-auto w-full mt-5 pb-10 bg-white p-6 rounded shadow">
+      <div class="text-center mb-10">
+        <h1 class="text-3xl font-bold">
+          Get Ready to Revolutionize Your Brand Forever
+        </h1>
+        <p class="text-gray-600 mt-2">
+          Seeking exceptional design and development solutions? With our
+          excellently crafted packages, we're here to transform your brand for
+          the better.
+        </p>
+      </div>
+
+      <!-- Step Indicator -->
+      <div class="flex justify-center mb-8">
+        <div class="flex items-center space-x-4">
+          <div
+            id="step-1"
+            class="flex items-center justify-center w-8 h-8 text-white bg-[#FE5F00] rounded-full font-bold transition-colors duration-300"
+          >
+            1
+          </div>
+          <div class="w-20 h-1 bg-gray-300"></div>
+          <div
+            id="step-2"
+            class="flex items-center justify-center w-8 h-8 text-gray-700 bg-gray-200 rounded-full font-bold transition-colors duration-300"
+          >
+            2
+          </div>
+          <div class="w-20 h-1 bg-gray-300"></div>
+          <div
+            id="step-3"
+            class="flex items-center justify-center w-8 h-8 text-gray-700 bg-gray-200 rounded-full font-bold transition-colors duration-300"
+          >
+            3
+          </div>
+        </div>
+      </div>
+
+      <!-- Step 1 Form -->
+      <form id="websiteForm" class="space-y-6">
+        <!-- Fields -->
+        <div class="mb-8">
+          <label for="fullName" class="block text-gray-700 font-medium"
+            >Full Name *</label
+          >
+          <input
+            type="text"
+            id="fullName"
+            name="fullName"
+            required
+            class="w-full mt-2 p-3 border rounded-lg focus:ring focus:ring-orange-300"
+            placeholder="Mark Smith"
+          />
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+          <div>
+            <label for="email" class="block text-gray-700 font-medium"
+              >Email *</label
+            >
+            <input
+              type="email"
+              id="email"
+              name="email"
+              required
+              class="w-full mt-2 p-3 border rounded-lg focus:ring focus:ring-orange-300"
+              placeholder="abc123@gmail.com"
+            />
+          </div>
+          <div>
+            <label for="phone" class="block text-gray-700 font-medium"
+              >Phone no *</label
+            >
+            <input
+              type="text"
+              id="phone"
+              name="phone"
+              required
+              class="w-full mt-2 p-3 border rounded-lg focus:ring focus:ring-orange-300"
+              placeholder="+1 789 456 1234"
+            />
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+          <div>
+            <label for="businessName" class="block text-gray-700 font-medium"
+              >Exact name of your business *</label
+            >
+            <input
+              type="text"
+              id="businessName"
+              name="businessName"
+              required
+              class="w-full mt-2 p-3 border rounded-lg focus:ring focus:ring-orange-300"
+              placeholder="Your Business Name"
+            />
+          </div>
+          <div>
+            <label
+              for="businessAddress"
+              class="block text-gray-700 font-medium"
+              >Your business address (If available)</label
+            >
+            <input
+              type="text"
+              id="businessAddress"
+              name="businessAddress"
+              class="w-full mt-2 p-3 border rounded-lg focus:ring focus:ring-orange-300"
+              placeholder="Your Business Address"
+            />
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+          <div>
+            <label
+              for="businessContact"
+              class="block text-gray-700 font-medium"
+              >Your business contact number (If available)</label
+            >
+            <input
+              type="text"
+              id="businessContact"
+              name="businessContact"
+              class="w-full mt-2 p-3 border rounded-lg focus:ring focus:ring-orange-300"
+              placeholder="Your Business contact no"
+            />
+          </div>
+          <div>
+            <label for="businessEmail" class="block text-gray-700 font-medium"
+              >Your business email (If available)</label
+            >
+            <input
+              type="text"
+              id="businessEmail"
+              name="businessEmail"
+              class="w-full mt-2 p-3 border rounded-lg focus:ring focus:ring-orange-300"
+              placeholder="Your Business Email"
+            />
+          </div>
+        </div>
+
+        <div class="mb-8">
+          <label
+            for="socialMediaHandles"
+            class="block text-gray-700 font-medium"
+            >Social Media Handles URL</label
+          >
+          <textarea
+            id="socialMediaHandles"
+            name="socialMediaHandles"
+            class="w-full mt-2 p-3 border rounded-lg focus:ring focus:ring-orange-300"
+            rows="3"
+            placeholder="Mention Here"
+          ></textarea>
+        </div>
+
+        <div class="mb-8">
+          <label for="weburl" class="block text-gray-700 font-medium"
+            >Current Website URL</label
+          >
+          <input
+            type="text"
+            id="weburl"
+            name="weburl"
+            class="w-full mt-2 p-3 border rounded-lg focus:ring focus:ring-orange-300"
+            placeholder="Website URL"
+          />
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div>
+            <label for="webHosting" class="block text-gray-700 font-medium"
+              >Current Web Hosting Company</label
+            >
+            <input
+              type="text"
+              id="webHosting"
+              name="webHosting"
+              class="w-full mt-2 p-3 border rounded-lg focus:ring focus:ring-orange-300"
+              placeholder="Current Hosting Provider"
+            />
+          </div>
+          <div>
+            <label for="domainAddress" class="block text-gray-700 font-medium"
+              >Current Domain Address</label
+            >
+            <input
+              type="text"
+              id="domainAddress"
+              name="domainAddress"
+              class="w-full mt-2 p-3 border rounded-lg focus:ring focus:ring-orange-300"
+              placeholder="Current Domain Address"
+            />
+          </div>
+        </div>
+
+        <!-- Navigation Button -->
+        <button
+          type="submit"
+          id="nextBtn"
+          class="bg-[#FE5F00] text-white py-2 px-6 rounded-lg mt-8"
+        >
+          Next
+        </button>
+      </form>
+    </div>
+
+    <script>
+      /*************************************************************
+       * 1. Parse Query Params (If returning from Step 2)
+       *************************************************************/
+      function getQueryParams() {
+        const params = {};
+        const urlSearchParams = new URLSearchParams(window.location.search);
+        urlSearchParams.forEach((value, key) => {
+          params[key] = value;
+        });
+        return params;
+      }
+
+      // Fill form fields if returning from Step 2
+      const existingParams = getQueryParams();
+      const websiteForm = document.getElementById("websiteForm");
+
+      // A helper to fill form inputs
+      function fillFormFields(form, data) {
+        for (let [key, value] of Object.entries(data)) {
+          const field = form.elements[key];
+          if (field) {
+            field.value = value;
+          }
+        }
+      }
+
+      fillFormFields(websiteForm, existingParams);
+
+      /*************************************************************
+       * 2. Validate & On Submit, pass data to Step 2
+       *************************************************************/
+      function validateForm() {
+        // Simple check of required fields
+        const requiredFields = websiteForm.querySelectorAll("[required]");
+        for (let field of requiredFields) {
+          if (!field.value.trim()) {
+            alert("Please fill all required fields.");
+            field.focus();
+            return false;
+          }
+        }
+        return true;
+      }
+
+      function buildQueryParams(dataObj) {
+        const params = new URLSearchParams();
+        for (let [key, value] of Object.entries(dataObj)) {
+          params.set(key, value);
+        }
+        return params.toString();
+      }
+
+      websiteForm.addEventListener("submit", (e) => {
+        e.preventDefault();
+        if (!validateForm()) return;
+
+        // Collect step-1 data
+        const formData = new FormData(websiteForm);
+        let step1Data = {};
+        formData.forEach((value, key) => {
+          step1Data[key] = value.trim();
+        });
+
+        // Build query string
+        const queryString = buildQueryParams(step1Data);
+        // Navigate to step-2 with our step-1 data
+        window.location.href = `step-2.html?${queryString}`;
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="A multi-step form for website requirements."
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Brief Form | Step 2</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      input:focus,
+      textarea:focus {
+        outline: none;
+        box-shadow: 0 0 0 3px rgba(254, 95, 0, 0.3);
+      }
+    </style>
+  </head>
+
+  <body class="bg-gray-100">
+    <img
+      src="../images/logo3.png"
+      alt="Logo"
+      class="w-40 ml-10 mt-4"
+    />
+    <div class="max-w-5xl mx-auto w-full mt-5 pb-10 bg-white p-6 rounded shadow">
+      <!-- Step Indicator -->
+      <div class="flex justify-center mb-8">
+        <div class="flex items-center space-x-4">
+          <div
+            id="step-1"
+            class="flex items-center justify-center w-8 h-8 text-white bg-[#FE5F00] rounded-full font-bold transition-colors duration-300"
+          >
+            1
+          </div>
+          <div class="w-20 h-1 bg-[#FE5F00]"></div>
+          <div
+            id="step-2"
+            class="flex items-center justify-center w-8 h-8 text-white bg-[#FE5F00] rounded-full font-bold transition-colors duration-300"
+          >
+            2
+          </div>
+          <div class="w-20 h-1 bg-gray-300"></div>
+          <div
+            id="step-3"
+            class="flex items-center justify-center w-8 h-8 text-gray-700 bg-gray-200 rounded-full font-bold transition-colors duration-300"
+          >
+            3
+          </div>
+        </div>
+      </div>
+
+      <!-- Step 2 Form -->
+      <form id="websiteForm" class="space-y-6">
+
+        <!-- Fields -->
+        <div class="mb-5">
+          <label
+            for="organizationOperations"
+            class="block text-gray-700 font-medium"
+            >Please describe your organization's operations in a few
+            sentences. *</label
+          >
+          <textarea
+            id="organizationOperations"
+            name="organizationOperations"
+            required
+            class="w-full mt-2 p-3 border rounded-lg focus:ring focus:ring-orange-300"
+            rows="3"
+            placeholder="Describe Here"
+          ></textarea>
+        </div>
+
+        <!-- Purpose of website -->
+        <div class="mb-8">
+          <label for="websitePurpose" class="block text-gray-700 font-medium"
+            >Purpose of your website *</label
+          >
+          <div class="grid grid-cols-2 mt-2 gap-y-2">
+            <div class="flex items-center gap-2">
+              <input
+                type="radio"
+                name="websitePurpose"
+                id="relayingInfo"
+                value="Relaying information about your business"
+                required
+              />
+              <label for="relayingInfo" class="text-gray-600 cursor-pointer"
+                >Relaying information about your business</label
+              >
+            </div>
+            <div class="flex items-center gap-2">
+              <input
+                type="radio"
+                name="websitePurpose"
+                id="sellBuy"
+                value="Selling or buying online"
+                required
+              />
+              <label for="sellBuy" class="text-gray-600 cursor-pointer"
+                >Selling (or buying) Online</label
+              >
+            </div>
+            <div class="flex items-center gap-2">
+              <input
+                type="radio"
+                name="websitePurpose"
+                id="nonProfit"
+                value="Non-profit/Welfare"
+                required
+              />
+              <label for="nonProfit" class="text-gray-600 cursor-pointer"
+                >Non-profit/Welfare</label
+              >
+            </div>
+            <div class="flex items-center gap-2">
+              <input
+                type="radio"
+                name="websitePurpose"
+                id="blogging"
+                value="Personal Blogging"
+                required
+              />
+              <label for="blogging" class="text-gray-600 cursor-pointer"
+                >Personal Blogging</label
+              >
+            </div>
+            <div class="flex items-center gap-2">
+              <input
+                type="radio"
+                name="websitePurpose"
+                id="portfolio"
+                value="Portfolio Showcasing"
+                required
+              />
+              <label for="portfolio" class="text-gray-600 cursor-pointer"
+                >Portfolio Showcasing</label
+              >
+            </div>
+            <!-- Other radio with text input -->
+            <div class="flex items-center gap-2">
+              <input
+                type="radio"
+                name="websitePurpose"
+                id="purposeOther"
+                value="Other"
+                required
+              />
+              <label for="purposeOther" class="text-gray-600 cursor-pointer"
+                >Other</label
+              >
+              <!-- This input should be required only if "Other" is selected -->
+              <input
+                type="text"
+                id="purposeOtherText"
+                name="purposeOtherText"
+                class="text-gray-600 focus:outline-none border-b border-gray-300 w-full px-1"
+                placeholder="Specify other purpose"
+                disabled
+              />
+            </div>
+          </div>
+        </div>
+
+        <!-- Overall feeling checkboxes -->
+        <div class="mb-8">
+          <label class="block text-gray-700 font-medium"
+            >Overall feeling that you would like to portray with your new
+            website: *</label
+          >
+          <div class="grid grid-cols-2 mt-2 gap-y-2">
+            <div class="flex items-center gap-2">
+              <input
+                type="checkbox"
+                id="Corporate"
+                name="feeling"
+                value="Corporate"
+                required
+              />
+              <label for="Corporate" class="text-gray-600 cursor-pointer"
+                >Corporate</label
+              >
+            </div>
+            <div class="flex items-center gap-2">
+              <input type="checkbox" id="Fun" name="feeling" value="Fun" />
+              <label for="Fun" class="text-gray-600 cursor-pointer"
+                >Fun</label
+              >
+            </div>
+            <div class="flex items-center gap-2">
+              <input
+                type="checkbox"
+                id="HighTech"
+                name="feeling"
+                value="High-tech"
+                required
+              />
+              <label for="HighTech" class="text-gray-600 cursor-pointer"
+                >High-tech</label
+              >
+            </div>
+            <div class="flex items-center gap-2">
+              <input
+                type="checkbox"
+                id="Modern"
+                name="feeling"
+                value="Modern"
+                required
+              />
+              <label for="Modern" class="text-gray-600 cursor-pointer"
+                >Modern</label
+              >
+            </div>
+            <div class="flex items-center gap-2">
+              <input
+                type="checkbox"
+                id="Classic"
+                name="feeling"
+                value="Classic"
+                required
+              />
+              <label for="Classic" class="text-gray-600 cursor-pointer"
+                >Classic (Vintage)</label
+              >
+            </div>
+            <!-- Other checkbox with text input -->
+            <div class="flex items-center gap-2">
+              <input
+                type="checkbox"
+                id="OtherFeel"
+                name="feeling"
+                value="Other"
+                required
+              />
+              <label for="OtherFeel" class="text-gray-600 cursor-pointer"
+                >Other</label
+              >
+              <input
+                type="text"
+                id="OtherFeelText"
+                name="OtherFeelText"
+                class="text-gray-600 focus:outline-none border-b border-gray-300 w-full px-1"
+                placeholder="Specify other feeling"
+                disabled
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="mb-6">
+          <label for="audience" class="block text-gray-700 font-medium"
+            >Target audience</label
+          >
+          <input
+            id="audience"
+            name="audience"
+            class="w-full mt-2 p-3 border rounded-lg focus:ring focus:ring-orange-300"
+            placeholder="Describe your audience"
+          />
+        </div>
+        <div class="mb-6">
+          <label for="requirePages" class="block text-gray-700 font-medium"
+            >Pages you require (except the homepage)</label
+          >
+          <textarea
+            id="requirePages"
+            name="requirePages"
+            class="w-full mt-2 p-3 border rounded-lg focus:ring focus:ring-orange-300"
+            rows="3"
+            placeholder="e.g. About Us, Services/Products, Contact Us"
+          ></textarea>
+        </div>
+        <div class="mb-6">
+          <label for="competitors" class="block text-gray-700 font-medium"
+            >Similar businesses/competitors</label
+          >
+          <input
+            id="competitors"
+            name="competitors"
+            class="w-full mt-2 p-3 border rounded-lg focus:ring focus:ring-orange-300"
+            placeholder="List your competitors"
+          />
+        </div>
+
+        <!-- Example websites -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+          <div>
+            <label for="weburl1" class="block text-gray-700 font-medium"
+              >Website #1 URL</label
+            >
+            <input
+              id="weburl1"
+              name="weburl1"
+              class="w-full mt-2 p-3 border rounded-lg focus:ring focus:ring-orange-300"
+              placeholder="Example: https://example1.com"
+            />
+          </div>
+          <div>
+            <label for="webcomments1" class="block text-gray-700 font-medium"
+              >Website #1 Comments</label
+            >
+            <input
+              id="webcomments1"
+              name="webcomments1"
+              class="w-full mt-2 p-3 border rounded-lg focus:ring focus:ring-orange-300"
+              placeholder="What do you like/dislike?"
+            />
+          </div>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+          <div>
+            <label for="weburl2" class="block text-gray-700 font-medium"
+              >Website #2 URL</label
+            >
+            <input
+              id="weburl2"
+              name="weburl2"
+              class="w-full mt-2 p-3 border rounded-lg focus:ring focus:ring-orange-300"
+              placeholder="Example: https://example2.com"
+            />
+          </div>
+          <div>
+            <label for="webcomments2" class="block text-gray-700 font-medium"
+              >Website #2 Comments</label
+            >
+            <input
+              id="webcomments2"
+              name="webcomments2"
+              class="w-full mt-2 p-3 border rounded-lg focus:ring focus:ring-orange-300"
+              placeholder="What do you like/dislike?"
+            />
+          </div>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+          <div>
+            <label for="weburl3" class="block text-gray-700 font-medium"
+              >Website #3 URL</label
+            >
+            <input
+              id="weburl3"
+              name="weburl3"
+              class="w-full mt-2 p-3 border rounded-lg focus:ring focus:ring-orange-300"
+              placeholder="Example: https://example3.com"
+            />
+          </div>
+          <div>
+            <label for="webcomments3" class="block text-gray-700 font-medium"
+              >Website #3 Comments</label
+            >
+            <input
+              id="webcomments3"
+              name="webcomments3"
+              class="w-full mt-2 p-3 border rounded-lg focus:ring focus:ring-orange-300"
+              placeholder="What do you like/dislike?"
+            />
+          </div>
+        </div>
+
+        <div class="mb-6">
+          <label for="features" class="block text-gray-700 font-medium"
+            >Any specific features/plugins you plan to incorporate?</label
+          >
+          <input
+            id="features"
+            name="features"
+            class="w-full mt-2 p-3 border rounded-lg focus:ring focus:ring-orange-300"
+            placeholder="Describe here"
+          />
+        </div>
+        <div class="mb-6">
+          <label for="maintenanceTeam" class="block text-gray-700 font-medium"
+            >Do you plan to hire a maintenance team to update your website?</label
+          >
+          <input
+            id="maintenanceTeam"
+            name="maintenanceTeam"
+            class="w-full mt-2 p-3 border rounded-lg focus:ring focus:ring-orange-300"
+            placeholder="Yes/No/Not Sure"
+          />
+        </div>
+        <div class="mb-6">
+          <label class="block text-gray-700 font-medium"
+            >Do you currently have content that you want to use on your new
+            website? *</label
+          >
+          <div class="flex gap-8 mt-2">
+            <div class="flex items-center gap-2">
+              <input
+                type="radio"
+                name="existingContent"
+                id="contentYes"
+                value="Yes"
+                required
+              />
+              <label for="contentYes" class="text-gray-600 cursor-pointer"
+                >Yes</label
+              >
+            </div>
+            <div class="flex items-center gap-2">
+              <input
+                type="radio"
+                name="existingContent"
+                id="contentNo"
+                value="No"
+                required
+              />
+              <label for="contentNo" class="text-gray-600 cursor-pointer"
+                >No</label
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- Navigation Buttons -->
+        <div class="flex justify-between mt-8">
+          <button
+            type="button"
+            id="prevBtn"
+            class="bg-gray-300 text-gray-700 py-2 px-4 rounded-lg"
+          >
+            Previous
+          </button>
+          <button
+            type="submit"
+            id="nextBtn"
+            class="bg-[#FE5F00] text-white py-2 px-6 rounded-lg"
+          >
+            Next
+          </button>
+        </div>
+      </form>
+    </div>
+
+    <script>
+      /***********************************************************
+       * 1. Parse Step-1 Data from Query & Fill Step-2 Fields
+       ***********************************************************/
+      function getQueryParams() {
+        const params = {};
+        const urlSearchParams = new URLSearchParams(window.location.search);
+        urlSearchParams.forEach((value, key) => {
+          params[key] = value;
+        });
+        return params;
+      }
+
+      const step1Data = getQueryParams(); // This has Step-1 data if coming from index.html
+      const websiteForm = document.getElementById("websiteForm");
+
+      // Fill any existing Step-2 data if the user is returning from Step 3
+      // (i.e., they might have come back).
+      function fillFormFields(form, data) {
+        // If there is step-2 data in the query (like user came from step-3)
+        for (let [key, value] of Object.entries(data)) {
+          const field = form.elements[key];
+          if (field) {
+            // Handle checkboxes or radios
+            if (field.type === "checkbox" || field.type === "radio") {
+              // Possibly multiple elements with the same name
+              const group = form.querySelectorAll(`[name="${field.name}"]`);
+              group.forEach((elem) => {
+                if (elem.value === value) {
+                  elem.checked = true;
+                }
+              });
+            } else {
+              field.value = value;
+            }
+          }
+        }
+      }
+
+      fillFormFields(websiteForm, step1Data);
+
+      /***********************************************************
+       * 2. "Other" Logic
+       ***********************************************************/
+      const purposeOther = document.getElementById("purposeOther");
+      const purposeOtherText = document.getElementById("purposeOtherText");
+      const otherFeel = document.getElementById("OtherFeel");
+      const otherFeelText = document.getElementById("OtherFeelText");
+
+      purposeOtherText.disabled = true;
+      otherFeelText.disabled = true;
+
+      // Watch changes on the "websitePurpose" radio group
+      document
+        .querySelectorAll('input[name="websitePurpose"]')
+        .forEach((radio) => {
+          radio.addEventListener("change", () => {
+            if (purposeOther.checked) {
+              purposeOtherText.disabled = false;
+              purposeOtherText.required = true;
+              purposeOtherText.focus();
+            } else {
+              purposeOtherText.disabled = true;
+              purposeOtherText.required = false;
+              purposeOtherText.value = "";
+            }
+          });
+        });
+
+      // Watch changes on the "feeling" checkboxes
+      // We only enable "OtherFeelText" if "OtherFeel" is checked
+      otherFeel.addEventListener("change", () => {
+        if (otherFeel.checked) {
+          otherFeelText.disabled = false;
+          otherFeelText.required = true;
+          otherFeelText.focus();
+        } else {
+          otherFeelText.disabled = true;
+          otherFeelText.required = false;
+          otherFeelText.value = "";
+        }
+      });
+
+      /***********************************************************
+       * 3. Validate Form & On Submit => Combine Step-1 & Step-2 data
+       ***********************************************************/
+      function validateForm() {
+        // We do a simple check for required fields
+        const requiredFields = websiteForm.querySelectorAll("[required]");
+        // Because we have required checkboxes, we might do a custom approach:
+        // But for simplicity, let's do a quick check if it's text, radio, etc.
+        for (let field of requiredFields) {
+          if (field.type === "radio") {
+            // Make sure at least one in the group is checked
+            const group = websiteForm.querySelectorAll(
+              `input[name="${field.name}"]`
+            );
+            const anyChecked = Array.from(group).some((radio) => radio.checked);
+            if (!anyChecked) {
+              alert("Please fill all required fields (radio).");
+              field.focus();
+              return false;
+            }
+          } else if (field.type === "checkbox") {
+            // If any one checkbox is required, ensure at least one is checked
+            // In your code, each checkbox has `required` - meaning each must be checked
+            // Usually we'd do: ensure at least one is checked if it's a "group" requirement.
+            // But your HTML sets `required` on each individually. 
+            // We'll do the simpler approach: each required checkbox must be checked
+            if (!field.checked) {
+              alert("Please check all required boxes.");
+              field.focus();
+              return false;
+            }
+          } else {
+            // Normal text / textarea
+            if (!field.value.trim()) {
+              alert("Please fill all required text fields.");
+              field.focus();
+              return false;
+            }
+          }
+        }
+        return true;
+      }
+
+      // Helper to build query from an object
+      function buildQueryParams(dataObj) {
+        const params = new URLSearchParams();
+        for (let [key, value] of Object.entries(dataObj)) {
+          params.set(key, value);
+        }
+        return params.toString();
+      }
+
+      function collectFormData(form) {
+        const formData = new FormData(form);
+        let dataObj = {};
+        // Because checkboxes can be multiple, we do a little check
+        // But in your code, each is "required," meaning either checked or not.
+        // We'll store each key as either string or array if multiple
+        formData.forEach((value, key) => {
+          if (dataObj[key]) {
+            // Already have a value => convert to array
+            if (!Array.isArray(dataObj[key])) {
+              dataObj[key] = [dataObj[key]];
+            }
+            dataObj[key].push(value);
+          } else {
+            dataObj[key] = value;
+          }
+        });
+        return dataObj;
+      }
+
+      websiteForm.addEventListener("submit", (e) => {
+        e.preventDefault();
+        if (!validateForm()) return;
+
+        // Collect existing step-1 data (already in step1Data)
+        // Then collect step-2 data from the form
+        const step2Data = collectFormData(websiteForm);
+
+        // Merge step1Data + step2Data
+        // If there's a conflict in key names, step2Data overwrites
+        const combinedData = { ...step1Data, ...step2Data };
+
+        // Build the query string
+        const queryString = buildQueryParams(combinedData);
+        // Navigate to step-3
+        window.location.href = `step-3.html?${queryString}`;
+      });
+
+      /***********************************************************
+       * 4. Handle "Previous" Button
+       *    => Navigate back to index.html with existing step-1 data
+       ***********************************************************/
+      const prevBtn = document.getElementById("prevBtn");
+      prevBtn.addEventListener("click", () => {
+        // Just go back to index.html with the original step1Data
+        // So that form remains filled
+        const queryString = new URLSearchParams(step1Data).toString();
+        window.location.href = `../web-brief?${queryString}`;
+      });
+    </script>
+  </body>
+</html>

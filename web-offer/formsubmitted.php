@@ -17,7 +17,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Form Submitted Successfully</title>
+    <title>Design Pro Labs | Web Offer | Form Submitted</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
