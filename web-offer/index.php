@@ -32,7 +32,7 @@
 
 <body class="hompg">
   <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-524K75WW" height="0" width="0"
-      style="display:none;visibility:hidden"></iframe></noscript>
+    style="display:none;visibility:hidden"></iframe></noscript>
   <header class="fixed z-50 top-0 left-0 w-full flex justify-between items-center md:px-[7vw] px-[5vw] py-3">
     <a href="./">
       <img src="assets/images/logo-white.png" alt="" class="sm:h-[80px] h-[75px] invert-[1] brightness-[0]" />
