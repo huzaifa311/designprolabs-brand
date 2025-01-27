@@ -5,79 +5,44 @@ function getQueryParam(param) {
 
 const id = getQueryParam("id");
 const businessname = getQueryParam("businessname");
+const newRevamp = getQueryParam('new-revamp');
 const purpose = getQueryParam("purpose");
-const feeling = getQueryParam("feeling");
-const domain = getQueryParam("domain");
-const skipBtn = document.getElementById('skipBtn'); // Skip button
-const skipText = document.getElementById('skipText'); // Text inside the button
-const requirePagesForm = document.getElementById('requirePagesForm'); // Form element
-const otherCheckbox = document.getElementById('other'); // "Other" checkbox
-const otherTextInput = document.getElementById('otherText'); // "Other" text input
+const nextBtn = document.getElementById('nextBtn'); // Next button
+const rangeInput = document.getElementById('pagesRange'); // Range slider input
 
-otherTextInput.disabled = true;
+// Define page ranges
+const pageRanges = ["1-3", "3-5", "5-8", "8+"];
+let selectedRange = "1-3"; // Default value
 
-// Monitor checkboxes to update button text and handle "Other" input focus
-requirePagesForm.addEventListener('change', function () {
-  const checkboxes = requirePagesForm.querySelectorAll('input[type="checkbox"]');
-  const isAnyChecked = Array.from(checkboxes).some((checkbox) => checkbox.checked);
-  skipText.textContent = isAnyChecked ? 'Next' : 'Skip';
-
-  // Handle "Other" checkbox behavior
-  if (otherCheckbox.checked) {
-    otherTextInput.disabled = false; // Enable the "Other" input field
-    otherTextInput.required = true; // Make it required
-    setTimeout(() => otherTextInput.focus(), 100); // Add slight delay for smoother focus
-  } else {
-    otherTextInput.disabled = true; // Disable the "Other" input field
-    otherTextInput.required = false; // Remove the required attribute
-    otherTextInput.value = ''; // Clear the input value if unchecked
-  }
+// Handle range slider change
+rangeInput.addEventListener("input", function () {
+  const selectedValue = parseInt(rangeInput.value, 10) - 1;
+  selectedRange = pageRanges[selectedValue]; // Update the selected range
+  console.log("Selected Range Updated:", selectedRange);
 });
 
-// Handle form submission (Enter key or button click)
-requirePagesForm.addEventListener('submit', function (event) {
+// Handle form submission
+nextBtn.addEventListener("click", async function (event) {
   event.preventDefault();
-  submitForm();
-});
 
-skipBtn.addEventListener('click', function () {
-  skipBtn.disabled = true;
-  submitForm().finally(() => {
-    skipBtn.disabled = false;
-  });
-});
+  // Use the current selected range
+  console.log("Submitted Range:", selectedRange);
 
-async function submitForm() {
-  const checkboxes = requirePagesForm.querySelectorAll('input[type="checkbox"]');
-  const pages = [];
+  // Construct the next URL with the selected range
+  const nextUrl = `../brief/urgency.php?id=${id}&businessname=${encodeURIComponent(businessname)}&new-revamp=${newRevamp}&purpose=${encodeURIComponent(purpose)}&requirepages=${encodeURIComponent(selectedRange)}`;
 
-  // Collect selected pages
-  checkboxes.forEach((checkbox) => {
-    if (checkbox.checked) {
-      if (checkbox.id === 'other' && otherTextInput.value.trim()) {
-        pages.push(otherTextInput.value.trim());
-      } else if (checkbox.id !== 'other') {
-        pages.push(checkbox.nextElementSibling.textContent.trim().toLowerCase()); // Convert to lowercase for URL
-      }
-    }
-  });
-
-  // If no pages are selected, use "N/A"
-  const requirepages = pages.length > 0 ? pages.join('+') : 'N/A';
-
-  const nextUrl = `../brief/urgency.php?id=${id}&businessname=${encodeURIComponent(businessname)}&purpose=${encodeURIComponent(purpose)}&feeling=${encodeURIComponent(feeling)}&domain=${encodeURIComponent(domain)}&requirepages=${encodeURIComponent(requirepages)}`;
-
+  // Redirect to the next page
   try {
-    console.log('requirepages saved successfully:', requirepages);
-    const res = await fetch("https://form-submission-google-sheet.vercel.app/web-offer/requirepages", {
+    const res = await fetch("http://localhost:3000/web-offer/requirepages", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ requirepages, id })
+      body: JSON.stringify({ requirepages: selectedRange, id })
     });
     if (res.ok) {
       window.location.href = nextUrl;
     }
   } catch (error) {
-    console.error('Error saving requirepages:', error);
+    console.error('Error saving Range:', error);
+
   }
-}
+});

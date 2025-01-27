@@ -51,43 +51,36 @@
   </header>
   <div class="py-10 bg-[url(../assets/images/stepfrombg2.jpg)] bg-no-repeat bg-cover bg-center">
     <section class="w-[95%] sm:w-[73%] 2xl:w-[1500px] mx-auto sm:py-32 py-48">
-      <div class="flex justify-center mb-10 items-center whitespace-nowrap">
-        <div class="w-9 h-9 rounded-full flex justify-center items-center bg-[#FE5F00] text-white">
+      <div class="flex justify-center mb-6 items-center whitespace-nowrap">
+        <div class="w-9 h-9 whitespace-nowrap rounded-full flex justify-center items-center  bg-[#FE5F00] text-white">
           1
         </div>
         <div class="sm:w-20 w-14 h-px bg-[#FE5F00]"></div>
-        <div class="w-9 h-9 rounded-full flex justify-center items-center bg-[#FE5F00] text-white">
+        <div class="w-9 h-9 whitespace-nowrap rounded-full flex justify-center items-center  bg-[#FE5F00] text-white">
           2
         </div>
         <div class="sm:w-20 w-14 h-px bg-[#FE5F00]"></div>
-        <div class="w-9 h-9 rounded-full flex justify-center items-center bg-[#FE5F00] text-white">
+        <div class="w-9 h-9 whitespace-nowrap rounded-full flex justify-center items-center  bg-[#FE5F00] text-white">
           3
         </div>
         <div class="sm:w-20 w-14 h-px bg-[#FE5F00]"></div>
-        <div class="w-9 h-9 rounded-full flex justify-center items-center bg-[#FE5F00] text-white">
+        <div class="w-9 h-9 whitespace-nowrap rounded-full flex justify-center items-center  bg-[#FE5F00] text-white">
           4
         </div>
         <div class="sm:w-20 w-14 h-px bg-[#FE5F00]"></div>
-        <div class="w-9 h-9 rounded-full flex justify-center items-center bg-[#FE5F00] text-white">
+        <div class="w-9 h-9 whitespace-nowrap rounded-full flex justify-center items-center  bg-[#FE5F00] text-white">
           5
         </div>
-        <div class="sm:w-20 w-14 h-px bg-[#FE5F00]"></div>
-        <div class="w-9 h-9 rounded-full flex justify-center items-center bg-[#FE5F00] text-white">
-          6
-        </div>
-        <div class="sm:w-20 w-14 h-px bg-[#FE5F00]"></div>
-        <div class="w-9 h-9 rounded-full flex justify-center items-center bg-[#FE5F00] text-white">
-          7
+        <div class="sm:w-20 w-14 h-px bg-black"></div>
+        <div class="w-8 h-8 rounded-full flex justify-center items-center border border-black">
+            6
         </div>
       </div>
       <h1 class="sm:text-5xl text-4xl font-bold text-center">
-        Congrats,
-        <span id="companyName" class="text-[#FE5F00] whitespace-nowrap"></span>
-        Your Website is<br />
-        almost ready! 😊
+        Almost There😊
       </h1>
       <p class="text-center text-[14px] mt-3">
-        Please fill in the following details to recieve your website.
+        Kindly fill the following details so our PM can contact you.
       </p>
       <div class="mt-8 space-y-4 flex flex-col">
         <input id="name" type="text"

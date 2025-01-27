@@ -3,22 +3,22 @@
 
 <head>
   <script>(function (w, d, s, l, i) {
-    w[l] = w[l] || []; w[l].push({
-      'gtm.start':
-        new Date().getTime(), event: 'gtm.js'
-    }); var f = d.getElementsByTagName(s)[0],
-      j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
-        'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
-  })(window, document, 'script', 'dataLayer', 'GTM-524K75WW');</script>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-16824780855"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag() { dataLayer.push(arguments); }
-  gtag('js', new Date());
+      w[l] = w[l] || []; w[l].push({
+        'gtm.start':
+          new Date().getTime(), event: 'gtm.js'
+      }); var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-524K75WW');</script>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-16824780855"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
-  gtag('config', 'AW-16824780855');
-</script>
+    gtag('config', 'AW-16824780855');
+  </script>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -38,7 +38,7 @@
 
 <body class="hompg bg-[url(../assets/images/stepfrombg.png)] bg-no-repeat bg-cover bg-center">
   <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-524K75WW" height="0" width="0"
-    style="display:none;visibility:hidden"></iframe></noscript>
+      style="display:none;visibility:hidden"></iframe></noscript>
   <header
     class="fixed z-50 top-0 left-0 w-full flex justify-between items-center md:px-[7vw] px-[5vw] py-3 border-b border-b-[#ddd] bg-white">
     <a href="../">
@@ -52,54 +52,50 @@
 
   <section class="flex justify-center items-center h-screen">
     <div class="bg-white sm:p-7 px-0 py-10 rounded-xl border border-[#ddd] md:max-w-[55%]">
-    <div class="flex justify-center mb-10 items-center whitespace-nowrap">
-          <div class="w-9 h-9 rounded-full flex justify-center items-center  bg-[#FE5F00] text-white">
-            1
-          </div>
-          <div class="sm:w-20 w-14 h-px bg-[#FE5F00]"></div>
-          <div class="w-9 h-9 rounded-full flex justify-center items-center  bg-[#FE5F00] text-white">
-            2
-          </div>
-          <div class="sm:w-20 w-14 h-px bg-[#FE5F00]"></div>
-          <div class="w-9 h-9 rounded-full flex justify-center items-center  bg-[#FE5F00] text-white">
-            3
-          </div>
-          <div class="sm:w-20 w-14 h-px bg-[#FE5F00]"></div>
-          <div class="w-9 h-9 rounded-full flex justify-center items-center  bg-[#FE5F00] text-white">
-            4
-          </div>
-          <div class="sm:w-20 w-14 h-px bg-[#FE5F00]"></div>
-          <div class="w-9 h-9 rounded-full flex justify-center items-center  bg-[#FE5F00] text-white">
-            5
-          </div>
-          <div class="sm:w-20 w-14 h-px bg-black"></div>
-          <div class="w-8 h-8 rounded-full flex justify-center items-center border border-black">
-            6
-          </div>
-          <div class="sm:w-20 w-14 h-px bg-black"></div>
-          <div class="w-8 h-8 rounded-full flex justify-center items-center border border-black">
-            7
-          </div>
+      <div class="flex justify-center mb-6 items-center whitespace-nowrap">
+        <div class="w-9 h-9 whitespace-nowrap rounded-full flex justify-center items-center  bg-[#FE5F00] text-white">
+          1
         </div>
-      <h1 class="text-4xl font-bold text-center">Urgency of The Website</h1>
-      <form id="urgencyForm" class="flex flex-col justify-center mt-5">
-        <div class="grid sm:grid-cols-2 sm:gap-x-8">
+        <div class="sm:w-20 w-14 h-px bg-[#FE5F00]"></div>
+        <div class="w-9 h-9 whitespace-nowrap rounded-full flex justify-center items-center  bg-[#FE5F00] text-white">
+          2
+        </div>
+        <div class="sm:w-20 w-14 h-px bg-[#FE5F00]"></div>
+        <div class="w-9 h-9 whitespace-nowrap rounded-full flex justify-center items-center  bg-[#FE5F00] text-white">
+          3
+        </div>
+        <div class="sm:w-20 w-14 h-px bg-[#FE5F00]"></div>
+        <div class="w-9 h-9 whitespace-nowrap rounded-full flex justify-center items-center  bg-[#FE5F00] text-white">
+          4
+        </div>
+        <div class="sm:w-20 w-14 h-px bg-black"></div>
+        <div class="w-8 h-8 rounded-full flex justify-center items-center border border-black">
+          5
+        </div>
+        <div class="sm:w-20 w-14 h-px bg-black"></div>
+        <div class="w-8 h-8 rounded-full flex justify-center items-center border border-black">
+            6
+        </div>
+      </div>
+      <h1 class="text-4xl font-bold text-center">Whats the Deadline?</h1>
+      <form id="urgencyForm" class="flex flex-col justify-center mt-7">
+        <div class="flex justify-center sm:gap-x-10">
           <div class="space-y-3">
             <div class="flex gap-2 items-ceanter">
               <input type="checkbox" id="day" />
               <label for="day">Within A Day</label>
             </div>
             <div class="flex gap-2 items-center">
-              <input type="checkbox" id="Week" />
-              <label for="Week"> Within A Week</label>
-            </div>
-          </div>
-          <div class="space-y-3 sm:ml-auto">
-          <div class="flex gap-2 items-center">
               <input type="checkbox" id="Two-Weeks" />
               <label for="Two-Weeks">Within Two Weeks</label>
             </div>
-          <div class="flex gap-2 items-center">
+          </div>
+          <div class="space-y-3">
+            <div class="flex gap-2 items-center">
+              <input type="checkbox" id="Week" />
+              <label for="Week"> Within A Week</label>
+            </div>
+            <div class="flex gap-2 items-center">
               <input type="checkbox" id="No-Deadline" />
               <label for="No-Deadline">No Deadline</label>
             </div>

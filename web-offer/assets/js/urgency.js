@@ -7,9 +7,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const id = getQueryParam("id");
   const businessname = getQueryParam("businessname");
+  const newRevamp = getQueryParam('new-revamp');
   const purpose = getQueryParam("purpose");
-  const feeling = getQueryParam("feeling");
-  const domain = getQueryParam("domain");
   const requirepages = getQueryParam("requirepages");
 
   const nextBtn = document.getElementById("nextBtn");
@@ -63,13 +62,13 @@ document.addEventListener("DOMContentLoaded", () => {
   async function redirectToNextPage() {
     const selectedUrgency = checkboxes.find((checkbox) => checkbox.checked).id;
 
-    const nextUrl = `../brief/anything.php?id=${id}&businessname=${encodeURIComponent(businessname)}&purpose=${encodeURIComponent(purpose)}&feeling=${encodeURIComponent(feeling)}&domain=${encodeURIComponent(domain)}&requirepages=${encodeURIComponent(requirepages)}&urgency=${encodeURIComponent(selectedUrgency)}`;
+    const nextUrl = `../brief/personal_info.php?id=${id}&businessname=${encodeURIComponent(businessname)}&new-revamp=${newRevamp}&purpose=${encodeURIComponent(purpose)}&requirepages=${encodeURIComponent(requirepages)}&urgency=${encodeURIComponent(selectedUrgency)}`;
 
     try {
       console.log("Redirecting to:", nextUrl);
       // Simulate async behavior for testing (e.g., API call)
       await new Promise((resolve) => setTimeout(resolve, 500));
-      const res = await fetch("https://form-submission-google-sheet.vercel.app/web-offer/urgency", {
+      const res = await fetch("http://localhost:3000/web-offer/urgency", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ urgency: selectedUrgency, id })

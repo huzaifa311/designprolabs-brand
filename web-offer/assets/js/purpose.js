@@ -4,6 +4,7 @@ function getQueryParam(param) {
 }
 
 const businessname = getQueryParam('businessname');
+const newRevamp = getQueryParam('new-revamp');
 const id = getQueryParam('id');
 const skipBtn = document.getElementById('skipBtn'); // Skip button
 const skipText = document.getElementById('skipText'); // Text inside the button
@@ -62,11 +63,11 @@ async function submitForm() {
   // If no purposes are selected, use "N/A"
   const purpose = purposes.length > 0 ? purposes.join('+') : 'N/A';
 
-  const nextUrl = `../brief/feeling.php?id=${id}&businessname=${encodeURIComponent(businessname)}&purpose=${encodeURIComponent(purpose)}`;
+  const nextUrl = `../brief/requirepages.php?id=${id}&businessname=${encodeURIComponent(businessname)}&new-revamp=${newRevamp}&purpose=${encodeURIComponent(purpose)}`;
 
   try {
     console.log('Purpose saved successfully:', purpose);
-    const res = await fetch("https://form-submission-google-sheet.vercel.app/web-offer/purpose", {
+    const res = await fetch("http://localhost:3000/web-offer/purpose", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ purpose, id })

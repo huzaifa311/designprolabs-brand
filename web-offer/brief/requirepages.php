@@ -3,27 +3,28 @@
 
 <head>
   <script>(function (w, d, s, l, i) {
-    w[l] = w[l] || []; w[l].push({
-      'gtm.start':
-        new Date().getTime(), event: 'gtm.js'
-    }); var f = d.getElementsByTagName(s)[0],
-      j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
-        'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
-  })(window, document, 'script', 'dataLayer', 'GTM-524K75WW');</script>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-16824780855"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag() { dataLayer.push(arguments); }
-  gtag('js', new Date());
+      w[l] = w[l] || []; w[l].push({
+        'gtm.start':
+          new Date().getTime(), event: 'gtm.js'
+      }); var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-524K75WW');</script>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-16824780855"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
-  gtag('config', 'AW-16824780855');
-</script>
+    gtag('config', 'AW-16824780855');
+  </script>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="icon" href="../assets/favicon.ico" type="image/x-icon" />
   <link rel="stylesheet" href="../assets/css/style.css" />
+  <link rel="stylesheet" href="../assets/css/requirepages.css" />
   <script src="https://cdn.tailwindcss.com"></script>
   <link
     href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
@@ -38,7 +39,7 @@
 
 <body class="hompg bg-[url(../assets/images/stepfrombg.png)] bg-no-repeat bg-cover bg-center">
   <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-524K75WW" height="0" width="0"
-    style="display:none;visibility:hidden"></iframe></noscript>
+      style="display:none;visibility:hidden"></iframe></noscript>
   <header
     class="fixed z-50 top-0 left-0 w-full flex justify-between items-center md:px-[7vw] px-[5vw] py-3 border-b border-b-[#ddd] bg-white">
     <a href="../">
@@ -52,58 +53,49 @@
 
   <section class="flex justify-center items-center h-screen">
     <div class="bg-white sm:p-7 px-0 py-10 rounded-xl border border-[#ddd] md:max-w-[55%]">
-    <div class="flex justify-center mb-10 items-center whitespace-nowrap">
-          <div class="w-9 h-9 rounded-full flex justify-center items-center  bg-[#FE5F00] text-white">
-            1
-          </div>
-          <div class="sm:w-20 w-14 h-px bg-[#FE5F00]"></div>
-          <div class="w-9 h-9 rounded-full flex justify-center items-center  bg-[#FE5F00] text-white">
-            2
-          </div>
-          <div class="sm:w-20 w-14 h-px bg-[#FE5F00]"></div>
-          <div class="w-9 h-9 rounded-full flex justify-center items-center  bg-[#FE5F00] text-white">
-            3
-          </div>
-          <div class="sm:w-20 w-14 h-px bg-[#FE5F00]"></div>
-          <div class="w-9 h-9 rounded-full flex justify-center items-center  bg-[#FE5F00] text-white">
-            4
-          </div>
-          <div class="sm:w-20 w-14 h-px bg-black"></div>
-          <div class="w-8 h-8 rounded-full flex justify-center items-center border border-black">
-            5
-          </div>
-          <div class="sm:w-20 w-14 h-px bg-black"></div>
-          <div class="w-8 h-8 rounded-full flex justify-center items-center border border-black">
-            6
-          </div>
-          <div class="sm:w-20 w-14 h-px bg-black"></div>
-          <div class="w-8 h-8 rounded-full flex justify-center items-center border border-black">
-            7
-          </div>
+     <div class="flex justify-center mb-6 items-center whitespace-nowrap">
+        <div class="w-9 h-9 rounded-full flex justify-center items-center  bg-[#FE5F00] text-white">
+          1
         </div>
-      <h1 class="text-4xl font-bold text-center">Pages you require (except the homepage) on your website</h1>
-      <form id="requirePagesForm" class="flex flex-col justify-center mt-5">
-        <div class="grid sm:grid-cols-2 sm:gap-x-8">
-          <div class="space-y-3">
-            <div class="flex gap-2 items-ceanter">
-              <input type="checkbox" id="About" />
-              <label for="About">About Us</label>
-            </div>
-            <div class="flex gap-2 items-center">
-              <input type="checkbox" id="Services " />
-              <label for="Services ">Services/Products</label>
-            </div>
-          </div>
-          <div class="space-y-3 sm:ml-auto">
-            <div class="flex gap-2 items-center">
-              <input type="checkbox" id="Contact" />
-              <label for="Contact">Contact Us</label>
-            </div>
-            <div class="flex gap-2 items-center">
-              <input type="checkbox" id="other" />
-              <label for="other">Other:</label>
-              <input type="text" class="border-b border-b-[#ddd] focus:outline-none" id="otherText" />
-            </div>
+        <div class="sm:w-20 w-14 h-px bg-[#FE5F00]"></div>
+        <div class="w-9 h-9 rounded-full flex justify-center items-center  bg-[#FE5F00] text-white">
+          2
+        </div>
+        <div class="sm:w-20 w-14 h-px bg-[#FE5F00]"></div>
+        <div class="w-9 h-9 rounded-full flex justify-center items-center  bg-[#FE5F00] text-white">
+          3
+        </div>
+        <div class="sm:w-20 w-14 h-px bg-black"></div>
+        <div class="w-8 h-8 rounded-full flex justify-center items-center border border-black">
+          4
+        </div>
+        <div class="sm:w-20 w-14 h-px bg-black"></div>
+        <div class="w-8 h-8 rounded-full flex justify-center items-center border border-black">
+          5
+        </div>
+        <div class="sm:w-20 w-14 h-px bg-black"></div>
+        <div class="w-8 h-8 rounded-full flex justify-center items-center border border-black">
+            6
+        </div>
+      </div>
+      <h1 class="text-4xl font-bold text-center">How many pages you require?</h1>
+      <form id="requirePagesForm" class="flex flex-col justify-center mt-7 space-y-6">
+        <div class="flex flex-col items-center space-y-4">
+          <input
+            type="range"
+            id="pagesRange"
+            name="pagesRange"
+            min="1"
+            max="4"
+            step="1"
+            value="1"
+            class="w-[80%] h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer py-[6px]"
+          />
+          <div id="rangeLabels" class="flex justify-between w-[80%] text-sm">
+            <span>1-3</span>
+            <span>3-5</span>
+            <span>5-8</span>
+            <span>8+</span>
           </div>
         </div>
       </form>
@@ -111,11 +103,12 @@
   </section>
 
   <div class="fixed bottom-0 left-0 w-full py-4 flex justify-center customBorder bg-white">
-    <button id="skipBtn" class="text-lg font-semibold text-white bg-[#FE5F00] py-[10px] px-10 flex items-center gap-2">
-      <span id="skipText">Skip</span>
+    <button id="nextBtn" class="text-lg font-semibold text-white bg-[#FE5F00] py-2 px-10 flex items-center gap-2">
+      <span id="nextText">Next</span>
       <img src="../assets/images/arrowForward.png" alt="arrowForward" />
     </button>
   </div>
+  
 
   <script src="../assets/js/requirepages.js"></script>
   <!--Start of Tawk.to Script-->

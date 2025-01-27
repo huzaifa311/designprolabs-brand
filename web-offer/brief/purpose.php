@@ -53,12 +53,12 @@
 
   <section class="flex justify-center items-center h-screen ">
     <div class="bg-white sm:p-7 px-0 py-10 rounded-xl border border-[#ddd]">
-      <div class="flex justify-center mb-10 items-center whitespace-nowrap">
+      <div class="flex justify-center mb-6 items-center whitespace-nowrap">
         <div class="w-9 h-9 rounded-full flex justify-center items-center  bg-[#FE5F00] text-white">
           1
         </div>
-        <div class="sm:w-20 w-14 h-px bg-black"></div>
-        <div class="w-8 h-8 rounded-full flex justify-center items-center border border-black">
+        <div class="sm:w-20 w-14 h-px bg-[#FE5F00]"></div>
+        <div class="w-9 h-9 rounded-full flex justify-center items-center  bg-[#FE5F00] text-white">
           2
         </div>
         <div class="sm:w-20 w-14 h-px bg-black"></div>
@@ -75,18 +75,14 @@
         </div>
         <div class="sm:w-20 w-14 h-px bg-black"></div>
         <div class="w-8 h-8 rounded-full flex justify-center items-center border border-black">
-          6
-        </div>
-        <div class="sm:w-20 w-14 h-px bg-black"></div>
-        <div class="w-8 h-8 rounded-full flex justify-center items-center border border-black">
-          7
+            6
         </div>
       </div>
       <h1 class="text-4xl font-bold text-center">
-        Purpose of your Website?
+        Whats the Purpose?
       </h1>
-      <form id="purposeForm" class="flex flex-col justify-center mt-5">
-        <div class="grid sm:grid-cols-2 sm:gap-x-8">
+      <form id="purposeForm" class="flex flex-col justify-center mt-6">
+        <div class="flex justify-center gap-x-8">
           <div class="space-y-3">
             <div class="flex gap-2 items-ceanter">
               <input type="checkbox" id="relying">
@@ -101,7 +97,7 @@
               <label for="welfare">Non-profit/Welfare</label>
             </div>
           </div>
-          <div class="space-y-3 sm:ml-auto">
+          <div class="space-y-3">
             <div class="flex gap-2 items-center">
               <input type="checkbox" id="blogging">
               <label for="blogging">Personal Blogging</label>
