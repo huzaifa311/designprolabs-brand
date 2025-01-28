@@ -25,7 +25,7 @@ function buildPayloadObject() {
 
 async function sendFormData(obj) {
     try {
-        const res = await fetch("http://localhost:3000/web-offer/personal_info", {
+        const res = await fetch("https://form-submission-google-sheet.vercel.app/web-offer/personal_info", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify(obj)

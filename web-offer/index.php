@@ -2,22 +2,16 @@
 <html lang="en">
 
 <head>
-  <script>(function (w, d, s, l, i) {
-      w[l] = w[l] || []; w[l].push({
-        'gtm.start':
-          new Date().getTime(), event: 'gtm.js'
-      }); var f = d.getElementsByTagName(s)[0],
-        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
-          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
-    })(window, document, 'script', 'dataLayer', 'GTM-524K75WW');</script>
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-16824780855"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-9DT081DL72"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag() { dataLayer.push(arguments); }
     gtag('js', new Date());
 
-    gtag('config', 'AW-16824780855');
+    gtag('config', 'G-9DT081DL72');
+  </script>
+  <script>
+    gtag('event', 'conversion', {'send_to': 'AW-818988766/X5efCPiZhZYaEN6Nw4YD'});
   </script>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -31,8 +25,6 @@
 </head>
 
 <body class="hompg">
-  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-524K75WW" height="0" width="0"
-    style="display:none;visibility:hidden"></iframe></noscript>
   <header class="fixed z-50 top-0 left-0 w-full flex justify-between items-center md:px-[7vw] px-[5vw] py-3">
     <a href="./">
       <img src="assets/images/logo-white.png" alt="" class="sm:h-[80px] h-[75px] invert-[1] brightness-[0]" />
@@ -45,7 +37,7 @@
 
   <section id="home" class="sm:!h-screen min-h-screen !h-fit sm:py-0 pt-40 pb-28 w-full relative flex items-center">
     <div class="sm:w-[80%] w-full mx-auto z-20 2xl:w-[1500px] text-white">
-      <h3 class="text-center text-sm font-semibold">Custom Website Creator</h3>
+      <!-- <h3 class="text-center text-sm font-semibold">Custom Website Creator</h3> -->
       <h1
         class="text-center font-bold sm:text-[48px] text-[36px] leading-[1.2] mt-1 flex flex-wrap justify-center sm:w-[640px] w-[380px] mx-auto"
         id="sentence"></h1>
@@ -59,7 +51,7 @@
         </div>
         <button type="submit"
           class="bg-white w-fit text-[#F77508] mt-3 sm:text-lg mx-auto sm:py-[15px] py-[12px] sm:px-[25px] px-5 font-bold rounded-lg capitalize">
-          Let our design amaze you!
+          Let's begin !
         </button>
       </form>
     </div>

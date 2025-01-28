@@ -2,22 +2,16 @@
 <html lang="en">
 
 <head>
-  <script>(function (w, d, s, l, i) {
-      w[l] = w[l] || []; w[l].push({
-        'gtm.start':
-          new Date().getTime(), event: 'gtm.js'
-      }); var f = d.getElementsByTagName(s)[0],
-        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
-          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
-    })(window, document, 'script', 'dataLayer', 'GTM-524K75WW');</script>
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-16824780855"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-9DT081DL72"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag() { dataLayer.push(arguments); }
     gtag('js', new Date());
 
-    gtag('config', 'AW-16824780855');
+    gtag('config', 'G-9DT081DL72');
+  </script>
+  <script>
+    gtag('event', 'conversion', {'send_to': 'AW-818988766/X5efCPiZhZYaEN6Nw4YD'});
   </script>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -38,8 +32,6 @@
 </head>
 
 <body class="hompg bg-[url(../assets/images/stepfrombg.png)] bg-no-repeat bg-cover bg-center">
-  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-524K75WW" height="0" width="0"
-      style="display:none;visibility:hidden"></iframe></noscript>
   <header
     class="fixed z-50 top-0 left-0 w-full flex justify-between items-center md:px-[7vw] px-[5vw] py-3 border-b border-b-[#ddd] bg-white">
     <a href="../">
@@ -53,49 +45,41 @@
 
   <section class="flex justify-center items-center h-screen">
     <div class="bg-white sm:p-7 px-0 py-10 rounded-xl border border-[#ddd] md:max-w-[55%]">
-     <div class="flex justify-center mb-6 items-center whitespace-nowrap">
-        <div class="w-9 h-9 rounded-full flex justify-center items-center  bg-[#FE5F00] text-white">
+      <div class="flex justify-center mb-6 items-center whitespace-nowrap">
+        <div class="sm:w-9 sm:h-9 w-7 h-7 rounded-full flex justify-center items-center bg-[#FE5F00] text-white">
           1
         </div>
-        <div class="sm:w-20 w-14 h-px bg-[#FE5F00]"></div>
-        <div class="w-9 h-9 rounded-full flex justify-center items-center  bg-[#FE5F00] text-white">
+        <div class="sm:w-20 w-9 h-px bg-[#FE5F00]"></div>
+        <div class="sm:w-9 sm:h-9 w-7 h-7 rounded-full flex justify-center items-center bg-[#FE5F00] text-white">
           2
         </div>
-        <div class="sm:w-20 w-14 h-px bg-[#FE5F00]"></div>
-        <div class="w-9 h-9 rounded-full flex justify-center items-center  bg-[#FE5F00] text-white">
+        <div class="sm:w-20 w-9 h-px bg-[#FE5F00]"></div>
+        <div class="sm:w-9 sm:h-9 w-7 h-7 rounded-full flex justify-center items-center bg-[#FE5F00] text-white">
           3
         </div>
-        <div class="sm:w-20 w-14 h-px bg-[#FE5F00]"></div>
-        <div class="w-9 h-9 rounded-full flex justify-center items-center  bg-[#FE5F00] text-white">
+        <div class="sm:w-20 w-9 h-px bg-[#FE5F00]"></div>
+        <div class="sm:w-9 sm:h-9 w-7 h-7 rounded-full flex justify-center items-center bg-[#FE5F00] text-white">
           4
         </div>
-        <div class="sm:w-20 w-14 h-px bg-[#FE5F00]"></div>
-        <div class="w-9 h-9 rounded-full flex justify-center items-center  bg-[#FE5F00] text-white">
+        <div class="sm:w-20 w-9 h-px bg-[#FE5F00]"></div>
+        <div class="sm:w-9 sm:h-9 w-7 h-7 rounded-full flex justify-center items-center bg-[#FE5F00] text-white">
           5
         </div>
-        <div class="sm:w-20 w-14 h-px bg-[#FE5F00]"></div>
-        <div class="w-9 h-9 rounded-full flex justify-center items-center  bg-[#FE5F00] text-white">
-            6
+        <div class="sm:w-20 w-9 h-px bg-[#FE5F00]"></div>
+        <div class="sm:w-9 sm:h-9 w-7 h-7 rounded-full flex justify-center items-center bg-[#FE5F00] text-white">
+          6
         </div>
       </div>
       <h1 class="text-4xl font-bold text-center">Whats your budget?</h1>
       <form id="requirePagesForm" class="flex flex-col justify-center mt-7 space-y-6">
         <div class="flex flex-col items-center space-y-4">
-          <input
-            type="range"
-            id="pagesRange"
-            name="pagesRange"
-            min="1"
-            max="4"
-            step="1"
-            value="1"
-            class="w-[80%] h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer py-[6px]"
-          />
-          <div id="rangeLabels" class="flex justify-between w-[80%] text-sm">
-            <span>$-3</span>
-            <span>3-5</span>
-            <span>5-8</span>
-            <span>8+</span>
+          <input type="range" id="pagesRange" name="pagesRange" min="1" max="4" step="1" value="1"
+            class="w-[93%] h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer py-[6px]" />
+          <div id="rangeLabels" class="flex justify-between w-[93%] text-sm">
+            <span>$249-$549</span>
+            <span>$549-$999</span>
+            <span>$999-$1549</span>
+            <span>$1549+</span>
           </div>
         </div>
       </form>
@@ -108,9 +92,9 @@
       <img src="../assets/images/arrowForward.png" alt="arrowForward" />
     </button>
   </div>
-  
 
-  <script src="../assets/js/requirepages.js"></script>
+
+  <script src="../assets/js/budget.js"></script>
   <!--Start of Tawk.to Script-->
 
   <script type="text/javascript">

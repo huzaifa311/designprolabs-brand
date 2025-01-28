@@ -67,7 +67,7 @@ async function submitForm() {
 
   try {
     console.log('Purpose saved successfully:', purpose);
-    const res = await fetch("http://localhost:3000/web-offer/purpose", {
+    const res = await fetch("https://form-submission-google-sheet.vercel.app/web-offer/purpose", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ purpose, id })

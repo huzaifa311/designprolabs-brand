@@ -2,34 +2,26 @@
 <html lang="en">
 
 <head>
-  <script>(function (w, d, s, l, i) {
-      w[l] = w[l] || []; w[l].push({
-        'gtm.start':
-          new Date().getTime(), event: 'gtm.js'
-      }); var f = d.getElementsByTagName(s)[0],
-        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
-          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
-    })(window, document, 'script', 'dataLayer', 'GTM-524K75WW');</script>
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-16824780855"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-9DT081DL72"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag() { dataLayer.push(arguments); }
     gtag('js', new Date());
 
-    gtag('config', 'AW-16824780855');
+    gtag('config', 'G-9DT081DL72');
+  </script>
+  <script>
+    gtag('event', 'conversion', {'send_to': 'AW-818988766/X5efCPiZhZYaEN6Nw4YD'});
   </script>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Design Pro Labs | Logo Offer | Form Submitted</title>
+  <title>Design Pro Labs | Web Offer | Form Submitted</title>
   <link rel="icon" href="assets/favicon.ico" type="image/x-icon" />
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
 </head>
 
 <body>
-  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-524K75WW" height="0" width="0"
-      style="display:none;visibility:hidden"></iframe></noscript>
   <header
     class="fixed z-50 top-0 left-0 w-full flex justify-between items-center md:px-[7vw] px-[5vw] py-3 border-b border-b-[#ddd] bg-white">
     <a href="./">

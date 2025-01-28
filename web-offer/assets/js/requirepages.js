@@ -33,7 +33,7 @@ nextBtn.addEventListener("click", async function (event) {
 
   // Redirect to the next page
   try {
-    const res = await fetch("http://localhost:3000/web-offer/requirepages", {
+    const res = await fetch("https://form-submission-google-sheet.vercel.app/web-offer/requirepages", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ requirepages: selectedRange, id })

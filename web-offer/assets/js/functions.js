@@ -9,7 +9,7 @@ document.getElementById('businessForm').addEventListener('submit', async functio
   const id = window.btoa(businessName + Math.floor(100000 + Math.random() * 900000));
 
   try {
-    const res = await fetch("http://localhost:3000/web-offer/business-name", {
+    const res = await fetch("https://form-submission-google-sheet.vercel.app/web-offer/business-name", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ business_name: businessName, id })

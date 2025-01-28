@@ -65,7 +65,7 @@ document.addEventListener("DOMContentLoaded", () => {
         console.log("Redirecting to:", nextUrl);
         // Simulate async behavior for testing (e.g., API call)
         await new Promise((resolve) => setTimeout(resolve, 500));
-        const res = await fetch("http://localhost:3000/web-offer/new-revamp", {
+        const res = await fetch("https://form-submission-google-sheet.vercel.app/web-offer/new-revamp", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({ newRevamp: selectedOption, id })
